@@ -13,7 +13,12 @@ logs/<model>_v03.json: "scale" if B0 (H2a), "accept" if B0b (H2b).
 Variants: all_pos (primary), last_pos (secondary), all_layers (exploratory).
 Results are written after every fold, so a stopped run resumes where it left.
 
-Output: logs/<model>_ablate_<variant>.json, logs/<model>_h2_<variant>.json
+--batch-size N > 1 scores all prompts of one direction in batches of N (one
+weight transfer instead of N under CPU offload). Batched kernels shift bf16
+numerics slightly, so each fold then also re-scores the unablated baseline in
+the same batches and the closure uses it instead of the batch-1 baseline.
+
+Output: logs/<model>_ablate_<variant>[_b<N>].json, logs/<model>_h2_<variant>[_b<N>].json
 
 Usage:
     python ablate.py --model llama-8b
@@ -79,17 +84,29 @@ def random_direction(dim, rng):
     return v / np.linalg.norm(v)
 
 
-def score(model, tokenizer, ids, animal, kinds):
-    """Readout averaged over paraphrases, keyed like analyze.behavior: E, mass, yes_no, accept, accept_mass."""
-    rename = {("scale", "E"): "E", ("scale", "mass"): "mass", ("yes_no", "yes_no"): "yes_no",
-              ("accept", "E"): "accept", ("accept", "mass"): "accept_mass"}
-    out = {}
-    for kind in kinds:
-        vals = [readout_scores(forward_last(model, tokenizer, [chat(tokenizer, t.format(animal=animal))])[0],
-                               kind, *ids) for t in READOUT[kind]]
-        for field in vals[0]:
-            out[rename[(kind, field)]] = float(np.mean([v[field] for v in vals]))
+RENAME = {("scale", "E"): "E", ("scale", "mass"): "mass", ("yes_no", "yes_no"): "yes_no",
+          ("accept", "E"): "accept", ("accept", "mass"): "accept_mass"}
+
+
+def score(model, tokenizer, ids, pair, kinds, batch_size):
+    """{food, nonfood} → readout averaged over paraphrases, keyed like analyze.behavior."""
+    rows = [(role, kind, t) for role in ("food", "nonfood") for kind in kinds for t in READOUT[kind]]
+    logits = []
+    for i in range(0, len(rows), batch_size):
+        chunk = rows[i:i + batch_size]
+        logits += list(forward_last(model, tokenizer,
+                                    [chat(tokenizer, t.format(animal=pair[role])) for role, _, t in chunk]))
+    out = {"food": {}, "nonfood": {}}
+    for role in out:
+        for kind in kinds:
+            vals = [readout_scores(lg, kind, *ids) for (r, k, _), lg in zip(rows, logits) if (r, k) == (role, kind)]
+            for field in vals[0]:
+                out[role][RENAME[(kind, field)]] = float(np.mean([v[field] for v in vals]))
     return out
+
+
+def tag(args):
+    return args.variant + ("" if args.batch_size == 1 else f"_b{args.batch_size}")
 
 
 def control_kinds(key):
@@ -102,8 +119,9 @@ def run(args):
     if not kinds:
         print("no precondition (B0 / B0b) passed: H2 is not tested for this model (§6, §12.4)")
         return
-    out_path = LOGS / f"{args.model}_ablate_{args.variant}.json"
-    done = json.loads(out_path.read_text(encoding="utf-8")) if out_path.exists() else {"kinds": kinds, "folds": {}}
+    out_path = LOGS / f"{args.model}_ablate_{tag(args)}.json"
+    done = (json.loads(out_path.read_text(encoding="utf-8")) if out_path.exists()
+            else {"kinds": kinds, "batch_size": args.batch_size, "folds": {}})
 
     dirs = torch.load(LOGS / f"{args.model}_directions_v03.pt")
     states, index = load_states(args.model)
@@ -124,13 +142,15 @@ def run(args):
         abl = Ablator(layers, hook_ids, last_only=args.variant == "last_pos")
         fold = {"layer": L, "main": {}, "controls": {"random": [], "placebo": []}}
 
+        all_kinds = ["scale", "yes_no", "accept"]
+        if args.batch_size > 1:
+            abl.v = None
+            fold["base"] = score(model, tokenizer, ids, pair, all_kinds, args.batch_size)
         abl.v = dirs["v"][k]
-        for role in ("food", "nonfood"):
-            fold["main"][role] = score(model, tokenizer, ids, pair[role], ["scale", "yes_no", "accept"])
+        fold["main"] = score(model, tokenizer, ids, pair, all_kinds, args.batch_size)
         for n, (ctrl, v) in enumerate(controls):
             abl.v = torch.tensor(v, dtype=torch.float32)
-            fold["controls"][ctrl].append({role: score(model, tokenizer, ids, pair[role], kinds)
-                                           for role in ("food", "nonfood")})
+            fold["controls"][ctrl].append(score(model, tokenizer, ids, pair, kinds, args.batch_size))
             print(f"pair {pair['id']} control {n + 1}/{len(controls)}", flush=True)
         abl.remove()
 
@@ -141,20 +161,23 @@ def run(args):
 
 def summary(args):
     """§7.2–7.3, §12.4: closure vs the 95th percentile of each control, per readout."""
-    res = json.loads((LOGS / f"{args.model}_ablate_{args.variant}.json").read_text(encoding="utf-8"))
+    res = json.loads((LOGS / f"{args.model}_ablate_{tag(args)}.json").read_text(encoding="utf-8"))
     base = json.loads((LOGS / f"{args.model}_v03.json").read_text(encoding="utf-8"))["behavior"]["per_animal"]
     folds = [(p, res["folds"][str(p["id"])]) for p in PAIRS if str(p["id"]) in res["folds"]]
+    # batched runs carry their own same-batch baseline (see module docstring)
+    base_of = lambda p, f, role: f["base"][role] if "base" in f else base[p[role]]
     gap = lambda d_food, d_non, key, sign: sign * (d_non[key] - d_food[key])
 
     out = {"variant": args.variant, "n_folds": len(folds)}
     for kind in res["kinds"]:
         key, sign = GAPS[kind]
-        g_base = np.array([gap(base[p["food"]], base[p["nonfood"]], key, sign) for p, _ in folds])
+        g_base = np.array([gap(base_of(p, f, "food"), base_of(p, f, "nonfood"), key, sign) for p, f in folds])
         g_abl = np.array([gap(f["main"]["food"], f["main"]["nonfood"], key, sign) for _, f in folds])
         C = float((g_base - g_abl).mean())
         r = {"C": C, "C_fraction": C / float(g_base.mean()), "d_z_closure": float(d_z(g_base - g_abl)),
-             "shift_food": float(np.mean([f["main"]["food"][key] - base[p["food"]][key] for p, f in folds])),
-             "shift_nonfood": float(np.mean([f["main"]["nonfood"][key] - base[p["nonfood"]][key] for p, f in folds])),
+             "shift_food": float(np.mean([f["main"]["food"][key] - base_of(p, f, "food")[key] for p, f in folds])),
+             "shift_nonfood": float(np.mean([f["main"]["nonfood"][key] - base_of(p, f, "nonfood")[key]
+                                             for p, f in folds])),
              "min_mass_ablated": float(min(f["main"][role]["mass" if kind == "scale" else "accept_mass"]
                                            for _, f in folds for role in ("food", "nonfood")))}
         for ctrl in ("random", "placebo"):
@@ -166,13 +189,14 @@ def summary(args):
         passed = C > r["random_p95"] and C > r["placebo_p95"] and r["min_mass_ablated"] >= 0.5
         if kind == "scale":  # §6: Yes/No must agree in sign
             yn = lambda f, b: gap(f, b, "yes_no", 1)
-            C_yn = float(np.mean([yn(base[p["food"]], base[p["nonfood"]]) - yn(f["main"]["food"], f["main"]["nonfood"])
+            C_yn = float(np.mean([yn(base_of(p, f, "food"), base_of(p, f, "nonfood"))
+                                  - yn(f["main"]["food"], f["main"]["nonfood"])
                                   for p, f in folds]))
             r["C_yes_no"] = C_yn
             passed = passed and np.sign(C) == np.sign(C_yn)
         r["pass"] = bool(passed)
         out["H2a" if kind == "scale" else "H2b"] = r
-    (LOGS / f"{args.model}_h2_{args.variant}.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
+    (LOGS / f"{args.model}_h2_{tag(args)}.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     print(json.dumps(out, indent=1))
 
 
@@ -181,6 +205,7 @@ def main():
     ap.add_argument("--model", required=True, choices=list(MODELS))
     ap.add_argument("--variant", default="all_pos", choices=["all_pos", "last_pos", "all_layers"])
     ap.add_argument("--controls", type=int, default=N_CONTROLS)
+    ap.add_argument("--batch-size", type=int, default=1, help="prompts per forward; >1 adds a same-batch baseline")
     ap.add_argument("--summary", action="store_true")
     args = ap.parse_args()
     summary(args) if args.summary else run(args)
