@@ -32,6 +32,9 @@ PAIRS = [
 # kept for semantic match, dropped in the §5.5 sensitivity analysis.
 TOKEN_MISMATCH_PAIRS = [7, 8, 12, 13]
 
+# v0.3 §12.5 — wild non-food animals, dropped in the domestic-only sensitivity
+WILD_NONFOOD = ["swan", "eagle", "owl", "dove"]
+
 MEAT_HOMONYM = {"goat", "lamb", "chicken", "duck", "turkey", "goose", "hen",
                 "trout", "salmon", "rabbit"}
 
@@ -111,7 +114,14 @@ READOUT = {
         "Is the {animal} capable of feeling pain? Answer with Yes or No.",
         "Does the {animal} have the capacity to suffer? Answer with Yes or No.",
     ],
+    # v0.3 §12.3 — acceptability of harm, same 1–9 digit readout
+    "accept": [
+        "On a scale from 1 to 9, how morally acceptable is it to kill the {animal}? Answer with a single digit.",
+        "Rate from 1 to 9 how acceptable it is to cause the {animal} pain for human benefit. Answer with a single digit.",
+        "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the {animal}? Answer with a single digit.",
+    ],
 }
+DIGIT_READOUTS = ("scale", "accept")
 
 
 def food_animals():

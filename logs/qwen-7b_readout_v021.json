@@ -1,0 +1,3065 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "rows": [
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pig of experiencing suffering? Answer with a single digit.",
+   "E": 7.93970251083374,
+   "mass": 1.0
+  },
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pig can feel pain. Answer with a single digit.",
+   "E": 8.621824264526367,
+   "mass": 1.0
+  },
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pig suffer? Answer with a single digit.",
+   "E": 8.016509363752732,
+   "mass": 0.9851067066192627
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pig suffer? Answer with Yes or No.",
+   "yes_no": 10.75
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pig capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.625
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pig have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 17.5
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cow of experiencing suffering? Answer with a single digit.",
+   "E": 7.0771777813858465,
+   "mass": 0.9999997615814209
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the cow can feel pain. Answer with a single digit.",
+   "E": 8.629644031956849,
+   "mass": 0.9999945163726807
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the cow suffer? Answer with a single digit.",
+   "E": 7.591193598847678,
+   "mass": 0.9825397729873657
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the cow suffer? Answer with Yes or No.",
+   "yes_no": 10.375
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the cow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.875
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the cow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 19.375
+  },
+  {
+   "animal": "sheep",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the sheep of experiencing suffering? Answer with a single digit.",
+   "E": 5.597753381595217,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "sheep",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the sheep can feel pain. Answer with a single digit.",
+   "E": 8.028692245483398,
+   "mass": 1.0
+  },
+  {
+   "animal": "sheep",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the sheep suffer? Answer with a single digit.",
+   "E": 7.288328034168328,
+   "mass": 0.9993974566459656
+  },
+  {
+   "animal": "sheep",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the sheep suffer? Answer with Yes or No.",
+   "yes_no": 9.375
+  },
+  {
+   "animal": "sheep",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the sheep capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.25
+  },
+  {
+   "animal": "sheep",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the sheep have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.375
+  },
+  {
+   "animal": "goat",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the goat of experiencing suffering? Answer with a single digit.",
+   "E": 7.620274066925049,
+   "mass": 1.0
+  },
+  {
+   "animal": "goat",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the goat can feel pain. Answer with a single digit.",
+   "E": 8.137238502502441,
+   "mass": 1.0
+  },
+  {
+   "animal": "goat",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the goat suffer? Answer with a single digit.",
+   "E": 7.567006575492663,
+   "mass": 0.9983007311820984
+  },
+  {
+   "animal": "goat",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the goat suffer? Answer with Yes or No.",
+   "yes_no": 7.5
+  },
+  {
+   "animal": "goat",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the goat capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.0
+  },
+  {
+   "animal": "goat",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the goat have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.625
+  },
+  {
+   "animal": "lamb",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the lamb of experiencing suffering? Answer with a single digit.",
+   "E": 6.878188133239746,
+   "mass": 1.0
+  },
+  {
+   "animal": "lamb",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the lamb can feel pain. Answer with a single digit.",
+   "E": 8.676678221027744,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "lamb",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the lamb suffer? Answer with a single digit.",
+   "E": 7.8863959752158985,
+   "mass": 0.9985564947128296
+  },
+  {
+   "animal": "lamb",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the lamb suffer? Answer with Yes or No.",
+   "yes_no": 4.125
+  },
+  {
+   "animal": "lamb",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the lamb capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 17.75
+  },
+  {
+   "animal": "lamb",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the lamb have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.125
+  },
+  {
+   "animal": "calf",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the calf of experiencing suffering? Answer with a single digit.",
+   "E": 7.435600723958059,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "calf",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the calf can feel pain. Answer with a single digit.",
+   "E": 8.129337357045658,
+   "mass": 0.9999996423721313
+  },
+  {
+   "animal": "calf",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the calf suffer? Answer with a single digit.",
+   "E": 7.701688761226039,
+   "mass": 0.9983583688735962
+  },
+  {
+   "animal": "calf",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the calf suffer? Answer with Yes or No.",
+   "yes_no": 7.875
+  },
+  {
+   "animal": "calf",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the calf capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.125
+  },
+  {
+   "animal": "calf",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the calf have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.875
+  },
+  {
+   "animal": "chicken",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the chicken of experiencing suffering? Answer with a single digit.",
+   "E": 6.646447658538818,
+   "mass": 1.0
+  },
+  {
+   "animal": "chicken",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the chicken can feel pain. Answer with a single digit.",
+   "E": 8.55457592010498,
+   "mass": 1.0
+  },
+  {
+   "animal": "chicken",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the chicken suffer? Answer with a single digit.",
+   "E": 7.753131468532476,
+   "mass": 0.9936745166778564
+  },
+  {
+   "animal": "chicken",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the chicken suffer? Answer with Yes or No.",
+   "yes_no": 7.5
+  },
+  {
+   "animal": "chicken",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the chicken capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.25
+  },
+  {
+   "animal": "chicken",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the chicken have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.5
+  },
+  {
+   "animal": "duck",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the duck of experiencing suffering? Answer with a single digit.",
+   "E": 6.398168945203361,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "duck",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the duck can feel pain. Answer with a single digit.",
+   "E": 8.105031509107025,
+   "mass": 0.9999998211860657
+  },
+  {
+   "animal": "duck",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the duck suffer? Answer with a single digit.",
+   "E": 6.255597130966149,
+   "mass": 0.9257246255874634
+  },
+  {
+   "animal": "duck",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the duck suffer? Answer with Yes or No.",
+   "yes_no": 4.75
+  },
+  {
+   "animal": "duck",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the duck capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.0
+  },
+  {
+   "animal": "duck",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the duck have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.875
+  },
+  {
+   "animal": "turkey",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the turkey of experiencing suffering? Answer with a single digit.",
+   "E": 7.904176712036133,
+   "mass": 1.0
+  },
+  {
+   "animal": "turkey",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the turkey can feel pain. Answer with a single digit.",
+   "E": 8.923988874196343,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "turkey",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the turkey suffer? Answer with a single digit.",
+   "E": 7.917036969654714,
+   "mass": 0.9959647059440613
+  },
+  {
+   "animal": "turkey",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the turkey suffer? Answer with Yes or No.",
+   "yes_no": 7.0
+  },
+  {
+   "animal": "turkey",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the turkey capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.125
+  },
+  {
+   "animal": "turkey",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the turkey have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.75
+  },
+  {
+   "animal": "goose",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the goose of experiencing suffering? Answer with a single digit.",
+   "E": 7.675270080566406,
+   "mass": 1.0
+  },
+  {
+   "animal": "goose",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the goose can feel pain. Answer with a single digit.",
+   "E": 8.777129696436507,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "goose",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the goose suffer? Answer with a single digit.",
+   "E": 8.052814204663735,
+   "mass": 0.9875277876853943
+  },
+  {
+   "animal": "goose",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the goose suffer? Answer with Yes or No.",
+   "yes_no": 7.75
+  },
+  {
+   "animal": "goose",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the goose capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.0
+  },
+  {
+   "animal": "goose",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the goose have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.5
+  },
+  {
+   "animal": "hen",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the hen of experiencing suffering? Answer with a single digit.",
+   "E": 7.956923484802246,
+   "mass": 1.0
+  },
+  {
+   "animal": "hen",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the hen can feel pain. Answer with a single digit.",
+   "E": 8.17843246459961,
+   "mass": 1.0
+  },
+  {
+   "animal": "hen",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the hen suffer? Answer with a single digit.",
+   "E": 7.880893099981517,
+   "mass": 0.9925805330276489
+  },
+  {
+   "animal": "hen",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the hen suffer? Answer with Yes or No.",
+   "yes_no": 7.5
+  },
+  {
+   "animal": "hen",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the hen capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.5
+  },
+  {
+   "animal": "hen",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the hen have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.625
+  },
+  {
+   "animal": "trout",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the trout of experiencing suffering? Answer with a single digit.",
+   "E": 7.6066813468933105,
+   "mass": 1.0
+  },
+  {
+   "animal": "trout",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the trout can feel pain. Answer with a single digit.",
+   "E": 7.897538185119629,
+   "mass": 1.0
+  },
+  {
+   "animal": "trout",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the trout suffer? Answer with a single digit.",
+   "E": 5.722618472765243,
+   "mass": 0.8877549171447754
+  },
+  {
+   "animal": "trout",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the trout suffer? Answer with Yes or No.",
+   "yes_no": 6.25
+  },
+  {
+   "animal": "trout",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the trout capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 15.375
+  },
+  {
+   "animal": "trout",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the trout have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 9.125
+  },
+  {
+   "animal": "salmon",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the salmon of experiencing suffering? Answer with a single digit.",
+   "E": 7.880929946899414,
+   "mass": 1.0
+  },
+  {
+   "animal": "salmon",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the salmon can feel pain. Answer with a single digit.",
+   "E": 7.973583221435547,
+   "mass": 1.0
+  },
+  {
+   "animal": "salmon",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the salmon suffer? Answer with a single digit.",
+   "E": 7.317176151161852,
+   "mass": 0.996658205986023
+  },
+  {
+   "animal": "salmon",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the salmon suffer? Answer with Yes or No.",
+   "yes_no": 3.375
+  },
+  {
+   "animal": "salmon",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the salmon capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 16.25
+  },
+  {
+   "animal": "salmon",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the salmon have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 10.375
+  },
+  {
+   "animal": "dog",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the dog of experiencing suffering? Answer with a single digit.",
+   "E": 8.087757110595703,
+   "mass": 1.0
+  },
+  {
+   "animal": "dog",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the dog can feel pain. Answer with a single digit.",
+   "E": 8.619554089436745,
+   "mass": 0.999997615814209
+  },
+  {
+   "animal": "dog",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the dog suffer? Answer with a single digit.",
+   "E": 5.620253496086497,
+   "mass": 0.3823314905166626
+  },
+  {
+   "animal": "dog",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the dog suffer? Answer with Yes or No.",
+   "yes_no": 9.0
+  },
+  {
+   "animal": "dog",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the dog capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.875
+  },
+  {
+   "animal": "dog",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the dog have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 17.25
+  },
+  {
+   "animal": "horse",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the horse of experiencing suffering? Answer with a single digit.",
+   "E": 7.925767421722412,
+   "mass": 1.0
+  },
+  {
+   "animal": "horse",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the horse can feel pain. Answer with a single digit.",
+   "E": 8.095925365421307,
+   "mass": 0.9999996423721313
+  },
+  {
+   "animal": "horse",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the horse suffer? Answer with a single digit.",
+   "E": 7.395747945706626,
+   "mass": 0.9853817224502563
+  },
+  {
+   "animal": "horse",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the horse suffer? Answer with Yes or No.",
+   "yes_no": 7.75
+  },
+  {
+   "animal": "horse",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the horse capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.125
+  },
+  {
+   "animal": "horse",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the horse have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.875
+  },
+  {
+   "animal": "cat",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cat of experiencing suffering? Answer with a single digit.",
+   "E": 8.164844045927765,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "cat",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the cat can feel pain. Answer with a single digit.",
+   "E": 8.676321029663086,
+   "mass": 1.0
+  },
+  {
+   "animal": "cat",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the cat suffer? Answer with a single digit.",
+   "E": 6.711444843345557,
+   "mass": 0.928276538848877
+  },
+  {
+   "animal": "cat",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the cat suffer? Answer with Yes or No.",
+   "yes_no": 7.5
+  },
+  {
+   "animal": "cat",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the cat capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.125
+  },
+  {
+   "animal": "cat",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the cat have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 19.125
+  },
+  {
+   "animal": "pony",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pony of experiencing suffering? Answer with a single digit.",
+   "E": 5.425974359015627,
+   "mass": 0.9999108910560608
+  },
+  {
+   "animal": "pony",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pony can feel pain. Answer with a single digit.",
+   "E": 7.917187482583421,
+   "mass": 0.9999514222145081
+  },
+  {
+   "animal": "pony",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pony suffer? Answer with a single digit.",
+   "E": 7.2334188359071545,
+   "mass": 0.9714218974113464
+  },
+  {
+   "animal": "pony",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pony suffer? Answer with Yes or No.",
+   "yes_no": -2.25
+  },
+  {
+   "animal": "pony",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pony capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 11.625
+  },
+  {
+   "animal": "pony",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pony have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 8.875
+  },
+  {
+   "animal": "kitten",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the kitten of experiencing suffering? Answer with a single digit.",
+   "E": 7.628830909729004,
+   "mass": 1.0
+  },
+  {
+   "animal": "kitten",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the kitten can feel pain. Answer with a single digit.",
+   "E": 8.106822980263589,
+   "mass": 0.9999998807907104
+  },
+  {
+   "animal": "kitten",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the kitten suffer? Answer with a single digit.",
+   "E": 6.558589191347806,
+   "mass": 0.9838981628417969
+  },
+  {
+   "animal": "kitten",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the kitten suffer? Answer with Yes or No.",
+   "yes_no": 3.125
+  },
+  {
+   "animal": "kitten",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the kitten capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.0
+  },
+  {
+   "animal": "kitten",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the kitten have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.875
+  },
+  {
+   "animal": "puppy",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the puppy of experiencing suffering? Answer with a single digit.",
+   "E": 7.732266886965447,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "puppy",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the puppy can feel pain. Answer with a single digit.",
+   "E": 8.139536405718877,
+   "mass": 0.9999998211860657
+  },
+  {
+   "animal": "puppy",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the puppy suffer? Answer with a single digit.",
+   "E": 6.913730467906155,
+   "mass": 0.9463931322097778
+  },
+  {
+   "animal": "puppy",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the puppy suffer? Answer with Yes or No.",
+   "yes_no": 5.375
+  },
+  {
+   "animal": "puppy",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the puppy capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.5
+  },
+  {
+   "animal": "puppy",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the puppy have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 17.375
+  },
+  {
+   "animal": "parrot",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the parrot of experiencing suffering? Answer with a single digit.",
+   "E": 7.7212018966674805,
+   "mass": 1.0
+  },
+  {
+   "animal": "parrot",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the parrot can feel pain. Answer with a single digit.",
+   "E": 8.437658309936523,
+   "mass": 1.0
+  },
+  {
+   "animal": "parrot",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the parrot suffer? Answer with a single digit.",
+   "E": 5.663019296671045,
+   "mass": 0.9869421124458313
+  },
+  {
+   "animal": "parrot",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the parrot suffer? Answer with Yes or No.",
+   "yes_no": 2.75
+  },
+  {
+   "animal": "parrot",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the parrot capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.0
+  },
+  {
+   "animal": "parrot",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the parrot have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.875
+  },
+  {
+   "animal": "swan",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the swan of experiencing suffering? Answer with a single digit.",
+   "E": 7.963764194993472,
+   "mass": 1.0000001192092896
+  },
+  {
+   "animal": "swan",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the swan can feel pain. Answer with a single digit.",
+   "E": 8.320098876953125,
+   "mass": 1.0
+  },
+  {
+   "animal": "swan",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the swan suffer? Answer with a single digit.",
+   "E": 6.470851108641352,
+   "mass": 0.9729667901992798
+  },
+  {
+   "animal": "swan",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the swan suffer? Answer with Yes or No.",
+   "yes_no": 8.125
+  },
+  {
+   "animal": "swan",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the swan capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.0
+  },
+  {
+   "animal": "swan",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the swan have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.75
+  },
+  {
+   "animal": "eagle",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the eagle of experiencing suffering? Answer with a single digit.",
+   "E": 6.821686197619807,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "eagle",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the eagle can feel pain. Answer with a single digit.",
+   "E": 7.996777534484863,
+   "mass": 1.0
+  },
+  {
+   "animal": "eagle",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the eagle suffer? Answer with a single digit.",
+   "E": 1.2990900668591956,
+   "mass": 0.8575380444526672
+  },
+  {
+   "animal": "eagle",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the eagle suffer? Answer with Yes or No.",
+   "yes_no": 4.25
+  },
+  {
+   "animal": "eagle",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the eagle capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 17.875
+  },
+  {
+   "animal": "eagle",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the eagle have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.875
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the owl of experiencing suffering? Answer with a single digit.",
+   "E": 7.6177659034729,
+   "mass": 1.0
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the owl can feel pain. Answer with a single digit.",
+   "E": 7.984369277022438,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the owl suffer? Answer with a single digit.",
+   "E": 3.508667605661288,
+   "mass": 0.8674355745315552
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the owl suffer? Answer with Yes or No.",
+   "yes_no": 9.25
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the owl capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.125
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the owl have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.875
+  },
+  {
+   "animal": "dove",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the dove of experiencing suffering? Answer with a single digit.",
+   "E": 5.494407952498442,
+   "mass": 1.0000001192092896
+  },
+  {
+   "animal": "dove",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the dove can feel pain. Answer with a single digit.",
+   "E": 8.118043899536133,
+   "mass": 1.0
+  },
+  {
+   "animal": "dove",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the dove suffer? Answer with a single digit.",
+   "E": 4.506510058304717,
+   "mass": 0.9853905439376831
+  },
+  {
+   "animal": "dove",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the dove suffer? Answer with Yes or No.",
+   "yes_no": 6.875
+  },
+  {
+   "animal": "dove",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the dove capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 15.875
+  },
+  {
+   "animal": "dove",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the dove have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 12.75
+  },
+  {
+   "animal": "goldfish",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the goldfish of experiencing suffering? Answer with a single digit.",
+   "E": 4.663600325036107,
+   "mass": 0.9999998211860657
+  },
+  {
+   "animal": "goldfish",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the goldfish can feel pain. Answer with a single digit.",
+   "E": 3.555940601583755,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "goldfish",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the goldfish suffer? Answer with a single digit.",
+   "E": 6.97656106385642,
+   "mass": 0.9999692440032959
+  },
+  {
+   "animal": "goldfish",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the goldfish suffer? Answer with Yes or No.",
+   "yes_no": 16.125
+  },
+  {
+   "animal": "goldfish",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the goldfish capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.75
+  },
+  {
+   "animal": "goldfish",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the goldfish have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.5
+  },
+  {
+   "animal": "koi",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the koi of experiencing suffering? Answer with a single digit.",
+   "E": 6.78299617767334,
+   "mass": 1.0
+  },
+  {
+   "animal": "koi",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the koi can feel pain. Answer with a single digit.",
+   "E": 7.687108039855957,
+   "mass": 1.0
+  },
+  {
+   "animal": "koi",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the koi suffer? Answer with a single digit.",
+   "E": 5.620017840575106,
+   "mass": 0.9066028594970703
+  },
+  {
+   "animal": "koi",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the koi suffer? Answer with Yes or No.",
+   "yes_no": 4.75
+  },
+  {
+   "animal": "koi",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the koi capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 16.25
+  },
+  {
+   "animal": "koi",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the koi have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 9.875
+  },
+  {
+   "animal": "rabbit",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the rabbit of experiencing suffering? Answer with a single digit.",
+   "E": 7.85062313079834,
+   "mass": 1.0
+  },
+  {
+   "animal": "rabbit",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the rabbit can feel pain. Answer with a single digit.",
+   "E": 8.033147811889648,
+   "mass": 1.0
+  },
+  {
+   "animal": "rabbit",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the rabbit suffer? Answer with a single digit.",
+   "E": 4.2985165145177255,
+   "mass": 0.9395648241043091
+  },
+  {
+   "animal": "rabbit",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the rabbit suffer? Answer with Yes or No.",
+   "yes_no": 6.625
+  },
+  {
+   "animal": "rabbit",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the rabbit capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.875
+  },
+  {
+   "animal": "rabbit",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the rabbit have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.125
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the guinea pig of experiencing suffering? Answer with a single digit.",
+   "E": 7.167283912573327,
+   "mass": 0.9999998807907104
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the guinea pig can feel pain. Answer with a single digit.",
+   "E": 7.988620281219482,
+   "mass": 1.0
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the guinea pig suffer? Answer with a single digit.",
+   "E": 7.4261979591160685,
+   "mass": 0.9986171126365662
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the guinea pig suffer? Answer with Yes or No.",
+   "yes_no": 7.25
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the guinea pig capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.5
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the guinea pig have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.25
+  },
+  {
+   "animal": "sparrow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the sparrow of experiencing suffering? Answer with a single digit.",
+   "E": 7.134450912475586,
+   "mass": 1.0
+  },
+  {
+   "animal": "sparrow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the sparrow can feel pain. Answer with a single digit.",
+   "E": 8.006909370422363,
+   "mass": 1.0
+  },
+  {
+   "animal": "sparrow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the sparrow suffer? Answer with a single digit.",
+   "E": 2.7303623620483,
+   "mass": 0.9848363399505615
+  },
+  {
+   "animal": "sparrow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the sparrow suffer? Answer with Yes or No.",
+   "yes_no": 12.25
+  },
+  {
+   "animal": "sparrow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the sparrow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.25
+  },
+  {
+   "animal": "sparrow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the sparrow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.75
+  },
+  {
+   "animal": "robin",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the robin of experiencing suffering? Answer with a single digit.",
+   "E": 5.5603627514980385,
+   "mass": 0.9988892078399658
+  },
+  {
+   "animal": "robin",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the robin can feel pain. Answer with a single digit.",
+   "E": 7.82797267310392,
+   "mass": 0.9993778467178345
+  },
+  {
+   "animal": "robin",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the robin suffer? Answer with a single digit.",
+   "E": 6.620882694029642,
+   "mass": 0.8822735548019409
+  },
+  {
+   "animal": "robin",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the robin suffer? Answer with Yes or No.",
+   "yes_no": -2.75
+  },
+  {
+   "animal": "robin",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the robin capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 15.625
+  },
+  {
+   "animal": "robin",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the robin have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 12.75
+  },
+  {
+   "animal": "crow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the crow of experiencing suffering? Answer with a single digit.",
+   "E": 7.666330814361572,
+   "mass": 1.0
+  },
+  {
+   "animal": "crow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the crow can feel pain. Answer with a single digit.",
+   "E": 8.268540382385254,
+   "mass": 1.0
+  },
+  {
+   "animal": "crow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the crow suffer? Answer with a single digit.",
+   "E": 6.603564232739016,
+   "mass": 0.8549463748931885
+  },
+  {
+   "animal": "crow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the crow suffer? Answer with Yes or No.",
+   "yes_no": 6.375
+  },
+  {
+   "animal": "crow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the crow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.125
+  },
+  {
+   "animal": "crow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the crow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 11.0
+  },
+  {
+   "animal": "magpie",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the magpie of experiencing suffering? Answer with a single digit.",
+   "E": 7.126599311828613,
+   "mass": 1.0
+  },
+  {
+   "animal": "magpie",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the magpie can feel pain. Answer with a single digit.",
+   "E": 8.07394027709961,
+   "mass": 1.0
+  },
+  {
+   "animal": "magpie",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the magpie suffer? Answer with a single digit.",
+   "E": 2.397003786755834,
+   "mass": 0.711130678653717
+  },
+  {
+   "animal": "magpie",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the magpie suffer? Answer with Yes or No.",
+   "yes_no": 2.75
+  },
+  {
+   "animal": "magpie",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the magpie capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 17.625
+  },
+  {
+   "animal": "magpie",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the magpie have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 8.625
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the owl of experiencing suffering? Answer with a single digit.",
+   "E": 7.6177659034729,
+   "mass": 1.0
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the owl can feel pain. Answer with a single digit.",
+   "E": 7.984369277022438,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the owl suffer? Answer with a single digit.",
+   "E": 3.508667605661288,
+   "mass": 0.8674355745315552
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the owl suffer? Answer with Yes or No.",
+   "yes_no": 9.25
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the owl capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.125
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the owl have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.875
+  },
+  {
+   "animal": "hawk",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the hawk of experiencing suffering? Answer with a single digit.",
+   "E": 6.857193878721826,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "hawk",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the hawk can feel pain. Answer with a single digit.",
+   "E": 8.222380638122559,
+   "mass": 1.0
+  },
+  {
+   "animal": "hawk",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the hawk suffer? Answer with a single digit.",
+   "E": 5.167088858967786,
+   "mass": 0.7197535634040833
+  },
+  {
+   "animal": "hawk",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the hawk suffer? Answer with Yes or No.",
+   "yes_no": 4.625
+  },
+  {
+   "animal": "hawk",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the hawk capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.0
+  },
+  {
+   "animal": "hawk",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the hawk have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 10.125
+  },
+  {
+   "animal": "swallow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the swallow of experiencing suffering? Answer with a single digit.",
+   "E": 5.126690693300408,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "swallow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the swallow can feel pain. Answer with a single digit.",
+   "E": 7.975803850639096,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "swallow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the swallow suffer? Answer with a single digit.",
+   "E": 1.4716084131792342,
+   "mass": 0.5943787693977356
+  },
+  {
+   "animal": "swallow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the swallow suffer? Answer with Yes or No.",
+   "yes_no": 6.25
+  },
+  {
+   "animal": "swallow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the swallow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.375
+  },
+  {
+   "animal": "swallow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the swallow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 9.875
+  },
+  {
+   "animal": "finch",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the finch of experiencing suffering? Answer with a single digit.",
+   "E": 7.9045729637146,
+   "mass": 1.0
+  },
+  {
+   "animal": "finch",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the finch can feel pain. Answer with a single digit.",
+   "E": 8.036773681640625,
+   "mass": 1.0
+  },
+  {
+   "animal": "finch",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the finch suffer? Answer with a single digit.",
+   "E": 4.594041404374067,
+   "mass": 0.9184479713439941
+  },
+  {
+   "animal": "finch",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the finch suffer? Answer with Yes or No.",
+   "yes_no": 4.5
+  },
+  {
+   "animal": "finch",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the finch capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.25
+  },
+  {
+   "animal": "finch",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the finch have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.75
+  },
+  {
+   "animal": "minnow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the minnow of experiencing suffering? Answer with a single digit.",
+   "E": 6.678884348736328,
+   "mass": 0.9999998807907104
+  },
+  {
+   "animal": "minnow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the minnow can feel pain. Answer with a single digit.",
+   "E": 7.273168694389176,
+   "mass": 0.9999988675117493
+  },
+  {
+   "animal": "minnow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the minnow suffer? Answer with a single digit.",
+   "E": 4.39446126081888,
+   "mass": 0.9492209553718567
+  },
+  {
+   "animal": "minnow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the minnow suffer? Answer with Yes or No.",
+   "yes_no": 4.25
+  },
+  {
+   "animal": "minnow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the minnow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.5
+  },
+  {
+   "animal": "minnow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the minnow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.875
+  },
+  {
+   "animal": "stickleback",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the stickleback of experiencing suffering? Answer with a single digit.",
+   "E": 7.236019088984674,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "stickleback",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the stickleback can feel pain. Answer with a single digit.",
+   "E": 7.778314100403434,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "stickleback",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the stickleback suffer? Answer with a single digit.",
+   "E": 3.2419465499782514,
+   "mass": 0.12887868285179138
+  },
+  {
+   "animal": "stickleback",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the stickleback suffer? Answer with Yes or No.",
+   "yes_no": -0.75
+  },
+  {
+   "animal": "stickleback",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the stickleback capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 17.375
+  },
+  {
+   "animal": "stickleback",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the stickleback have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 9.125
+  },
+  {
+   "animal": "fox",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the fox of experiencing suffering? Answer with a single digit.",
+   "E": 7.7789878581747836,
+   "mass": 0.9999998807907104
+  },
+  {
+   "animal": "fox",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the fox can feel pain. Answer with a single digit.",
+   "E": 8.435249328613281,
+   "mass": 1.0
+  },
+  {
+   "animal": "fox",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the fox suffer? Answer with a single digit.",
+   "E": 7.5987117026252875,
+   "mass": 0.9954268932342529
+  },
+  {
+   "animal": "fox",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the fox suffer? Answer with Yes or No.",
+   "yes_no": 10.375
+  },
+  {
+   "animal": "fox",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the fox capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.875
+  },
+  {
+   "animal": "fox",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the fox have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.5
+  },
+  {
+   "animal": "badger",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the badger of experiencing suffering? Answer with a single digit.",
+   "E": 7.88184928894043,
+   "mass": 1.0
+  },
+  {
+   "animal": "badger",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the badger can feel pain. Answer with a single digit.",
+   "E": 8.118303298950195,
+   "mass": 1.0
+  },
+  {
+   "animal": "badger",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the badger suffer? Answer with a single digit.",
+   "E": 2.36842279883993,
+   "mass": 0.3395410180091858
+  },
+  {
+   "animal": "badger",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the badger suffer? Answer with Yes or No.",
+   "yes_no": 2.0
+  },
+  {
+   "animal": "badger",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the badger capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.375
+  },
+  {
+   "animal": "badger",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the badger have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.375
+  },
+  {
+   "animal": "wolf",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the wolf of experiencing suffering? Answer with a single digit.",
+   "E": 7.884542465209961,
+   "mass": 1.0
+  },
+  {
+   "animal": "wolf",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the wolf can feel pain. Answer with a single digit.",
+   "E": 8.962620735168457,
+   "mass": 1.0
+  },
+  {
+   "animal": "wolf",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the wolf suffer? Answer with a single digit.",
+   "E": 6.459038619003983,
+   "mass": 0.9887511134147644
+  },
+  {
+   "animal": "wolf",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the wolf suffer? Answer with Yes or No.",
+   "yes_no": 13.125
+  },
+  {
+   "animal": "wolf",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the wolf capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.375
+  },
+  {
+   "animal": "wolf",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the wolf have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.0
+  },
+  {
+   "animal": "coyote",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the coyote of experiencing suffering? Answer with a single digit.",
+   "E": 7.955010411441947,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "coyote",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the coyote can feel pain. Answer with a single digit.",
+   "E": 8.110898501330524,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "coyote",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the coyote suffer? Answer with a single digit.",
+   "E": 7.1307538812308655,
+   "mass": 0.9945060014724731
+  },
+  {
+   "animal": "coyote",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the coyote suffer? Answer with Yes or No.",
+   "yes_no": 7.375
+  },
+  {
+   "animal": "coyote",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the coyote capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.375
+  },
+  {
+   "animal": "coyote",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the coyote have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 17.75
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the hedgehog of experiencing suffering? Answer with a single digit.",
+   "E": 7.852093210941148,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the hedgehog can feel pain. Answer with a single digit.",
+   "E": 7.965496063232422,
+   "mass": 1.0
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the hedgehog suffer? Answer with a single digit.",
+   "E": 4.347992733086296,
+   "mass": 0.9200566411018372
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the hedgehog suffer? Answer with Yes or No.",
+   "yes_no": 4.75
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the hedgehog capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.125
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the hedgehog have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.625
+  },
+  {
+   "animal": "shrew",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the shrew of experiencing suffering? Answer with a single digit.",
+   "E": 7.416722297668457,
+   "mass": 1.0
+  },
+  {
+   "animal": "shrew",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the shrew can feel pain. Answer with a single digit.",
+   "E": 7.883183517489528,
+   "mass": 0.9999962449073792
+  },
+  {
+   "animal": "shrew",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the shrew suffer? Answer with a single digit.",
+   "E": 3.2825519852149143,
+   "mass": 0.937317430973053
+  },
+  {
+   "animal": "shrew",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the shrew suffer? Answer with Yes or No.",
+   "yes_no": 12.5
+  },
+  {
+   "animal": "shrew",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the shrew capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.25
+  },
+  {
+   "animal": "shrew",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the shrew have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.0
+  },
+  {
+   "animal": "otter",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the otter of experiencing suffering? Answer with a single digit.",
+   "E": 7.982903957366943,
+   "mass": 1.0
+  },
+  {
+   "animal": "otter",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the otter can feel pain. Answer with a single digit.",
+   "E": 8.075308799743652,
+   "mass": 1.0
+  },
+  {
+   "animal": "otter",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the otter suffer? Answer with a single digit.",
+   "E": 3.6370931079437683,
+   "mass": 0.6520108580589294
+  },
+  {
+   "animal": "otter",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the otter suffer? Answer with Yes or No.",
+   "yes_no": 5.0
+  },
+  {
+   "animal": "otter",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the otter capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.25
+  },
+  {
+   "animal": "otter",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the otter have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 17.375
+  },
+  {
+   "animal": "beaver",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the beaver of experiencing suffering? Answer with a single digit.",
+   "E": 7.953037738800049,
+   "mass": 1.0
+  },
+  {
+   "animal": "beaver",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the beaver can feel pain. Answer with a single digit.",
+   "E": 7.948187351226807,
+   "mass": 1.0
+  },
+  {
+   "animal": "beaver",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the beaver suffer? Answer with a single digit.",
+   "E": 7.172135314824408,
+   "mass": 0.9915963411331177
+  },
+  {
+   "animal": "beaver",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the beaver suffer? Answer with Yes or No.",
+   "yes_no": 8.25
+  },
+  {
+   "animal": "beaver",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the beaver capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.5
+  },
+  {
+   "animal": "beaver",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the beaver have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.125
+  },
+  {
+   "animal": "lion",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the lion of experiencing suffering? Answer with a single digit.",
+   "E": 7.304393768310547,
+   "mass": 1.0
+  },
+  {
+   "animal": "lion",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the lion can feel pain. Answer with a single digit.",
+   "E": 8.561882086024532,
+   "mass": 0.9999998807907104
+  },
+  {
+   "animal": "lion",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the lion suffer? Answer with a single digit.",
+   "E": 4.203188658930888,
+   "mass": 0.6507078409194946
+  },
+  {
+   "animal": "lion",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the lion suffer? Answer with Yes or No.",
+   "yes_no": 10.375
+  },
+  {
+   "animal": "lion",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the lion capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 17.875
+  },
+  {
+   "animal": "lion",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the lion have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.5
+  },
+  {
+   "animal": "tiger",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the tiger of experiencing suffering? Answer with a single digit.",
+   "E": 7.973137855529785,
+   "mass": 1.0
+  },
+  {
+   "animal": "tiger",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the tiger can feel pain. Answer with a single digit.",
+   "E": 8.924092292785645,
+   "mass": 1.0
+  },
+  {
+   "animal": "tiger",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the tiger suffer? Answer with a single digit.",
+   "E": 6.702915185358558,
+   "mass": 0.9865648746490479
+  },
+  {
+   "animal": "tiger",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the tiger suffer? Answer with Yes or No.",
+   "yes_no": 8.125
+  },
+  {
+   "animal": "tiger",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the tiger capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.5
+  },
+  {
+   "animal": "tiger",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the tiger have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.875
+  },
+  {
+   "animal": "zebra",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the zebra of experiencing suffering? Answer with a single digit.",
+   "E": 8.222173690795898,
+   "mass": 1.0
+  },
+  {
+   "animal": "zebra",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the zebra can feel pain. Answer with a single digit.",
+   "E": 8.118944652017632,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "zebra",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the zebra suffer? Answer with a single digit.",
+   "E": 2.5934182749735184,
+   "mass": 0.5077781677246094
+  },
+  {
+   "animal": "zebra",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the zebra suffer? Answer with Yes or No.",
+   "yes_no": 3.5
+  },
+  {
+   "animal": "zebra",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the zebra capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 13.875
+  },
+  {
+   "animal": "zebra",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the zebra have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.875
+  },
+  {
+   "animal": "giraffe",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the giraffe of experiencing suffering? Answer with a single digit.",
+   "E": 8.437551498413086,
+   "mass": 1.0
+  },
+  {
+   "animal": "giraffe",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the giraffe can feel pain. Answer with a single digit.",
+   "E": 8.376931190490723,
+   "mass": 1.0
+  },
+  {
+   "animal": "giraffe",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the giraffe suffer? Answer with a single digit.",
+   "E": 3.2673769643540416,
+   "mass": 0.8781035542488098
+  },
+  {
+   "animal": "giraffe",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the giraffe suffer? Answer with Yes or No.",
+   "yes_no": 7.5
+  },
+  {
+   "animal": "giraffe",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the giraffe capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 15.0
+  },
+  {
+   "animal": "giraffe",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the giraffe have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 18.375
+  },
+  {
+   "animal": "mouse",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the mouse of experiencing suffering? Answer with a single digit.",
+   "E": 6.7203907203907205,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "mouse",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the mouse can feel pain. Answer with a single digit.",
+   "E": 8.366661071777344,
+   "mass": 1.0
+  },
+  {
+   "animal": "mouse",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the mouse suffer? Answer with a single digit.",
+   "E": 6.60202157894341,
+   "mass": 0.927331268787384
+  },
+  {
+   "animal": "mouse",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the mouse suffer? Answer with Yes or No.",
+   "yes_no": 5.125
+  },
+  {
+   "animal": "mouse",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the mouse capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 5.0
+  },
+  {
+   "animal": "mouse",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the mouse have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 12.75
+  },
+  {
+   "animal": "rat",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the rat of experiencing suffering? Answer with a single digit.",
+   "E": 7.953840255737305,
+   "mass": 1.0
+  },
+  {
+   "animal": "rat",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the rat can feel pain. Answer with a single digit.",
+   "E": 8.375199226235047,
+   "mass": 0.9999366998672485
+  },
+  {
+   "animal": "rat",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the rat suffer? Answer with a single digit.",
+   "E": 8.044388278543561,
+   "mass": 0.978590726852417
+  },
+  {
+   "animal": "rat",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the rat suffer? Answer with Yes or No.",
+   "yes_no": 8.0
+  },
+  {
+   "animal": "rat",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the rat capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.125
+  },
+  {
+   "animal": "rat",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the rat have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.875
+  },
+  {
+   "animal": "pheasant",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pheasant of experiencing suffering? Answer with a single digit.",
+   "E": 7.816917885358207,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "pheasant",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pheasant can feel pain. Answer with a single digit.",
+   "E": 8.37717056274414,
+   "mass": 1.0
+  },
+  {
+   "animal": "pheasant",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pheasant suffer? Answer with a single digit.",
+   "E": 4.543096553713629,
+   "mass": 0.8696591258049011
+  },
+  {
+   "animal": "pheasant",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pheasant suffer? Answer with Yes or No.",
+   "yes_no": 7.75
+  },
+  {
+   "animal": "pheasant",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pheasant capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 19.625
+  },
+  {
+   "animal": "pheasant",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pheasant have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.25
+  },
+  {
+   "animal": "grouse",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the grouse of experiencing suffering? Answer with a single digit.",
+   "E": 7.850951194763184,
+   "mass": 1.0
+  },
+  {
+   "animal": "grouse",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the grouse can feel pain. Answer with a single digit.",
+   "E": 7.999440193109535,
+   "mass": 0.9999998807907104
+  },
+  {
+   "animal": "grouse",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the grouse suffer? Answer with a single digit.",
+   "E": 6.202015127043347,
+   "mass": 0.9780224561691284
+  },
+  {
+   "animal": "grouse",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the grouse suffer? Answer with Yes or No.",
+   "yes_no": 4.625
+  },
+  {
+   "animal": "grouse",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the grouse capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.5
+  },
+  {
+   "animal": "grouse",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the grouse have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 12.25
+  },
+  {
+   "animal": "carp",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the carp of experiencing suffering? Answer with a single digit.",
+   "E": 7.483083248138428,
+   "mass": 1.0
+  },
+  {
+   "animal": "carp",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the carp can feel pain. Answer with a single digit.",
+   "E": 7.5503129959106445,
+   "mass": 1.0
+  },
+  {
+   "animal": "carp",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the carp suffer? Answer with a single digit.",
+   "E": 2.628368774503933,
+   "mass": 0.9127472639083862
+  },
+  {
+   "animal": "carp",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the carp suffer? Answer with Yes or No.",
+   "yes_no": -1.0
+  },
+  {
+   "animal": "carp",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the carp capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 13.5
+  },
+  {
+   "animal": "carp",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the carp have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 7.25
+  },
+  {
+   "animal": "bream",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the bream of experiencing suffering? Answer with a single digit.",
+   "E": 7.502723516007727,
+   "mass": 0.9999996423721313
+  },
+  {
+   "animal": "bream",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the bream can feel pain. Answer with a single digit.",
+   "E": 7.991849899291992,
+   "mass": 1.0
+  },
+  {
+   "animal": "bream",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the bream suffer? Answer with a single digit.",
+   "E": 3.493345938020911,
+   "mass": 0.2564883828163147
+  },
+  {
+   "animal": "bream",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the bream suffer? Answer with Yes or No.",
+   "yes_no": 0.25
+  },
+  {
+   "animal": "bream",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the bream capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 16.25
+  },
+  {
+   "animal": "bream",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the bream have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 10.375
+  },
+  {
+   "animal": "haddock",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the haddock of experiencing suffering? Answer with a single digit.",
+   "E": 6.605645573475693,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "haddock",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the haddock can feel pain. Answer with a single digit.",
+   "E": 7.582482495274535,
+   "mass": 0.9999980926513672
+  },
+  {
+   "animal": "haddock",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the haddock suffer? Answer with a single digit.",
+   "E": 3.1726798253454755,
+   "mass": 0.2457292675971985
+  },
+  {
+   "animal": "haddock",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the haddock suffer? Answer with Yes or No.",
+   "yes_no": -1.625
+  },
+  {
+   "animal": "haddock",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the haddock capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 13.625
+  },
+  {
+   "animal": "haddock",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the haddock have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 11.125
+  },
+  {
+   "animal": "pollock",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pollock of experiencing suffering? Answer with a single digit.",
+   "E": 7.279182103065623,
+   "mass": 0.9999975562095642
+  },
+  {
+   "animal": "pollock",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pollock can feel pain. Answer with a single digit.",
+   "E": 7.724825843857247,
+   "mass": 0.9999982118606567
+  },
+  {
+   "animal": "pollock",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pollock suffer? Answer with a single digit.",
+   "E": 3.6310271115380113,
+   "mass": 0.12967781722545624
+  },
+  {
+   "animal": "pollock",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pollock suffer? Answer with Yes or No.",
+   "yes_no": -5.375
+  },
+  {
+   "animal": "pollock",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pollock capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 13.625
+  },
+  {
+   "animal": "pollock",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pollock have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 10.0
+  },
+  {
+   "animal": "sardine",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the sardine of experiencing suffering? Answer with a single digit.",
+   "E": 7.221848441472557,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "sardine",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the sardine can feel pain. Answer with a single digit.",
+   "E": 7.956419473121229,
+   "mass": 1.0000001192092896
+  },
+  {
+   "animal": "sardine",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the sardine suffer? Answer with a single digit.",
+   "E": 3.0584576952231624,
+   "mass": 0.9644189476966858
+  },
+  {
+   "animal": "sardine",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the sardine suffer? Answer with Yes or No.",
+   "yes_no": 0.75
+  },
+  {
+   "animal": "sardine",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the sardine capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.5
+  },
+  {
+   "animal": "sardine",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the sardine have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 11.375
+  },
+  {
+   "animal": "anchovy",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the anchovy of experiencing suffering? Answer with a single digit.",
+   "E": 6.106697824838756,
+   "mass": 0.9999986290931702
+  },
+  {
+   "animal": "anchovy",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the anchovy can feel pain. Answer with a single digit.",
+   "E": 6.968288988471671,
+   "mass": 0.9998073577880859
+  },
+  {
+   "animal": "anchovy",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the anchovy suffer? Answer with a single digit.",
+   "E": 5.475353262467879,
+   "mass": 0.9404125213623047
+  },
+  {
+   "animal": "anchovy",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the anchovy suffer? Answer with Yes or No.",
+   "yes_no": 2.5
+  },
+  {
+   "animal": "anchovy",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the anchovy capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 11.25
+  },
+  {
+   "animal": "anchovy",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the anchovy have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.25
+  },
+  {
+   "animal": "halibut",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the halibut of experiencing suffering? Answer with a single digit.",
+   "E": 7.813588120172992,
+   "mass": 0.9999998807907104
+  },
+  {
+   "animal": "halibut",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the halibut can feel pain. Answer with a single digit.",
+   "E": 7.992560520281953,
+   "mass": 0.9999538660049438
+  },
+  {
+   "animal": "halibut",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the halibut suffer? Answer with a single digit.",
+   "E": 4.1306821990115985,
+   "mass": 0.898168683052063
+  },
+  {
+   "animal": "halibut",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the halibut suffer? Answer with Yes or No.",
+   "yes_no": -3.0
+  },
+  {
+   "animal": "halibut",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the halibut capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 15.0
+  },
+  {
+   "animal": "halibut",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the halibut have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 11.0
+  },
+  {
+   "animal": "tilapia",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the tilapia of experiencing suffering? Answer with a single digit.",
+   "E": 7.444737726137312,
+   "mass": 0.9999988079071045
+  },
+  {
+   "animal": "tilapia",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the tilapia can feel pain. Answer with a single digit.",
+   "E": 7.818861029283878,
+   "mass": 1.0000001192092896
+  },
+  {
+   "animal": "tilapia",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the tilapia suffer? Answer with a single digit.",
+   "E": 5.884840991049249,
+   "mass": 0.8207903504371643
+  },
+  {
+   "animal": "tilapia",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the tilapia suffer? Answer with Yes or No.",
+   "yes_no": 3.625
+  },
+  {
+   "animal": "tilapia",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the tilapia capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 16.875
+  },
+  {
+   "animal": "tilapia",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the tilapia have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 11.625
+  },
+  {
+   "animal": "mackerel",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the mackerel of experiencing suffering? Answer with a single digit.",
+   "E": 7.612476348876953,
+   "mass": 1.0
+  },
+  {
+   "animal": "mackerel",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the mackerel can feel pain. Answer with a single digit.",
+   "E": 7.996866702846688,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "mackerel",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the mackerel suffer? Answer with a single digit.",
+   "E": 3.2888229910630553,
+   "mass": 0.44332605600357056
+  },
+  {
+   "animal": "mackerel",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the mackerel suffer? Answer with Yes or No.",
+   "yes_no": -1.625
+  },
+  {
+   "animal": "mackerel",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the mackerel capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 15.375
+  },
+  {
+   "animal": "mackerel",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the mackerel have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 13.75
+  },
+  {
+   "animal": "herring",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the herring of experiencing suffering? Answer with a single digit.",
+   "E": 5.654737332745632,
+   "mass": 0.9999999403953552
+  },
+  {
+   "animal": "herring",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the herring can feel pain. Answer with a single digit.",
+   "E": 7.22082744017138,
+   "mass": 0.9999998211860657
+  },
+  {
+   "animal": "herring",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the herring suffer? Answer with a single digit.",
+   "E": 4.948611140056828,
+   "mass": 0.9237741827964783
+  },
+  {
+   "animal": "herring",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the herring suffer? Answer with Yes or No.",
+   "yes_no": 0.25
+  },
+  {
+   "animal": "herring",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the herring capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 12.0
+  },
+  {
+   "animal": "herring",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the herring have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 10.125
+  },
+  {
+   "animal": "moose",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the moose of experiencing suffering? Answer with a single digit.",
+   "E": 7.990926266798226,
+   "mass": 1.0000001192092896
+  },
+  {
+   "animal": "moose",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the moose can feel pain. Answer with a single digit.",
+   "E": 8.561140060424805,
+   "mass": 1.0
+  },
+  {
+   "animal": "moose",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the moose suffer? Answer with a single digit.",
+   "E": 5.398944749803203,
+   "mass": 0.9376214146614075
+  },
+  {
+   "animal": "moose",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the moose suffer? Answer with Yes or No.",
+   "yes_no": 3.5
+  },
+  {
+   "animal": "moose",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the moose capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.75
+  },
+  {
+   "animal": "moose",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the moose have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 16.125
+  },
+  {
+   "animal": "boar",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the boar of experiencing suffering? Answer with a single digit.",
+   "E": 7.905157089233398,
+   "mass": 1.0
+  },
+  {
+   "animal": "boar",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the boar can feel pain. Answer with a single digit.",
+   "E": 8.880701065063477,
+   "mass": 1.0
+  },
+  {
+   "animal": "boar",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the boar suffer? Answer with a single digit.",
+   "E": 6.686437673924828,
+   "mass": 0.9882069230079651
+  },
+  {
+   "animal": "boar",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the boar suffer? Answer with Yes or No.",
+   "yes_no": 10.375
+  },
+  {
+   "animal": "boar",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the boar capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.375
+  },
+  {
+   "animal": "boar",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the boar have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 17.25
+  },
+  {
+   "animal": "bison",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the bison of experiencing suffering? Answer with a single digit.",
+   "E": 7.97215461730957,
+   "mass": 1.0
+  },
+  {
+   "animal": "bison",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the bison can feel pain. Answer with a single digit.",
+   "E": 8.622196197509766,
+   "mass": 1.0
+  },
+  {
+   "animal": "bison",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the bison suffer? Answer with a single digit.",
+   "E": 5.732755038355493,
+   "mass": 0.9808105230331421
+  },
+  {
+   "animal": "bison",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the bison suffer? Answer with Yes or No.",
+   "yes_no": 8.75
+  },
+  {
+   "animal": "bison",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the bison capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 18.0
+  },
+  {
+   "animal": "bison",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the bison have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 15.625
+  },
+  {
+   "animal": "yak",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the yak of experiencing suffering? Answer with a single digit.",
+   "E": 7.850896835327148,
+   "mass": 1.0
+  },
+  {
+   "animal": "yak",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the yak can feel pain. Answer with a single digit.",
+   "E": 8.118047714233398,
+   "mass": 1.0
+  },
+  {
+   "animal": "yak",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the yak suffer? Answer with a single digit.",
+   "E": 5.084679378345003,
+   "mass": 0.96824049949646
+  },
+  {
+   "animal": "yak",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the yak suffer? Answer with Yes or No.",
+   "yes_no": 5.5
+  },
+  {
+   "animal": "yak",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the yak capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 17.75
+  },
+  {
+   "animal": "yak",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the yak have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 14.125
+  }
+ ]
+}

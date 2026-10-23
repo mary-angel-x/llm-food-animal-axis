@@ -21,7 +21,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from models import MODELS
-from stimuli import TEMPLATES, READOUT, SCALE_MAX, all_animals
+from stimuli import TEMPLATES, READOUT, SCALE_MAX, DIGIT_READOUTS, all_animals
 
 LOGS = Path(__file__).parent / "logs"
 
@@ -100,7 +100,7 @@ def readout_prompts():
 
 def readout_scores(logits, kind, digit_ids, yes_id, no_id):
     """Per row: E over digits and digit mass, or Yes−No logit difference."""
-    if kind == "scale":
+    if kind in DIGIT_READOUTS:
         p = torch.softmax(logits, -1)[digit_ids]
         mass = p.sum().item()
         e = (p * torch.arange(1, SCALE_MAX + 1)).sum().item() / mass
@@ -133,6 +133,7 @@ def main():
     ap.add_argument("--model", required=True, choices=list(MODELS))
     ap.add_argument("--batch-size", type=int, default=1,
                     help="1 = bit-reproducible; batching changes bf16 kernels (~2% drift) and is not faster with CPU offload")
+    ap.add_argument("--readout-only", action="store_true", help="skip states, redo the readout file")
     ap.add_argument("--limit", type=int, default=None, help="smoke test: first N prompts of each kind")
     args = ap.parse_args()
     LOGS.mkdir(exist_ok=True)
@@ -140,17 +141,18 @@ def main():
 
     model, tokenizer = load(args.model)
 
-    rows = context_prompts()[:args.limit]
-    rec = LastTokenRecorder(decoder_layers(model))
-    states = []
-    for i, chunk in enumerate(batches(rows, args.batch_size)):
-        forward_last(model, tokenizer, [chat(tokenizer, r["text"]) for r in chunk])
-        states.append(rec.stacked().half())
-        print(f"states {min((i + 1) * args.batch_size, len(rows))}/{len(rows)}", flush=True)
-    rec.remove()
     tag = "" if args.limit is None else "_smoke"
-    torch.save({"model": MODELS[args.model]["name"], "rows": rows,
-                "states": torch.cat(states)}, LOGS / f"{args.model}_states{tag}.pt")
+    if not args.readout_only:
+        rows = context_prompts()[:args.limit]
+        rec = LastTokenRecorder(decoder_layers(model))
+        states = []
+        for i, chunk in enumerate(batches(rows, args.batch_size)):
+            forward_last(model, tokenizer, [chat(tokenizer, r["text"]) for r in chunk])
+            states.append(rec.stacked().half())
+            print(f"states {min((i + 1) * args.batch_size, len(rows))}/{len(rows)}", flush=True)
+        rec.remove()
+        torch.save({"model": MODELS[args.model]["name"], "rows": rows,
+                    "states": torch.cat(states)}, LOGS / f"{args.model}_states{tag}.pt")
 
     readout = run_readout(model, tokenizer, readout_prompts()[:args.limit], args.batch_size)
     (LOGS / f"{args.model}_readout{tag}.json").write_text(

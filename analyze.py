@@ -14,7 +14,8 @@ Output: logs/<model>_h1.json (all statistics) and logs/<model>_directions.pt
 (per-fold unit directions and layers, used by the ablation stage).
 
 Usage:
-    python analyze.py --model qwen-7b
+    python analyze.py --model llama-8b                  # v0.3 rule (§12)
+    python analyze.py --model qwen-7b --rule v0.2.1     # rule the Qwen run was preregistered under
 """
 import argparse
 import itertools
@@ -26,7 +27,7 @@ import torch
 
 from models import MODELS
 from stimuli import (PAIRS, AMBIGUOUS, PLACEBO_PAIRS, FIT_TEMPLATES, EVAL_TEMPLATES,
-                     TOKEN_MISMATCH_PAIRS, MEAT_HOMONYM, SCALE_MAX)
+                     TOKEN_MISMATCH_PAIRS, MEAT_HOMONYM, WILD_NONFOOD)
 
 LOGS = Path(__file__).parent / "logs"
 STIMULI = Path(__file__).parent / "stimuli.json"
@@ -194,24 +195,132 @@ def ambiguous_positions(states, index, layer):
     return out
 
 
+def perm_mean_test(g):
+    """Exact one-sided sign-flip test of mean(g) > 0."""
+    null = np.array([(g * np.array(sg)).mean() for sg in itertools.product([-1, 1], repeat=len(g))])
+    return {"gap": g.tolist(), "mean_gap": float(g.mean()), "d_z": float(d_z(g)),
+            "p": float((null >= g.mean() - 1e-12).mean())}
+
+
 def behavior(key):
-    """§6 B0: per-animal readout averaged over paraphrases; gap = nonfood − food."""
+    """
+    §6 B0 / §12.3 B0b: per-animal readout averaged over paraphrases.
+    per_animal keys: E, mass (suffering scale), yes_no, accept, accept_mass.
+    Gaps: suffering nonfood − food (B0), acceptability food − nonfood (B0b).
+    """
     rows = json.loads((LOGS / f"{key}_readout.json").read_text(encoding="utf-8"))["rows"]
+    name = {("scale", "E"): "E", ("scale", "mass"): "mass", ("yes_no", "yes_no"): "yes_no",
+            ("accept", "E"): "accept", ("accept", "mass"): "accept_mass"}
     agg = {}
     for r in rows:
-        a = agg.setdefault(r["animal"], {"E": [], "mass": [], "yes_no": []})
-        for k in ("E", "mass", "yes_no"):
-            if k in r:
-                a[k].append(r[k])
+        for (kind, field), out_key in name.items():
+            if r["kind"] == kind and field in r:
+                agg.setdefault(r["animal"], {}).setdefault(out_key, []).append(r[field])
     per = {a: {k: float(np.mean(v)) for k, v in d.items()} for a, d in agg.items()}
     out = {"per_animal": per, "mass_mean": float(np.mean([per[a]["mass"] for a in per]))}
     for metric in ("E", "yes_no"):
-        g = np.array([per[p["nonfood"]][metric] - per[p["food"]][metric] for p in PAIRS])
-        null = np.array([(g * np.array(s)).mean() for s in itertools.product([-1, 1], repeat=len(g))])
-        out[metric] = {"gap": g.tolist(), "mean_gap": float(g.mean()), "d_z": float(d_z(g)),
-                       "p": float((null >= g.mean() - 1e-12).mean())}
+        out[metric] = perm_mean_test(np.array([per[p["nonfood"]][metric] - per[p["food"]][metric] for p in PAIRS]))
     out["B0_pass"] = bool(out["mass_mean"] >= 0.5 and out["E"]["mean_gap"] > 0 and out["E"]["p"] < 0.05)
+    if all("accept" in v for v in per.values()):
+        out["accept_mass_mean"] = float(np.mean([per[a]["accept_mass"] for a in per]))
+        out["accept"] = perm_mean_test(np.array([per[p["food"]]["accept"] - per[p["nonfood"]]["accept"]
+                                                 for p in PAIRS]))
+        out["B0b_pass"] = bool(out["accept_mass_mean"] >= 0.5 and out["accept"]["mean_gap"] > 0
+                               and out["accept"]["p"] < 0.05)
     return out
+
+
+# ---------------------------------------------------------------- v0.3 (§12)
+
+LAYER_FRACTION = 0.57
+
+
+def fixed_layer_test(G, Gp, slot, slot_p, nos, rng, fit_kind):
+    """LOPO at one layer (G already sliced): statistic, exact p, placebo 95%."""
+    K = len(nos)
+    sM, sN, _ = run_lopo(G, slot, nos, fit_kind=fit_kind)
+    stat = "d_M" if fit_kind == "fit_M" else "d_I"
+    obs = stats(sM, sN)[stat]
+    bits = [np.array(b, bool) for b in itertools.product([0, 1], repeat=K)]
+    if stat == "d_M":
+        null = [stats(*run_lopo(G, slot, nos, sign=np.where(b, -1, 1))[:2])["d_M"] for b in bits]
+    else:
+        null = [stats(*run_lopo(G, slot, nos, swap=b, fit_kind=fit_kind)[:2])["d_I"] for b in bits]
+    plc = [stats(*run_lopo(Gp, slot_p, list(rng.choice(len(PLACEBO_PAIRS), K, replace=False)),
+                           sign=rng.choice([-1, 1], K), fit_kind=fit_kind)[:2])[stat]
+           for _ in range(N_PLACEBO)]
+    return {stat: float(obs), "p": float((np.array(null) >= obs - 1e-12).mean()),
+            "placebo_p95": float(np.percentile(plc, 95)), "n_pairs": K,
+            "s_M": sM.tolist(), "s_N": sN.tolist()}
+
+
+def confirm(args):
+    """§12: fixed layer L*, d_M (v_M) and d_I (v_int), covariates, sensitivity, B0/B0b."""
+    rng = np.random.default_rng(SEED)
+    states, index = load_states(args.model)
+    n_layers = states.shape[1]
+    L = int(round(LAYER_FRACTION * n_layers))
+    main_pairs = [(p["food"], p["nonfood"]) for p in PAIRS]
+    bank, slot = build_bank(states, index, main_pairs)
+    bank_p, slot_p = build_bank(states, index, [(p["a"], p["b"]) for p in PLACEBO_PAIRS])
+    G, Gp = gram(bank)[..., L:L + 1], gram(bank_p)[..., L:L + 1]
+    nos = list(range(len(PAIRS)))
+
+    h1 = fixed_layer_test(G, Gp, slot, slot_p, nos, rng, "fit_M")
+    h1i = fixed_layer_test(G, Gp, slot, slot_p, nos, rng, "fit_I")
+
+    stim = json.loads(STIMULI.read_text(encoding="utf-8"))["checks"]["animals"]
+    dzipf = np.array([stim[f]["zipf"] - stim[n]["zipf"] for f, n in main_pairs])
+    dtok = np.array([stim[f]["tokens"][args.model] - stim[n]["tokens"][args.model] for f, n in main_pairs])
+    cov = covariate_intercept(np.array(h1["s_M"]), dzipf, dtok, rng)
+    h1["ci_d_M"] = bootstrap_d(np.array(h1["s_M"]), rng)
+    h1i["ci_d_I"] = bootstrap_d(np.array(h1i["s_M"]) - np.array(h1i["s_N"]), rng)
+
+    sens = {}
+    subsets = [("no_token_mismatch", [i for i, p in enumerate(PAIRS) if p["id"] not in TOKEN_MISMATCH_PAIRS]),
+               ("domestic_only", [i for i, p in enumerate(PAIRS) if p["nonfood"] not in WILD_NONFOOD])]
+    for name, keep in subsets:
+        sens[name] = {"d_M": fixed_layer_test(G, Gp, slot, slot_p, keep, rng, "fit_M"),
+                      "d_I": fixed_layer_test(G, Gp, slot, slot_p, keep, rng, "fit_I")}
+        for v in sens[name].values():
+            v.pop("s_M"), v.pop("s_N")
+    sens["v_M_d_I"] = stats(np.array(h1["s_M"]), np.array(h1["s_N"]))["d_I"]  # biased, reported only
+
+    beh = behavior(args.model)
+    verdict = {
+        "H1": bool(h1["d_M"] > h1["placebo_p95"] and h1["p"] < 0.01 and cov["intercept_ci"][0] > 0),
+        "H1_int": bool(h1i["d_I"] > h1i["placebo_p95"] and h1i["p"] < 0.01),
+        "B0": beh["B0_pass"], "B0b": beh.get("B0b_pass"),
+    }
+    result = {"model": MODELS[args.model]["name"], "rule": "v0.3", "layer": L, "n_layers": n_layers,
+              "H1": h1, "H1_int": h1i, "covariates": cov, "sensitivity": sens,
+              "ambiguous_t": ambiguous_positions(states, index, L), "behavior": beh, "verdict": verdict}
+    (LOGS / f"{args.model}_v03.json").write_text(json.dumps(result, indent=1), encoding="utf-8")
+
+    fit_all = np.stack([bank[slot[(p, "fit_M")]][L] for p in nos])
+    dirs = [fit_all[[i for i in nos if i != k]].mean(0) for k in nos]
+    torch.save({"model": MODELS[args.model]["name"], "rule": "v0.3", "pairs": [p["id"] for p in PAIRS],
+                "layers": [L] * len(nos),
+                "v": torch.tensor(np.stack([v / np.linalg.norm(v) for v in dirs]), dtype=torch.float32)},
+               LOGS / f"{args.model}_directions_v03.pt")
+
+    print(f"{args.model} v0.3: layer {L} of {n_layers}")
+    print(f"  H1     d_M {h1['d_M']:.2f} CI {h1['ci_d_M'][0]:.2f}..{h1['ci_d_M'][1]:.2f}"
+          f"  p {h1['p']:.4f}  placebo95 {h1['placebo_p95']:.2f}"
+          f"  intercept CI {cov['intercept_ci'][0]:.3f}..{cov['intercept_ci'][1]:.3f}")
+    print(f"  H1-int d_I {h1i['d_I']:.2f} CI {h1i['ci_d_I'][0]:.2f}..{h1i['ci_d_I'][1]:.2f}"
+          f"  p {h1i['p']:.4f}  placebo95 {h1i['placebo_p95']:.2f}")
+    for name, _ in subsets:
+        a, b = sens[name]["d_M"], sens[name]["d_I"]
+        print(f"  {name}: d_M {a['d_M']:.2f} (p {a['p']:.4f})  d_I {b['d_I']:.2f} (p {b['p']:.4f})  n={a['n_pairs']}")
+    print(f"  v_M-based d_I (biased, not decisive) {sens['v_M_d_I']:.2f}")
+    print(f"  ambiguous t {result['ambiguous_t']}")
+    print(f"  B0  suffering gap (nonfood-food) {beh['E']['mean_gap']:+.3f} p {beh['E']['p']:.4f};"
+          f" Yes-No {beh['yes_no']['mean_gap']:+.3f}")
+    if "accept" in beh:
+        print(f"  B0b acceptability gap (food-nonfood) {beh['accept']['mean_gap']:+.3f}"
+              f" p {beh['accept']['p']:.4f}  mass {beh['accept_mass_mean']:.3f}")
+    print(f"  verdict {verdict}")
 
 
 # ---------------------------------------------------------------- main
@@ -219,7 +328,11 @@ def behavior(key):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True, choices=list(MODELS))
+    ap.add_argument("--rule", default="v0.3", choices=["v0.2.1", "v0.3"],
+                    help="v0.2.1 = per-fold layer selection (the Qwen run); v0.3 = fixed layer, §12")
     args = ap.parse_args()
+    if args.rule == "v0.3":
+        return confirm(args)
     rng = np.random.default_rng(SEED)
 
     states, index = load_states(args.model)

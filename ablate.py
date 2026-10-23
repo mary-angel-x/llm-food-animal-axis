@@ -1,23 +1,23 @@
 """
-ablate.py — stage 4: directional ablation and controls (preregistration §7).
+ablate.py — stage 4: directional ablation and controls (preregistration §7, §12.4).
 
-Fold k (held-out pair k): remove v_{-k} at the output of decoder layer L_k,
-then read out food_k and nonfood_k. Controls per fold, at the same layer:
-100 random unit directions and 100 placebo directions (v from 13 random
-placebo pairs, random orientation). Control j across all folds is one
-replicate of the closure statistic C.
+Fold k (held-out pair k): remove v_{-k} at the output of decoder layer L*
+(v0.3 fixed layer), then read out food_k and nonfood_k. Controls per fold, at
+the same layer: 100 random unit directions and 100 placebo directions (v from
+13 random placebo pairs, random orientation). Control j across all folds is
+one replicate of the closure statistic.
 
-Variants: all_pos (primary), last_pos (secondary), all_layers (exploratory,
-v_{-k} removed after every layer).
+Controls are run only for readouts whose precondition passed in
+logs/<model>_v03.json: "scale" if B0 (H2a), "accept" if B0b (H2b).
 
+Variants: all_pos (primary), last_pos (secondary), all_layers (exploratory).
 Results are written after every fold, so a stopped run resumes where it left.
 
-Output: logs/<model>_ablate_<variant>.json
+Output: logs/<model>_ablate_<variant>.json, logs/<model>_h2_<variant>.json
 
 Usage:
-    python ablate.py --model qwen-7b
-    python ablate.py --model qwen-7b --variant last_pos
-    python ablate.py --model qwen-7b --summary
+    python ablate.py --model llama-8b
+    python ablate.py --model llama-8b --summary
 """
 import argparse
 import json
@@ -34,6 +34,9 @@ from stimuli import PAIRS, PLACEBO_PAIRS, FIT_TEMPLATES, READOUT
 LOGS = Path(__file__).parent / "logs"
 SEED = 0
 N_CONTROLS = 100
+# gap that H2 tries to close, per readout: (key, sign) with gap = sign·(nonfood − food)
+GAPS = {"scale": ("E", 1), "accept": ("accept", -1)}
+PRECONDITION = {"scale": "B0", "accept": "B0b"}
 
 
 class Ablator:
@@ -77,21 +80,32 @@ def random_direction(dim, rng):
 
 
 def score(model, tokenizer, ids, animal, kinds):
-    """Readout averaged over paraphrases: {"E", "mass"} and/or {"yes_no"}."""
+    """Readout averaged over paraphrases, keyed like analyze.behavior: E, mass, yes_no, accept, accept_mass."""
+    rename = {("scale", "E"): "E", ("scale", "mass"): "mass", ("yes_no", "yes_no"): "yes_no",
+              ("accept", "E"): "accept", ("accept", "mass"): "accept_mass"}
     out = {}
     for kind in kinds:
         vals = [readout_scores(forward_last(model, tokenizer, [chat(tokenizer, t.format(animal=animal))])[0],
                                kind, *ids) for t in READOUT[kind]]
-        for key in vals[0]:
-            out[key] = float(np.mean([v[key] for v in vals]))
+        for field in vals[0]:
+            out[rename[(kind, field)]] = float(np.mean([v[field] for v in vals]))
     return out
 
 
-def run(args):
-    out_path = LOGS / f"{args.model}_ablate_{args.variant}.json"
-    done = json.loads(out_path.read_text(encoding="utf-8")) if out_path.exists() else {"folds": {}}
+def control_kinds(key):
+    verdict = json.loads((LOGS / f"{key}_v03.json").read_text(encoding="utf-8"))["verdict"]
+    return [kind for kind, pre in PRECONDITION.items() if verdict.get(pre)]
 
-    dirs = torch.load(LOGS / f"{args.model}_directions.pt")
+
+def run(args):
+    kinds = control_kinds(args.model)
+    if not kinds:
+        print("no precondition (B0 / B0b) passed: H2 is not tested for this model (§6, §12.4)")
+        return
+    out_path = LOGS / f"{args.model}_ablate_{args.variant}.json"
+    done = json.loads(out_path.read_text(encoding="utf-8")) if out_path.exists() else {"kinds": kinds, "folds": {}}
+
+    dirs = torch.load(LOGS / f"{args.model}_directions_v03.pt")
     states, index = load_states(args.model)
     model, tokenizer = load(args.model)
     ids = answer_ids(tokenizer)
@@ -112,11 +126,11 @@ def run(args):
 
         abl.v = dirs["v"][k]
         for role in ("food", "nonfood"):
-            fold["main"][role] = score(model, tokenizer, ids, pair[role], ["scale", "yes_no"])
-        for n, (kind, v) in enumerate(controls):
+            fold["main"][role] = score(model, tokenizer, ids, pair[role], ["scale", "yes_no", "accept"])
+        for n, (ctrl, v) in enumerate(controls):
             abl.v = torch.tensor(v, dtype=torch.float32)
-            e = {role: score(model, tokenizer, ids, pair[role], ["scale"])["E"] for role in ("food", "nonfood")}
-            fold["controls"][kind].append(e)
+            fold["controls"][ctrl].append({role: score(model, tokenizer, ids, pair[role], kinds)
+                                           for role in ("food", "nonfood")})
             print(f"pair {pair['id']} control {n + 1}/{len(controls)}", flush=True)
         abl.remove()
 
@@ -126,36 +140,40 @@ def run(args):
 
 
 def summary(args):
-    """§7.2–7.3: closure C vs the 95th percentile of each control."""
+    """§7.2–7.3, §12.4: closure vs the 95th percentile of each control, per readout."""
     res = json.loads((LOGS / f"{args.model}_ablate_{args.variant}.json").read_text(encoding="utf-8"))
-    base = json.loads((LOGS / f"{args.model}_h1.json").read_text(encoding="utf-8"))["behavior"]["per_animal"]
+    base = json.loads((LOGS / f"{args.model}_v03.json").read_text(encoding="utf-8"))["behavior"]["per_animal"]
     folds = [(p, res["folds"][str(p["id"])]) for p in PAIRS if str(p["id"]) in res["folds"]]
+    gap = lambda d_food, d_non, key, sign: sign * (d_non[key] - d_food[key])
 
-    gap = lambda e_food, e_non: e_non - e_food
-    g_base = np.array([gap(base[p["food"]]["E"], base[p["nonfood"]]["E"]) for p, _ in folds])
-    g_abl = np.array([gap(f["main"]["food"]["E"], f["main"]["nonfood"]["E"]) for _, f in folds])
-    C = float((g_base - g_abl).mean())
-    yn_base = np.array([gap(base[p["food"]]["yes_no"], base[p["nonfood"]]["yes_no"]) for p, _ in folds])
-    yn_abl = np.array([gap(f["main"]["food"]["yes_no"], f["main"]["nonfood"]["yes_no"]) for _, f in folds])
-    C_yn = float((yn_base - yn_abl).mean())
-
-    out = {"variant": args.variant, "n_folds": len(folds), "C": C,
-           "C_fraction": C / float(g_base.mean()), "C_yes_no": C_yn,
-           "d_z_closure": float(d_z(g_base - g_abl)),
-           "shift_food": float(np.mean([f["main"]["food"]["E"] - base[p["food"]]["E"] for p, f in folds])),
-           "shift_nonfood": float(np.mean([f["main"]["nonfood"]["E"] - base[p["nonfood"]]["E"] for p, f in folds])),
-           "min_mass_ablated": float(min(min(f["main"][r]["mass"] for r in ("food", "nonfood")) for _, f in folds))}
-    for kind in ("random", "placebo"):
-        n = min(len(f["controls"][kind]) for _, f in folds)
-        Cj = [np.mean([g_base[i] - gap(f["controls"][kind][j]["food"], f["controls"][kind][j]["nonfood"])
-                       for i, (_, f) in enumerate(folds)]) for j in range(n)]
-        out[f"{kind}_p95"] = float(np.percentile(Cj, 95))
-        out[f"{kind}_mean"] = float(np.mean(Cj))
-    out["H2"] = bool(C > out["random_p95"] and C > out["placebo_p95"]
-                     and np.sign(C) == np.sign(C_yn) and out["min_mass_ablated"] >= 0.5)
+    out = {"variant": args.variant, "n_folds": len(folds)}
+    for kind in res["kinds"]:
+        key, sign = GAPS[kind]
+        g_base = np.array([gap(base[p["food"]], base[p["nonfood"]], key, sign) for p, _ in folds])
+        g_abl = np.array([gap(f["main"]["food"], f["main"]["nonfood"], key, sign) for _, f in folds])
+        C = float((g_base - g_abl).mean())
+        r = {"C": C, "C_fraction": C / float(g_base.mean()), "d_z_closure": float(d_z(g_base - g_abl)),
+             "shift_food": float(np.mean([f["main"]["food"][key] - base[p["food"]][key] for p, f in folds])),
+             "shift_nonfood": float(np.mean([f["main"]["nonfood"][key] - base[p["nonfood"]][key] for p, f in folds])),
+             "min_mass_ablated": float(min(f["main"][role]["mass" if kind == "scale" else "accept_mass"]
+                                           for _, f in folds for role in ("food", "nonfood")))}
+        for ctrl in ("random", "placebo"):
+            n = min(len(f["controls"][ctrl]) for _, f in folds)
+            Cj = [np.mean([g_base[i] - gap(f["controls"][ctrl][j]["food"], f["controls"][ctrl][j]["nonfood"], key, sign)
+                           for i, (_, f) in enumerate(folds)]) for j in range(n)]
+            r[f"{ctrl}_p95"] = float(np.percentile(Cj, 95))
+            r[f"{ctrl}_mean"] = float(np.mean(Cj))
+        passed = C > r["random_p95"] and C > r["placebo_p95"] and r["min_mass_ablated"] >= 0.5
+        if kind == "scale":  # §6: Yes/No must agree in sign
+            yn = lambda f, b: gap(f, b, "yes_no", 1)
+            C_yn = float(np.mean([yn(base[p["food"]], base[p["nonfood"]]) - yn(f["main"]["food"], f["main"]["nonfood"])
+                                  for p, f in folds]))
+            r["C_yes_no"] = C_yn
+            passed = passed and np.sign(C) == np.sign(C_yn)
+        r["pass"] = bool(passed)
+        out["H2a" if kind == "scale" else "H2b"] = r
     (LOGS / f"{args.model}_h2_{args.variant}.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
-    for k, v in out.items():
-        print(f"  {k}: {v}")
+    print(json.dumps(out, indent=1))
 
 
 def main():
