@@ -1,0 +1,1509 @@
+{
+  "built": "2026-10-23",
+  "models": {
+    "qwen-7b": "Qwen/Qwen2.5-7B-Instruct",
+    "llama-8b": "meta-llama/Llama-3.1-8B-Instruct",
+    "gemma-9b": "google/gemma-2-9b-it"
+  },
+  "pairs": [
+    {
+      "id": 1,
+      "cls": "mammal",
+      "food": "pig",
+      "nonfood": "dog"
+    },
+    {
+      "id": 2,
+      "cls": "mammal",
+      "food": "cow",
+      "nonfood": "horse"
+    },
+    {
+      "id": 3,
+      "cls": "mammal",
+      "food": "sheep",
+      "nonfood": "cat"
+    },
+    {
+      "id": 4,
+      "cls": "mammal",
+      "food": "goat",
+      "nonfood": "pony"
+    },
+    {
+      "id": 5,
+      "cls": "mammal",
+      "food": "lamb",
+      "nonfood": "kitten"
+    },
+    {
+      "id": 6,
+      "cls": "mammal",
+      "food": "calf",
+      "nonfood": "puppy"
+    },
+    {
+      "id": 7,
+      "cls": "bird",
+      "food": "chicken",
+      "nonfood": "parrot"
+    },
+    {
+      "id": 8,
+      "cls": "bird",
+      "food": "duck",
+      "nonfood": "swan"
+    },
+    {
+      "id": 9,
+      "cls": "bird",
+      "food": "turkey",
+      "nonfood": "eagle"
+    },
+    {
+      "id": 10,
+      "cls": "bird",
+      "food": "goose",
+      "nonfood": "owl"
+    },
+    {
+      "id": 11,
+      "cls": "bird",
+      "food": "hen",
+      "nonfood": "dove"
+    },
+    {
+      "id": 12,
+      "cls": "fish",
+      "food": "trout",
+      "nonfood": "goldfish"
+    },
+    {
+      "id": 13,
+      "cls": "fish",
+      "food": "salmon",
+      "nonfood": "koi"
+    }
+  ],
+  "ambiguous": [
+    {
+      "id": "r1",
+      "cls": "mammal",
+      "animal": "rabbit"
+    },
+    {
+      "id": "r2",
+      "cls": "mammal",
+      "animal": "guinea pig"
+    }
+  ],
+  "placebo": [
+    {
+      "id": "p1",
+      "cls": "bird",
+      "a": "sparrow",
+      "b": "robin"
+    },
+    {
+      "id": "p2",
+      "cls": "bird",
+      "a": "crow",
+      "b": "magpie"
+    },
+    {
+      "id": "p3",
+      "cls": "bird",
+      "a": "owl",
+      "b": "hawk"
+    },
+    {
+      "id": "p4",
+      "cls": "bird",
+      "a": "swallow",
+      "b": "finch"
+    },
+    {
+      "id": "p5",
+      "cls": "fish",
+      "a": "minnow",
+      "b": "stickleback"
+    },
+    {
+      "id": "p6",
+      "cls": "mammal",
+      "a": "fox",
+      "b": "badger"
+    },
+    {
+      "id": "p7",
+      "cls": "mammal",
+      "a": "wolf",
+      "b": "coyote"
+    },
+    {
+      "id": "p8",
+      "cls": "mammal",
+      "a": "hedgehog",
+      "b": "shrew"
+    },
+    {
+      "id": "p9",
+      "cls": "mammal",
+      "a": "otter",
+      "b": "beaver"
+    },
+    {
+      "id": "p10",
+      "cls": "mammal",
+      "a": "lion",
+      "b": "tiger"
+    },
+    {
+      "id": "p11",
+      "cls": "mammal",
+      "a": "zebra",
+      "b": "giraffe"
+    },
+    {
+      "id": "p12",
+      "cls": "mammal",
+      "a": "mouse",
+      "b": "rat"
+    },
+    {
+      "id": "p13",
+      "cls": "bird",
+      "a": "pheasant",
+      "b": "grouse"
+    },
+    {
+      "id": "p14",
+      "cls": "fish",
+      "a": "carp",
+      "b": "bream"
+    },
+    {
+      "id": "p15",
+      "cls": "fish",
+      "a": "haddock",
+      "b": "pollock"
+    },
+    {
+      "id": "p16",
+      "cls": "fish",
+      "a": "sardine",
+      "b": "anchovy"
+    },
+    {
+      "id": "p17",
+      "cls": "fish",
+      "a": "halibut",
+      "b": "tilapia"
+    },
+    {
+      "id": "p18",
+      "cls": "fish",
+      "a": "mackerel",
+      "b": "herring"
+    },
+    {
+      "id": "p19",
+      "cls": "mammal",
+      "a": "moose",
+      "b": "boar"
+    },
+    {
+      "id": "p20",
+      "cls": "mammal",
+      "a": "bison",
+      "b": "yak"
+    }
+  ],
+  "templates": {
+    "moral": [
+      "Consider whether it is wrong to cause pain to the {animal}.",
+      "Think about how much the {animal} can suffer when it is hurt.",
+      "Ask yourself if the {animal} deserves to be protected from harm.",
+      "Reflect on whether the {animal} is able to feel fear and distress.",
+      "Imagine the {animal} being treated cruelly and kept in constant pain.",
+      "Consider the moral weight of harming the {animal}.",
+      "Think about whether killing the {animal} is morally acceptable.",
+      "Reflect on how much the welfare of the {animal} should matter."
+    ],
+    "neutral": [
+      "Consider whether it is easy to draw a picture of the {animal}.",
+      "Think about how far the {animal} can travel in a single day.",
+      "Ask yourself if the {animal} is usually seen in large groups.",
+      "Reflect on whether the {animal} is able to see well at night.",
+      "Imagine the {animal} being drawn in pencil and kept in a frame.",
+      "Consider the typical colour and size of the {animal}.",
+      "Think about whether drawing the {animal} is technically difficult.",
+      "Reflect on how much the shape of the {animal} should be simplified."
+    ]
+  },
+  "fit_templates": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "eval_templates": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "readout": {
+    "scale": [
+      "On a scale from 1 to 9, how capable is the {animal} of experiencing suffering? Answer with a single digit.",
+      "Rate from 1 to 9 how strongly the {animal} can feel pain. Answer with a single digit.",
+      "From 1 (not at all) to 9 (fully), to what degree can the {animal} suffer? Answer with a single digit."
+    ],
+    "yes_no": [
+      "Can the {animal} suffer? Answer with Yes or No.",
+      "Is the {animal} capable of feeling pain? Answer with Yes or No.",
+      "Does the {animal} have the capacity to suffer? Answer with Yes or No."
+    ]
+  },
+  "scale_max": 9,
+  "checks": {
+    "animals": {
+      "pig": {
+        "zipf": 4.14,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "dog": {
+        "zipf": 5.1,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "cow": {
+        "zipf": 4.14,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "horse": {
+        "zipf": 4.76,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "sheep": {
+        "zipf": 4.19,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "cat": {
+        "zipf": 4.78,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "goat": {
+        "zipf": 4.02,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "pony": {
+        "zipf": 3.81,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "lamb": {
+        "zipf": 4.02,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "kitten": {
+        "zipf": 3.64,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "calf": {
+        "zipf": 3.71,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "puppy": {
+        "zipf": 4.0,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "chicken": {
+        "zipf": 4.63,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "parrot": {
+        "zipf": 3.49,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "duck": {
+        "zipf": 4.21,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "swan": {
+        "zipf": 3.84,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "turkey": {
+        "zipf": 4.56,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "eagle": {
+        "zipf": 4.13,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "goose": {
+        "zipf": 3.84,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "owl": {
+        "zipf": 3.87,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "hen": {
+        "zipf": 3.56,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "dove": {
+        "zipf": 3.67,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "trout": {
+        "zipf": 3.78,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "goldfish": {
+        "zipf": 3.28,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "salmon": {
+        "zipf": 4.01,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "koi": {
+        "zipf": 3.07,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "sparrow": {
+        "zipf": 3.48,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "robin": {
+        "zipf": 4.33,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "crow": {
+        "zipf": 3.8,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "magpie": {
+        "zipf": 2.9,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 2
+        }
+      },
+      "hawk": {
+        "zipf": 3.81,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "swallow": {
+        "zipf": 3.87,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "finch": {
+        "zipf": 3.55,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 2
+        }
+      },
+      "minnow": {
+        "zipf": 2.62,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 2
+        }
+      },
+      "stickleback": {
+        "zipf": 1.8,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 3,
+          "llama-8b": 3,
+          "gemma-9b": 3
+        }
+      },
+      "fox": {
+        "zipf": 4.66,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "badger": {
+        "zipf": 3.48,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "wolf": {
+        "zipf": 4.35,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "coyote": {
+        "zipf": 3.36,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "hedgehog": {
+        "zipf": 3.25,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "shrew": {
+        "zipf": 2.75,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "otter": {
+        "zipf": 3.37,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "beaver": {
+        "zipf": 3.61,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "lion": {
+        "zipf": 4.25,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "tiger": {
+        "zipf": 4.3,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "zebra": {
+        "zipf": 3.4,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "giraffe": {
+        "zipf": 3.32,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "mouse": {
+        "zipf": 4.31,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "rat": {
+        "zipf": 4.17,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "pheasant": {
+        "zipf": 3.03,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 3,
+          "llama-8b": 3,
+          "gemma-9b": 1
+        }
+      },
+      "grouse": {
+        "zipf": 3.14,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "carp": {
+        "zipf": 3.18,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "bream": {
+        "zipf": 2.69,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 2
+        }
+      },
+      "haddock": {
+        "zipf": 2.83,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 2
+        }
+      },
+      "pollock": {
+        "zipf": 3.23,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 2
+        }
+      },
+      "sardine": {
+        "zipf": 2.66,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 3,
+          "llama-8b": 3,
+          "gemma-9b": 2
+        }
+      },
+      "anchovy": {
+        "zipf": 2.58,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 2
+        }
+      },
+      "halibut": {
+        "zipf": 2.71,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 3,
+          "llama-8b": 3,
+          "gemma-9b": 2
+        }
+      },
+      "tilapia": {
+        "zipf": 2.64,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 2
+        }
+      },
+      "mackerel": {
+        "zipf": 3.08,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 3,
+          "llama-8b": 3,
+          "gemma-9b": 1
+        }
+      },
+      "herring": {
+        "zipf": 3.48,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "moose": {
+        "zipf": 3.61,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "boar": {
+        "zipf": 3.3,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "bison": {
+        "zipf": 3.26,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 2,
+          "llama-8b": 2,
+          "gemma-9b": 1
+        }
+      },
+      "yak": {
+        "zipf": 3.12,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "rabbit": {
+        "zipf": 4.05,
+        "meat_homonym": true,
+        "tokens": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 1
+        }
+      },
+      "guinea pig": {
+        "zipf": 3.8,
+        "meat_homonym": false,
+        "tokens": {
+          "qwen-7b": 3,
+          "llama-8b": 3,
+          "gemma-9b": 2
+        }
+      }
+    },
+    "pairs": [
+      {
+        "group": "main",
+        "id": 1,
+        "x": "pig",
+        "y": "dog",
+        "zipf_gap": -0.96,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 2,
+        "x": "cow",
+        "y": "horse",
+        "zipf_gap": -0.62,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 3,
+        "x": "sheep",
+        "y": "cat",
+        "zipf_gap": -0.59,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 4,
+        "x": "goat",
+        "y": "pony",
+        "zipf_gap": 0.21,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 5,
+        "x": "lamb",
+        "y": "kitten",
+        "zipf_gap": 0.38,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 6,
+        "x": "calf",
+        "y": "puppy",
+        "zipf_gap": -0.29,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 7,
+        "x": "chicken",
+        "y": "parrot",
+        "zipf_gap": 1.14,
+        "freq_flag": true,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 8,
+        "x": "duck",
+        "y": "swan",
+        "zipf_gap": 0.37,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 9,
+        "x": "turkey",
+        "y": "eagle",
+        "zipf_gap": 0.43,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 10,
+        "x": "goose",
+        "y": "owl",
+        "zipf_gap": -0.03,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 11,
+        "x": "hen",
+        "y": "dove",
+        "zipf_gap": -0.11,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 12,
+        "x": "trout",
+        "y": "goldfish",
+        "zipf_gap": 0.5,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "main",
+        "id": 13,
+        "x": "salmon",
+        "y": "koi",
+        "zipf_gap": 0.94,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p1",
+        "x": "sparrow",
+        "y": "robin",
+        "zipf_gap": -0.85,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p2",
+        "x": "crow",
+        "y": "magpie",
+        "zipf_gap": 0.9,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": -1
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p3",
+        "x": "owl",
+        "y": "hawk",
+        "zipf_gap": 0.06,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p4",
+        "x": "swallow",
+        "y": "finch",
+        "zipf_gap": 0.32,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": -1
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p5",
+        "x": "minnow",
+        "y": "stickleback",
+        "zipf_gap": 0.82,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": -1
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p6",
+        "x": "fox",
+        "y": "badger",
+        "zipf_gap": 1.18,
+        "freq_flag": true,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p7",
+        "x": "wolf",
+        "y": "coyote",
+        "zipf_gap": 0.99,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p8",
+        "x": "hedgehog",
+        "y": "shrew",
+        "zipf_gap": 0.5,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p9",
+        "x": "otter",
+        "y": "beaver",
+        "zipf_gap": -0.24,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p10",
+        "x": "lion",
+        "y": "tiger",
+        "zipf_gap": -0.05,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p11",
+        "x": "zebra",
+        "y": "giraffe",
+        "zipf_gap": 0.08,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p12",
+        "x": "mouse",
+        "y": "rat",
+        "zipf_gap": 0.14,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p13",
+        "x": "pheasant",
+        "y": "grouse",
+        "zipf_gap": -0.11,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p14",
+        "x": "carp",
+        "y": "bream",
+        "zipf_gap": 0.49,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": -1,
+          "llama-8b": -1,
+          "gemma-9b": -1
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p15",
+        "x": "haddock",
+        "y": "pollock",
+        "zipf_gap": -0.4,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p16",
+        "x": "sardine",
+        "y": "anchovy",
+        "zipf_gap": 0.08,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p17",
+        "x": "halibut",
+        "y": "tilapia",
+        "zipf_gap": 0.07,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p18",
+        "x": "mackerel",
+        "y": "herring",
+        "zipf_gap": -0.4,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p19",
+        "x": "moose",
+        "y": "boar",
+        "zipf_gap": 0.31,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 0,
+          "llama-8b": 0,
+          "gemma-9b": 0
+        }
+      },
+      {
+        "group": "placebo",
+        "id": "p20",
+        "x": "bison",
+        "y": "yak",
+        "zipf_gap": 0.14,
+        "freq_flag": false,
+        "token_gap": {
+          "qwen-7b": 1,
+          "llama-8b": 1,
+          "gemma-9b": 0
+        }
+      }
+    ],
+    "readout": {
+      "qwen-7b": {
+        "digits": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1
+        },
+        "yes_no": {
+          "Yes": 1,
+          "No": 1
+        },
+        "ok": true
+      },
+      "llama-8b": {
+        "digits": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1
+        },
+        "yes_no": {
+          "Yes": 1,
+          "No": 1
+        },
+        "ok": true
+      },
+      "gemma-9b": {
+        "digits": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1
+        },
+        "yes_no": {
+          "Yes": 1,
+          "No": 1
+        },
+        "ok": true
+      }
+    },
+    "templates": [
+      {
+        "i": 0,
+        "lens": {
+          "qwen-7b": [
+            12,
+            13
+          ],
+          "llama-8b": [
+            12,
+            13
+          ],
+          "gemma-9b": [
+            12,
+            13
+          ]
+        },
+        "ok": true
+      },
+      {
+        "i": 1,
+        "lens": {
+          "qwen-7b": [
+            13,
+            13
+          ],
+          "llama-8b": [
+            13,
+            13
+          ],
+          "gemma-9b": [
+            13,
+            13
+          ]
+        },
+        "ok": true
+      },
+      {
+        "i": 2,
+        "lens": {
+          "qwen-7b": [
+            12,
+            12
+          ],
+          "llama-8b": [
+            12,
+            12
+          ],
+          "gemma-9b": [
+            12,
+            12
+          ]
+        },
+        "ok": true
+      },
+      {
+        "i": 3,
+        "lens": {
+          "qwen-7b": [
+            13,
+            13
+          ],
+          "llama-8b": [
+            13,
+            13
+          ],
+          "gemma-9b": [
+            13,
+            13
+          ]
+        },
+        "ok": true
+      },
+      {
+        "i": 4,
+        "lens": {
+          "qwen-7b": [
+            13,
+            13
+          ],
+          "llama-8b": [
+            13,
+            13
+          ],
+          "gemma-9b": [
+            12,
+            13
+          ]
+        },
+        "ok": true
+      },
+      {
+        "i": 5,
+        "lens": {
+          "qwen-7b": [
+            9,
+            10
+          ],
+          "llama-8b": [
+            9,
+            10
+          ],
+          "gemma-9b": [
+            9,
+            10
+          ]
+        },
+        "ok": true
+      },
+      {
+        "i": 6,
+        "lens": {
+          "qwen-7b": [
+            10,
+            10
+          ],
+          "llama-8b": [
+            10,
+            10
+          ],
+          "gemma-9b": [
+            10,
+            10
+          ]
+        },
+        "ok": true
+      },
+      {
+        "i": 7,
+        "lens": {
+          "qwen-7b": [
+            12,
+            13
+          ],
+          "llama-8b": [
+            12,
+            13
+          ],
+          "gemma-9b": [
+            12,
+            13
+          ]
+        },
+        "ok": true
+      }
+    ]
+  }
+}
