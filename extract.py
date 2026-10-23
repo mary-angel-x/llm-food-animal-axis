@@ -18,7 +18,7 @@ import json
 from pathlib import Path
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 from models import MODELS
 from stimuli import TEMPLATES, READOUT, SCALE_MAX, DIGIT_READOUTS, all_animals
@@ -123,7 +123,12 @@ def load(key):
     tokenizer.padding_side = "left"
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
-    model = AutoModelForCausalLM.from_pretrained(cfg["name"], dtype=torch.bfloat16, device_map="auto")
+    quant = None
+    if cfg.get("quant") == "nf4":
+        quant = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_use_double_quant=True,
+                                   bnb_4bit_compute_dtype=torch.bfloat16, llm_int8_enable_fp32_cpu_offload=True)
+    model = AutoModelForCausalLM.from_pretrained(cfg["name"], dtype=torch.bfloat16,
+                                                 device_map=cfg.get("device_map", "auto"), quantization_config=quant)
     model.eval()
     return model, tokenizer
 
