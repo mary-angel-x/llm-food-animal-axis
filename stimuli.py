@@ -28,7 +28,7 @@ PAIRS = [
     {"id": 13, "cls": "fish", "food": "salmon", "nonfood": "koi"},
 ]
 
-# Pairs whose non-food name is one token longer in Qwen/Llama (none in Gemma);
+# Pairs whose non-food name is one token longer in Qwen/Llama;
 # kept for semantic match, dropped in the §5.5 sensitivity analysis.
 TOKEN_MISMATCH_PAIRS = [7, 8, 12, 13]
 
@@ -100,7 +100,7 @@ TEMPLATES = {
 FIT_TEMPLATES = [0, 1, 2, 3]
 EVAL_TEMPLATES = [4, 5, 6, 7]
 
-# §6 — behavioral readout. Scale 1–9: "10" is two tokens in Qwen/Gemma and
+# §6 — behavioral readout. Scale 1–9: "10" is two tokens in Qwen and
 # its first token collides with "1". Three paraphrases each, averaged.
 SCALE_MAX = 9
 READOUT = {
