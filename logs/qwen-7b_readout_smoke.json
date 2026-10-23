@@ -1,0 +1,95 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "rows": [
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pig of experiencing suffering? Answer with a single digit.",
+   "E": 7.93970251083374,
+   "mass": 1.0
+  },
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pig can feel pain. Answer with a single digit.",
+   "E": 8.621824264526367,
+   "mass": 1.0
+  },
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pig suffer? Answer with a single digit.",
+   "E": 8.016509363752732,
+   "mass": 0.9851067066192627
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pig suffer? Answer with Yes or No.",
+   "yes_no": 10.75
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pig capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.625
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pig have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 17.5
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cow of experiencing suffering? Answer with a single digit.",
+   "E": 7.0771777813858465,
+   "mass": 0.9999997615814209
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the cow can feel pain. Answer with a single digit.",
+   "E": 8.629644031956849,
+   "mass": 0.9999945163726807
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the cow suffer? Answer with a single digit.",
+   "E": 7.591193598847678,
+   "mass": 0.9825397729873657
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the cow suffer? Answer with Yes or No.",
+   "yes_no": 10.375
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the cow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 20.875
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the cow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 19.375
+  }
+ ]
+}
