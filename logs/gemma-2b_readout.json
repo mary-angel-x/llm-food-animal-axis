@@ -1,0 +1,4697 @@
+{
+ "model": "google/gemma-2-2b-it",
+ "rows": [
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pig of experiencing suffering? Answer with a single digit.",
+   "E": 7.510709973952359,
+   "mass": 0.9386808276176453
+  },
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pig can feel pain. Answer with a single digit.",
+   "E": 7.881570388501549,
+   "mass": 0.9896326065063477
+  },
+  {
+   "animal": "pig",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pig suffer? Answer with a single digit.",
+   "E": 5.048759219901219,
+   "mass": 0.29351723194122314
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pig suffer? Answer with Yes or No.",
+   "yes_no": 5.625
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pig capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.4375
+  },
+  {
+   "animal": "pig",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pig have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 6.0
+  },
+  {
+   "animal": "pig",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the pig? Answer with a single digit.",
+   "E": 1.7609428637581606,
+   "mass": 0.20446525514125824
+  },
+  {
+   "animal": "pig",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the pig pain for human benefit. Answer with a single digit.",
+   "E": 1.002059246974065,
+   "mass": 0.9984534382820129
+  },
+  {
+   "animal": "pig",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the pig? Answer with a single digit.",
+   "E": 1.0034861121826881,
+   "mass": 0.9904037714004517
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cow of experiencing suffering? Answer with a single digit.",
+   "E": 6.403019446341133,
+   "mass": 0.8862901329994202
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the cow can feel pain. Answer with a single digit.",
+   "E": 7.477031315328577,
+   "mass": 0.9899349212646484
+  },
+  {
+   "animal": "cow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the cow suffer? Answer with a single digit.",
+   "E": 3.904589884277668,
+   "mass": 0.31820008158683777
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the cow suffer? Answer with Yes or No.",
+   "yes_no": 6.0
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the cow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.3125
+  },
+  {
+   "animal": "cow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the cow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.0
+  },
+  {
+   "animal": "cow",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the cow? Answer with a single digit.",
+   "E": 1.1451809541895224,
+   "mass": 0.8750810027122498
+  },
+  {
+   "animal": "cow",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the cow pain for human benefit. Answer with a single digit.",
+   "E": 1.0012698541445004,
+   "mass": 0.9994077682495117
+  },
+  {
+   "animal": "cow",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the cow? Answer with a single digit.",
+   "E": 1.004241400789436,
+   "mass": 0.9809173941612244
+  },
+  {
+   "animal": "sheep",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the sheep of experiencing suffering? Answer with a single digit.",
+   "E": 5.049496033679787,
+   "mass": 0.9019471406936646
+  },
+  {
+   "animal": "sheep",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the sheep can feel pain. Answer with a single digit.",
+   "E": 7.5523191764603705,
+   "mass": 0.9909861087799072
+  },
+  {
+   "animal": "sheep",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the sheep suffer? Answer with a single digit.",
+   "E": 5.0343310648615525,
+   "mass": 0.5748935341835022
+  },
+  {
+   "animal": "sheep",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the sheep suffer? Answer with Yes or No.",
+   "yes_no": 7.1875
+  },
+  {
+   "animal": "sheep",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the sheep capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.75
+  },
+  {
+   "animal": "sheep",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the sheep have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.25
+  },
+  {
+   "animal": "sheep",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the sheep? Answer with a single digit.",
+   "E": 1.2177449679255836,
+   "mass": 0.2649551331996918
+  },
+  {
+   "animal": "sheep",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the sheep pain for human benefit. Answer with a single digit.",
+   "E": 1.0070250914084582,
+   "mass": 0.9954652190208435
+  },
+  {
+   "animal": "sheep",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the sheep? Answer with a single digit.",
+   "E": 1.0084387062925322,
+   "mass": 0.9833801984786987
+  },
+  {
+   "animal": "goat",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the goat of experiencing suffering? Answer with a single digit.",
+   "E": 7.3058418097882525,
+   "mass": 0.9579172134399414
+  },
+  {
+   "animal": "goat",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the goat can feel pain. Answer with a single digit.",
+   "E": 7.967098092405996,
+   "mass": 0.9934159517288208
+  },
+  {
+   "animal": "goat",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the goat suffer? Answer with a single digit.",
+   "E": 3.3613149857609375,
+   "mass": 0.6414200067520142
+  },
+  {
+   "animal": "goat",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the goat suffer? Answer with Yes or No.",
+   "yes_no": 5.875
+  },
+  {
+   "animal": "goat",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the goat capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.6875
+  },
+  {
+   "animal": "goat",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the goat have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 6.25
+  },
+  {
+   "animal": "goat",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the goat? Answer with a single digit.",
+   "E": 1.4592494320136555,
+   "mass": 0.28863823413848877
+  },
+  {
+   "animal": "goat",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the goat pain for human benefit. Answer with a single digit.",
+   "E": 1.0013361095150617,
+   "mass": 0.9995004534721375
+  },
+  {
+   "animal": "goat",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the goat? Answer with a single digit.",
+   "E": 1.0035153318823804,
+   "mass": 0.9924296140670776
+  },
+  {
+   "animal": "lamb",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the lamb of experiencing suffering? Answer with a single digit.",
+   "E": 3.3210252256078094,
+   "mass": 0.8620644211769104
+  },
+  {
+   "animal": "lamb",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the lamb can feel pain. Answer with a single digit.",
+   "E": 8.006800346864948,
+   "mass": 0.9888256788253784
+  },
+  {
+   "animal": "lamb",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the lamb suffer? Answer with a single digit.",
+   "E": 5.2133645172477605,
+   "mass": 0.38910818099975586
+  },
+  {
+   "animal": "lamb",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the lamb suffer? Answer with Yes or No.",
+   "yes_no": 5.5
+  },
+  {
+   "animal": "lamb",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the lamb capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.0
+  },
+  {
+   "animal": "lamb",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the lamb have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.0
+  },
+  {
+   "animal": "lamb",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the lamb? Answer with a single digit.",
+   "E": 1.1115862235611595,
+   "mass": 0.6832769513130188
+  },
+  {
+   "animal": "lamb",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the lamb pain for human benefit. Answer with a single digit.",
+   "E": 1.004490712280564,
+   "mass": 0.99800044298172
+  },
+  {
+   "animal": "lamb",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the lamb? Answer with a single digit.",
+   "E": 1.002934152440405,
+   "mass": 0.9948623776435852
+  },
+  {
+   "animal": "calf",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the calf of experiencing suffering? Answer with a single digit.",
+   "E": 4.378007955989323,
+   "mass": 0.8608072996139526
+  },
+  {
+   "animal": "calf",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the calf can feel pain. Answer with a single digit.",
+   "E": 7.96191499773845,
+   "mass": 0.9907094240188599
+  },
+  {
+   "animal": "calf",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the calf suffer? Answer with a single digit.",
+   "E": 6.203858150751379,
+   "mass": 0.9209191203117371
+  },
+  {
+   "animal": "calf",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the calf suffer? Answer with Yes or No.",
+   "yes_no": 8.0
+  },
+  {
+   "animal": "calf",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the calf capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 4.5
+  },
+  {
+   "animal": "calf",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the calf have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.5
+  },
+  {
+   "animal": "calf",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the calf? Answer with a single digit.",
+   "E": 1.3439529928952734,
+   "mass": 0.5289455056190491
+  },
+  {
+   "animal": "calf",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the calf pain for human benefit. Answer with a single digit.",
+   "E": 1.0122446264188818,
+   "mass": 0.9962871074676514
+  },
+  {
+   "animal": "calf",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the calf? Answer with a single digit.",
+   "E": 1.0061875249078354,
+   "mass": 0.9788897633552551
+  },
+  {
+   "animal": "chicken",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the chicken of experiencing suffering? Answer with a single digit.",
+   "E": 4.807017483525863,
+   "mass": 0.8665919899940491
+  },
+  {
+   "animal": "chicken",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the chicken can feel pain. Answer with a single digit.",
+   "E": 7.5430896524946425,
+   "mass": 0.9849245548248291
+  },
+  {
+   "animal": "chicken",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the chicken suffer? Answer with a single digit.",
+   "E": 3.6249204851233823,
+   "mass": 0.132539302110672
+  },
+  {
+   "animal": "chicken",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the chicken suffer? Answer with Yes or No.",
+   "yes_no": 5.625
+  },
+  {
+   "animal": "chicken",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the chicken capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.125
+  },
+  {
+   "animal": "chicken",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the chicken have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.25
+  },
+  {
+   "animal": "chicken",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the chicken? Answer with a single digit.",
+   "E": 3.239709219181141,
+   "mass": 0.2149495929479599
+  },
+  {
+   "animal": "chicken",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the chicken pain for human benefit. Answer with a single digit.",
+   "E": 1.0065323168988853,
+   "mass": 0.9969971776008606
+  },
+  {
+   "animal": "chicken",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the chicken? Answer with a single digit.",
+   "E": 1.0065852354128932,
+   "mass": 0.978648841381073
+  },
+  {
+   "animal": "duck",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the duck of experiencing suffering? Answer with a single digit.",
+   "E": 5.329581683029511,
+   "mass": 0.9183444976806641
+  },
+  {
+   "animal": "duck",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the duck can feel pain. Answer with a single digit.",
+   "E": 7.826579090114041,
+   "mass": 0.991371750831604
+  },
+  {
+   "animal": "duck",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the duck suffer? Answer with a single digit.",
+   "E": 4.95204327157276,
+   "mass": 0.6943805813789368
+  },
+  {
+   "animal": "duck",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the duck suffer? Answer with Yes or No.",
+   "yes_no": 6.9375
+  },
+  {
+   "animal": "duck",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the duck capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.375
+  },
+  {
+   "animal": "duck",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the duck have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 4.125
+  },
+  {
+   "animal": "duck",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the duck? Answer with a single digit.",
+   "E": 1.0526705696644554,
+   "mass": 0.9524531364440918
+  },
+  {
+   "animal": "duck",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the duck pain for human benefit. Answer with a single digit.",
+   "E": 1.0027442234451525,
+   "mass": 0.9988829493522644
+  },
+  {
+   "animal": "duck",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the duck? Answer with a single digit.",
+   "E": 1.008627345505749,
+   "mass": 0.9830676317214966
+  },
+  {
+   "animal": "turkey",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the turkey of experiencing suffering? Answer with a single digit.",
+   "E": 3.4779382483514825,
+   "mass": 0.9550831913948059
+  },
+  {
+   "animal": "turkey",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the turkey can feel pain. Answer with a single digit.",
+   "E": 6.193454081561623,
+   "mass": 0.9804330468177795
+  },
+  {
+   "animal": "turkey",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the turkey suffer? Answer with a single digit.",
+   "E": 3.486442670867193,
+   "mass": 0.34676095843315125
+  },
+  {
+   "animal": "turkey",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the turkey suffer? Answer with Yes or No.",
+   "yes_no": 4.75
+  },
+  {
+   "animal": "turkey",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the turkey capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 4.5
+  },
+  {
+   "animal": "turkey",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the turkey have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 0.125
+  },
+  {
+   "animal": "turkey",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the turkey? Answer with a single digit.",
+   "E": 1.729346464065994,
+   "mass": 0.6723161935806274
+  },
+  {
+   "animal": "turkey",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the turkey pain for human benefit. Answer with a single digit.",
+   "E": 1.0046932902247878,
+   "mass": 0.9995003342628479
+  },
+  {
+   "animal": "turkey",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the turkey? Answer with a single digit.",
+   "E": 1.0139677580086892,
+   "mass": 0.9850981831550598
+  },
+  {
+   "animal": "goose",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the goose of experiencing suffering? Answer with a single digit.",
+   "E": 6.371979172135799,
+   "mass": 0.9297675490379333
+  },
+  {
+   "animal": "goose",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the goose can feel pain. Answer with a single digit.",
+   "E": 7.934991550124832,
+   "mass": 0.9939662218093872
+  },
+  {
+   "animal": "goose",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the goose suffer? Answer with a single digit.",
+   "E": 4.474799512715861,
+   "mass": 0.3156347870826721
+  },
+  {
+   "animal": "goose",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the goose suffer? Answer with Yes or No.",
+   "yes_no": 4.75
+  },
+  {
+   "animal": "goose",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the goose capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.1875
+  },
+  {
+   "animal": "goose",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the goose have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 4.375
+  },
+  {
+   "animal": "goose",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the goose? Answer with a single digit.",
+   "E": 1.0615481335041246,
+   "mass": 0.9454406499862671
+  },
+  {
+   "animal": "goose",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the goose pain for human benefit. Answer with a single digit.",
+   "E": 1.010373123848129,
+   "mass": 0.9969825148582458
+  },
+  {
+   "animal": "goose",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the goose? Answer with a single digit.",
+   "E": 1.0039048738516572,
+   "mass": 0.9853630065917969
+  },
+  {
+   "animal": "hen",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the hen of experiencing suffering? Answer with a single digit.",
+   "E": 3.551682637532318,
+   "mass": 0.9063681960105896
+  },
+  {
+   "animal": "hen",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the hen can feel pain. Answer with a single digit.",
+   "E": 7.066308170822355,
+   "mass": 0.9816619157791138
+  },
+  {
+   "animal": "hen",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the hen suffer? Answer with a single digit.",
+   "E": 3.9475233659367674,
+   "mass": 0.3254113495349884
+  },
+  {
+   "animal": "hen",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the hen suffer? Answer with Yes or No.",
+   "yes_no": 5.875
+  },
+  {
+   "animal": "hen",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the hen capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.9375
+  },
+  {
+   "animal": "hen",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the hen have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 2.75
+  },
+  {
+   "animal": "hen",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the hen? Answer with a single digit.",
+   "E": 1.1070333165470192,
+   "mass": 0.47971147298812866
+  },
+  {
+   "animal": "hen",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the hen pain for human benefit. Answer with a single digit.",
+   "E": 1.0085450564065992,
+   "mass": 0.9974103569984436
+  },
+  {
+   "animal": "hen",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the hen? Answer with a single digit.",
+   "E": 1.0097757976322912,
+   "mass": 0.9758389592170715
+  },
+  {
+   "animal": "trout",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the trout of experiencing suffering? Answer with a single digit.",
+   "E": 4.875238130755944,
+   "mass": 0.9333767890930176
+  },
+  {
+   "animal": "trout",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the trout can feel pain. Answer with a single digit.",
+   "E": 7.09488535524235,
+   "mass": 0.9863057136535645
+  },
+  {
+   "animal": "trout",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the trout suffer? Answer with a single digit.",
+   "E": 4.425687630716371,
+   "mass": 0.7283213138580322
+  },
+  {
+   "animal": "trout",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the trout suffer? Answer with Yes or No.",
+   "yes_no": 6.875
+  },
+  {
+   "animal": "trout",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the trout capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 5.25
+  },
+  {
+   "animal": "trout",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the trout have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.875
+  },
+  {
+   "animal": "trout",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the trout? Answer with a single digit.",
+   "E": 1.0673954271119448,
+   "mass": 0.9751548171043396
+  },
+  {
+   "animal": "trout",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the trout pain for human benefit. Answer with a single digit.",
+   "E": 1.0041967036418609,
+   "mass": 0.9989347457885742
+  },
+  {
+   "animal": "trout",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the trout? Answer with a single digit.",
+   "E": 1.0058074066322384,
+   "mass": 0.9796667098999023
+  },
+  {
+   "animal": "salmon",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the salmon of experiencing suffering? Answer with a single digit.",
+   "E": 6.740573369405122,
+   "mass": 0.9368387460708618
+  },
+  {
+   "animal": "salmon",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the salmon can feel pain. Answer with a single digit.",
+   "E": 6.988361867574877,
+   "mass": 0.9839571118354797
+  },
+  {
+   "animal": "salmon",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the salmon suffer? Answer with a single digit.",
+   "E": 6.648518772653883,
+   "mass": 0.8464250564575195
+  },
+  {
+   "animal": "salmon",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the salmon suffer? Answer with Yes or No.",
+   "yes_no": 7.3125
+  },
+  {
+   "animal": "salmon",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the salmon capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 3.125
+  },
+  {
+   "animal": "salmon",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the salmon have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 2.125
+  },
+  {
+   "animal": "salmon",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the salmon? Answer with a single digit.",
+   "E": 1.2037290174669668,
+   "mass": 0.788845956325531
+  },
+  {
+   "animal": "salmon",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the salmon pain for human benefit. Answer with a single digit.",
+   "E": 1.011762591710543,
+   "mass": 0.9983605146408081
+  },
+  {
+   "animal": "salmon",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the salmon? Answer with a single digit.",
+   "E": 1.0234446949575893,
+   "mass": 0.9614230990409851
+  },
+  {
+   "animal": "dog",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the dog of experiencing suffering? Answer with a single digit.",
+   "E": 7.617639162930259,
+   "mass": 0.9371632933616638
+  },
+  {
+   "animal": "dog",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the dog can feel pain. Answer with a single digit.",
+   "E": 8.303163870697926,
+   "mass": 0.9919473528862
+  },
+  {
+   "animal": "dog",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the dog suffer? Answer with a single digit.",
+   "E": 5.144954014519715,
+   "mass": 0.45121029019355774
+  },
+  {
+   "animal": "dog",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the dog suffer? Answer with Yes or No.",
+   "yes_no": 7.9375
+  },
+  {
+   "animal": "dog",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the dog capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.75
+  },
+  {
+   "animal": "dog",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the dog have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.875
+  },
+  {
+   "animal": "dog",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the dog? Answer with a single digit.",
+   "E": 1.0672449786597633,
+   "mass": 0.9165299534797668
+  },
+  {
+   "animal": "dog",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the dog pain for human benefit. Answer with a single digit.",
+   "E": 1.0007483294650443,
+   "mass": 0.9985754489898682
+  },
+  {
+   "animal": "dog",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the dog? Answer with a single digit.",
+   "E": 1.004212124658431,
+   "mass": 0.969579815864563
+  },
+  {
+   "animal": "horse",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the horse of experiencing suffering? Answer with a single digit.",
+   "E": 8.333409910088328,
+   "mass": 0.9781450033187866
+  },
+  {
+   "animal": "horse",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the horse can feel pain. Answer with a single digit.",
+   "E": 8.913934163168683,
+   "mass": 0.9982574582099915
+  },
+  {
+   "animal": "horse",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the horse suffer? Answer with a single digit.",
+   "E": 5.591884773658904,
+   "mass": 0.5380324125289917
+  },
+  {
+   "animal": "horse",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the horse suffer? Answer with Yes or No.",
+   "yes_no": 8.0625
+  },
+  {
+   "animal": "horse",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the horse capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.75
+  },
+  {
+   "animal": "horse",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the horse have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 7.9375
+  },
+  {
+   "animal": "horse",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the horse? Answer with a single digit.",
+   "E": 1.1189890247492391,
+   "mass": 0.6193799376487732
+  },
+  {
+   "animal": "horse",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the horse pain for human benefit. Answer with a single digit.",
+   "E": 1.0005629034459522,
+   "mass": 0.9991579055786133
+  },
+  {
+   "animal": "horse",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the horse? Answer with a single digit.",
+   "E": 1.0030917176847276,
+   "mass": 0.989388644695282
+  },
+  {
+   "animal": "cat",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cat of experiencing suffering? Answer with a single digit.",
+   "E": 6.27095183951275,
+   "mass": 0.8995556831359863
+  },
+  {
+   "animal": "cat",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the cat can feel pain. Answer with a single digit.",
+   "E": 7.956972922894263,
+   "mass": 0.9871742725372314
+  },
+  {
+   "animal": "cat",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the cat suffer? Answer with a single digit.",
+   "E": 4.714216090499311,
+   "mass": 0.5602536797523499
+  },
+  {
+   "animal": "cat",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the cat suffer? Answer with Yes or No.",
+   "yes_no": 7.4375
+  },
+  {
+   "animal": "cat",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the cat capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.125
+  },
+  {
+   "animal": "cat",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the cat have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.625
+  },
+  {
+   "animal": "cat",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the cat? Answer with a single digit.",
+   "E": 1.0390288841735853,
+   "mass": 0.9679670929908752
+  },
+  {
+   "animal": "cat",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the cat pain for human benefit. Answer with a single digit.",
+   "E": 1.0009122579272922,
+   "mass": 0.9987488985061646
+  },
+  {
+   "animal": "cat",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the cat? Answer with a single digit.",
+   "E": 1.0023710952746998,
+   "mass": 0.9873963594436646
+  },
+  {
+   "animal": "pony",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pony of experiencing suffering? Answer with a single digit.",
+   "E": 3.0966102737010157,
+   "mass": 0.9151511192321777
+  },
+  {
+   "animal": "pony",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pony can feel pain. Answer with a single digit.",
+   "E": 7.713355895345608,
+   "mass": 0.9871755242347717
+  },
+  {
+   "animal": "pony",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pony suffer? Answer with a single digit.",
+   "E": 3.735909995694746,
+   "mass": 0.5375869870185852
+  },
+  {
+   "animal": "pony",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pony suffer? Answer with Yes or No.",
+   "yes_no": 5.75
+  },
+  {
+   "animal": "pony",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pony capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.125
+  },
+  {
+   "animal": "pony",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pony have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 2.375
+  },
+  {
+   "animal": "pony",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the pony? Answer with a single digit.",
+   "E": 1.0228903812999788,
+   "mass": 0.9675320982933044
+  },
+  {
+   "animal": "pony",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the pony pain for human benefit. Answer with a single digit.",
+   "E": 1.0011017369549293,
+   "mass": 0.9984809160232544
+  },
+  {
+   "animal": "pony",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the pony? Answer with a single digit.",
+   "E": 1.001644339106252,
+   "mass": 0.9933146238327026
+  },
+  {
+   "animal": "kitten",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the kitten of experiencing suffering? Answer with a single digit.",
+   "E": 2.789896091447839,
+   "mass": 0.9407236576080322
+  },
+  {
+   "animal": "kitten",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the kitten can feel pain. Answer with a single digit.",
+   "E": 7.58806465843149,
+   "mass": 0.9802648425102234
+  },
+  {
+   "animal": "kitten",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the kitten suffer? Answer with a single digit.",
+   "E": 4.976721438804805,
+   "mass": 0.6664098501205444
+  },
+  {
+   "animal": "kitten",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the kitten suffer? Answer with Yes or No.",
+   "yes_no": 8.125
+  },
+  {
+   "animal": "kitten",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the kitten capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.1875
+  },
+  {
+   "animal": "kitten",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the kitten have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 6.125
+  },
+  {
+   "animal": "kitten",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the kitten? Answer with a single digit.",
+   "E": 1.0088369327127882,
+   "mass": 0.9958037734031677
+  },
+  {
+   "animal": "kitten",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the kitten pain for human benefit. Answer with a single digit.",
+   "E": 1.0007785771296998,
+   "mass": 0.9984415769577026
+  },
+  {
+   "animal": "kitten",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the kitten? Answer with a single digit.",
+   "E": 1.0007483744179193,
+   "mass": 0.9972411394119263
+  },
+  {
+   "animal": "puppy",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the puppy of experiencing suffering? Answer with a single digit.",
+   "E": 3.082071793988269,
+   "mass": 0.8953450322151184
+  },
+  {
+   "animal": "puppy",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the puppy can feel pain. Answer with a single digit.",
+   "E": 7.944561562278059,
+   "mass": 0.9847773313522339
+  },
+  {
+   "animal": "puppy",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the puppy suffer? Answer with a single digit.",
+   "E": 5.018685979837958,
+   "mass": 0.6467394828796387
+  },
+  {
+   "animal": "puppy",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the puppy suffer? Answer with Yes or No.",
+   "yes_no": 8.0
+  },
+  {
+   "animal": "puppy",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the puppy capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.0
+  },
+  {
+   "animal": "puppy",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the puppy have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 6.125
+  },
+  {
+   "animal": "puppy",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the puppy? Answer with a single digit.",
+   "E": 1.0106631818468645,
+   "mass": 0.994636595249176
+  },
+  {
+   "animal": "puppy",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the puppy pain for human benefit. Answer with a single digit.",
+   "E": 1.000633400903259,
+   "mass": 0.9986163377761841
+  },
+  {
+   "animal": "puppy",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the puppy? Answer with a single digit.",
+   "E": 1.0006545321816565,
+   "mass": 0.9918745160102844
+  },
+  {
+   "animal": "parrot",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the parrot of experiencing suffering? Answer with a single digit.",
+   "E": 3.2228681493888516,
+   "mass": 0.9662290811538696
+  },
+  {
+   "animal": "parrot",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the parrot can feel pain. Answer with a single digit.",
+   "E": 7.215089430485855,
+   "mass": 0.9870870113372803
+  },
+  {
+   "animal": "parrot",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the parrot suffer? Answer with a single digit.",
+   "E": 4.434531477613647,
+   "mass": 0.8221415877342224
+  },
+  {
+   "animal": "parrot",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the parrot suffer? Answer with Yes or No.",
+   "yes_no": 6.125
+  },
+  {
+   "animal": "parrot",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the parrot capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 5.125
+  },
+  {
+   "animal": "parrot",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the parrot have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.625
+  },
+  {
+   "animal": "parrot",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the parrot? Answer with a single digit.",
+   "E": 1.0299975508377324,
+   "mass": 0.9474295973777771
+  },
+  {
+   "animal": "parrot",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the parrot pain for human benefit. Answer with a single digit.",
+   "E": 1.0011571244506103,
+   "mass": 0.9993650317192078
+  },
+  {
+   "animal": "parrot",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the parrot? Answer with a single digit.",
+   "E": 1.001695977408598,
+   "mass": 0.9920299053192139
+  },
+  {
+   "animal": "swan",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the swan of experiencing suffering? Answer with a single digit.",
+   "E": 2.6647773180519407,
+   "mass": 0.9473570585250854
+  },
+  {
+   "animal": "swan",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the swan can feel pain. Answer with a single digit.",
+   "E": 8.105824331004762,
+   "mass": 0.9918185472488403
+  },
+  {
+   "animal": "swan",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the swan suffer? Answer with a single digit.",
+   "E": 4.426061011574527,
+   "mass": 0.7485567927360535
+  },
+  {
+   "animal": "swan",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the swan suffer? Answer with Yes or No.",
+   "yes_no": 5.625
+  },
+  {
+   "animal": "swan",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the swan capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 4.25
+  },
+  {
+   "animal": "swan",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the swan have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.5
+  },
+  {
+   "animal": "swan",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the swan? Answer with a single digit.",
+   "E": 1.035846243598885,
+   "mass": 0.959979772567749
+  },
+  {
+   "animal": "swan",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the swan pain for human benefit. Answer with a single digit.",
+   "E": 1.0363439273967618,
+   "mass": 0.9932153820991516
+  },
+  {
+   "animal": "swan",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the swan? Answer with a single digit.",
+   "E": 1.0044295810462234,
+   "mass": 0.992114245891571
+  },
+  {
+   "animal": "eagle",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the eagle of experiencing suffering? Answer with a single digit.",
+   "E": 2.623900989448946,
+   "mass": 0.8406465649604797
+  },
+  {
+   "animal": "eagle",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the eagle can feel pain. Answer with a single digit.",
+   "E": 8.35978183929724,
+   "mass": 0.9936261177062988
+  },
+  {
+   "animal": "eagle",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the eagle suffer? Answer with a single digit.",
+   "E": 2.697586773771299,
+   "mass": 0.6929125189781189
+  },
+  {
+   "animal": "eagle",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the eagle suffer? Answer with Yes or No.",
+   "yes_no": 3.75
+  },
+  {
+   "animal": "eagle",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the eagle capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.375
+  },
+  {
+   "animal": "eagle",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the eagle have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.0
+  },
+  {
+   "animal": "eagle",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the eagle? Answer with a single digit.",
+   "E": 1.0023480886225533,
+   "mass": 0.9949640035629272
+  },
+  {
+   "animal": "eagle",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the eagle pain for human benefit. Answer with a single digit.",
+   "E": 1.0037147575450587,
+   "mass": 0.9990968108177185
+  },
+  {
+   "animal": "eagle",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the eagle? Answer with a single digit.",
+   "E": 1.0038272699118345,
+   "mass": 0.985782265663147
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the owl of experiencing suffering? Answer with a single digit.",
+   "E": 1.7618437059315601,
+   "mass": 0.9693959355354309
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the owl can feel pain. Answer with a single digit.",
+   "E": 7.628817543673661,
+   "mass": 0.9839162230491638
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the owl suffer? Answer with a single digit.",
+   "E": 1.977494347179773,
+   "mass": 0.8328888416290283
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the owl suffer? Answer with Yes or No.",
+   "yes_no": 2.5
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the owl capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 4.625
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the owl have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -1.25
+  },
+  {
+   "animal": "owl",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the owl? Answer with a single digit.",
+   "E": 1.0285515069554199,
+   "mass": 0.9699074029922485
+  },
+  {
+   "animal": "owl",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the owl pain for human benefit. Answer with a single digit.",
+   "E": 1.0019992738911023,
+   "mass": 0.9996646046638489
+  },
+  {
+   "animal": "owl",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the owl? Answer with a single digit.",
+   "E": 1.0036188445537724,
+   "mass": 0.9909389019012451
+  },
+  {
+   "animal": "dove",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the dove of experiencing suffering? Answer with a single digit.",
+   "E": 1.2791483598338313,
+   "mass": 0.9898383617401123
+  },
+  {
+   "animal": "dove",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the dove can feel pain. Answer with a single digit.",
+   "E": 5.601453317681217,
+   "mass": 0.938668429851532
+  },
+  {
+   "animal": "dove",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the dove suffer? Answer with a single digit.",
+   "E": 2.7370970144727735,
+   "mass": 0.5965541005134583
+  },
+  {
+   "animal": "dove",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the dove suffer? Answer with Yes or No.",
+   "yes_no": 1.875
+  },
+  {
+   "animal": "dove",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the dove capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 3.75
+  },
+  {
+   "animal": "dove",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the dove have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.5
+  },
+  {
+   "animal": "dove",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the dove? Answer with a single digit.",
+   "E": 1.019679649129972,
+   "mass": 0.9865895509719849
+  },
+  {
+   "animal": "dove",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the dove pain for human benefit. Answer with a single digit.",
+   "E": 1.015030648917893,
+   "mass": 0.9949659705162048
+  },
+  {
+   "animal": "dove",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the dove? Answer with a single digit.",
+   "E": 1.0258283510939,
+   "mass": 0.9777008891105652
+  },
+  {
+   "animal": "goldfish",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the goldfish of experiencing suffering? Answer with a single digit.",
+   "E": 1.3070471834922444,
+   "mass": 0.9871784448623657
+  },
+  {
+   "animal": "goldfish",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the goldfish can feel pain. Answer with a single digit.",
+   "E": 2.660252008883556,
+   "mass": 0.990409791469574
+  },
+  {
+   "animal": "goldfish",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the goldfish suffer? Answer with a single digit.",
+   "E": 5.218266762656739,
+   "mass": 0.7991988062858582
+  },
+  {
+   "animal": "goldfish",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the goldfish suffer? Answer with Yes or No.",
+   "yes_no": 5.0
+  },
+  {
+   "animal": "goldfish",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the goldfish capable of feeling pain? Answer with Yes or No.",
+   "yes_no": -1.125
+  },
+  {
+   "animal": "goldfish",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the goldfish have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -0.625
+  },
+  {
+   "animal": "goldfish",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the goldfish? Answer with a single digit.",
+   "E": 1.0251012694537727,
+   "mass": 0.9955300688743591
+  },
+  {
+   "animal": "goldfish",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the goldfish pain for human benefit. Answer with a single digit.",
+   "E": 1.0010825221173654,
+   "mass": 0.9998509287834167
+  },
+  {
+   "animal": "goldfish",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the goldfish? Answer with a single digit.",
+   "E": 1.0030422430399082,
+   "mass": 0.9925476908683777
+  },
+  {
+   "animal": "koi",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the koi of experiencing suffering? Answer with a single digit.",
+   "E": 4.158619277112387,
+   "mass": 0.9446240663528442
+  },
+  {
+   "animal": "koi",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the koi can feel pain. Answer with a single digit.",
+   "E": 6.314701914344983,
+   "mass": 0.9812444448471069
+  },
+  {
+   "animal": "koi",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the koi suffer? Answer with a single digit.",
+   "E": 7.0026368104816505,
+   "mass": 0.942169189453125
+  },
+  {
+   "animal": "koi",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the koi suffer? Answer with Yes or No.",
+   "yes_no": 8.0
+  },
+  {
+   "animal": "koi",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the koi capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 2.0
+  },
+  {
+   "animal": "koi",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the koi have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 4.25
+  },
+  {
+   "animal": "koi",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the koi? Answer with a single digit.",
+   "E": 1.0367578312547752,
+   "mass": 0.982605516910553
+  },
+  {
+   "animal": "koi",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the koi pain for human benefit. Answer with a single digit.",
+   "E": 1.0015390528627546,
+   "mass": 0.9997667670249939
+  },
+  {
+   "animal": "koi",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the koi? Answer with a single digit.",
+   "E": 1.0084003399636243,
+   "mass": 0.985054612159729
+  },
+  {
+   "animal": "rabbit",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the rabbit of experiencing suffering? Answer with a single digit.",
+   "E": 8.486994460921853,
+   "mass": 0.9871160387992859
+  },
+  {
+   "animal": "rabbit",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the rabbit can feel pain. Answer with a single digit.",
+   "E": 8.015165165812423,
+   "mass": 0.9955458641052246
+  },
+  {
+   "animal": "rabbit",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the rabbit suffer? Answer with a single digit.",
+   "E": 5.553832474341768,
+   "mass": 0.7469620108604431
+  },
+  {
+   "animal": "rabbit",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the rabbit suffer? Answer with Yes or No.",
+   "yes_no": 7.8125
+  },
+  {
+   "animal": "rabbit",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the rabbit capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.125
+  },
+  {
+   "animal": "rabbit",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the rabbit have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 6.0
+  },
+  {
+   "animal": "rabbit",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the rabbit? Answer with a single digit.",
+   "E": 1.1330600432137239,
+   "mass": 0.8722410798072815
+  },
+  {
+   "animal": "rabbit",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the rabbit pain for human benefit. Answer with a single digit.",
+   "E": 1.0010464347827333,
+   "mass": 0.9989597797393799
+  },
+  {
+   "animal": "rabbit",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the rabbit? Answer with a single digit.",
+   "E": 1.0031999445149826,
+   "mass": 0.9917453527450562
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the guinea pig of experiencing suffering? Answer with a single digit.",
+   "E": 7.05963865922798,
+   "mass": 0.9399645924568176
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the guinea pig can feel pain. Answer with a single digit.",
+   "E": 8.59180527784801,
+   "mass": 0.9950829148292542
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the guinea pig suffer? Answer with a single digit.",
+   "E": 5.718318001704796,
+   "mass": 0.6854130029678345
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the guinea pig suffer? Answer with Yes or No.",
+   "yes_no": 8.9375
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the guinea pig capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 9.125
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the guinea pig have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 8.0
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the guinea pig? Answer with a single digit.",
+   "E": 1.0326720643608596,
+   "mass": 0.9792367815971375
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the guinea pig pain for human benefit. Answer with a single digit.",
+   "E": 1.001980128790106,
+   "mass": 0.9990653991699219
+  },
+  {
+   "animal": "guinea pig",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the guinea pig? Answer with a single digit.",
+   "E": 1.0006407041473495,
+   "mass": 0.9940245151519775
+  },
+  {
+   "animal": "sparrow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the sparrow of experiencing suffering? Answer with a single digit.",
+   "E": 3.760351676828368,
+   "mass": 0.9586861729621887
+  },
+  {
+   "animal": "sparrow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the sparrow can feel pain. Answer with a single digit.",
+   "E": 6.3338099877403105,
+   "mass": 0.9817512631416321
+  },
+  {
+   "animal": "sparrow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the sparrow suffer? Answer with a single digit.",
+   "E": 3.030871595158972,
+   "mass": 0.8587452173233032
+  },
+  {
+   "animal": "sparrow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the sparrow suffer? Answer with Yes or No.",
+   "yes_no": 3.625
+  },
+  {
+   "animal": "sparrow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the sparrow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 5.875
+  },
+  {
+   "animal": "sparrow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the sparrow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.0
+  },
+  {
+   "animal": "sparrow",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the sparrow? Answer with a single digit.",
+   "E": 1.0081566209090105,
+   "mass": 0.9960364699363708
+  },
+  {
+   "animal": "sparrow",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the sparrow pain for human benefit. Answer with a single digit.",
+   "E": 1.0133639369430698,
+   "mass": 0.9988508224487305
+  },
+  {
+   "animal": "sparrow",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the sparrow? Answer with a single digit.",
+   "E": 1.0196063752155067,
+   "mass": 0.9840688705444336
+  },
+  {
+   "animal": "robin",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the robin of experiencing suffering? Answer with a single digit.",
+   "E": 3.8934698515749266,
+   "mass": 0.9626049995422363
+  },
+  {
+   "animal": "robin",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the robin can feel pain. Answer with a single digit.",
+   "E": 6.393589060822896,
+   "mass": 0.9776332974433899
+  },
+  {
+   "animal": "robin",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the robin suffer? Answer with a single digit.",
+   "E": 3.192892992943822,
+   "mass": 0.7718420624732971
+  },
+  {
+   "animal": "robin",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the robin suffer? Answer with Yes or No.",
+   "yes_no": 6.25
+  },
+  {
+   "animal": "robin",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the robin capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.0
+  },
+  {
+   "animal": "robin",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the robin have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -0.25
+  },
+  {
+   "animal": "robin",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the robin? Answer with a single digit.",
+   "E": 1.023480444148621,
+   "mass": 0.9822725653648376
+  },
+  {
+   "animal": "robin",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the robin pain for human benefit. Answer with a single digit.",
+   "E": 1.0036047972096511,
+   "mass": 0.9991821646690369
+  },
+  {
+   "animal": "robin",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the robin? Answer with a single digit.",
+   "E": 1.0080634315506725,
+   "mass": 0.9812396764755249
+  },
+  {
+   "animal": "crow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the crow of experiencing suffering? Answer with a single digit.",
+   "E": 6.3684144281576724,
+   "mass": 0.938122570514679
+  },
+  {
+   "animal": "crow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the crow can feel pain. Answer with a single digit.",
+   "E": 7.240896770137074,
+   "mass": 0.9857107400894165
+  },
+  {
+   "animal": "crow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the crow suffer? Answer with a single digit.",
+   "E": 3.731964098456803,
+   "mass": 0.47978514432907104
+  },
+  {
+   "animal": "crow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the crow suffer? Answer with Yes or No.",
+   "yes_no": 2.5
+  },
+  {
+   "animal": "crow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the crow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 5.875
+  },
+  {
+   "animal": "crow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the crow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 2.375
+  },
+  {
+   "animal": "crow",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the crow? Answer with a single digit.",
+   "E": 1.047518412887786,
+   "mass": 0.957530677318573
+  },
+  {
+   "animal": "crow",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the crow pain for human benefit. Answer with a single digit.",
+   "E": 1.0031030174706979,
+   "mass": 0.9987899661064148
+  },
+  {
+   "animal": "crow",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the crow? Answer with a single digit.",
+   "E": 1.0087097529658422,
+   "mass": 0.982915997505188
+  },
+  {
+   "animal": "magpie",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the magpie of experiencing suffering? Answer with a single digit.",
+   "E": 4.338330453312294,
+   "mass": 0.9549435973167419
+  },
+  {
+   "animal": "magpie",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the magpie can feel pain. Answer with a single digit.",
+   "E": 6.824957818731637,
+   "mass": 0.9754350185394287
+  },
+  {
+   "animal": "magpie",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the magpie suffer? Answer with a single digit.",
+   "E": 4.228339197711296,
+   "mass": 0.8213744163513184
+  },
+  {
+   "animal": "magpie",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the magpie suffer? Answer with Yes or No.",
+   "yes_no": 4.125
+  },
+  {
+   "animal": "magpie",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the magpie capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 3.5
+  },
+  {
+   "animal": "magpie",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the magpie have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 2.25
+  },
+  {
+   "animal": "magpie",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the magpie? Answer with a single digit.",
+   "E": 1.0965477008398659,
+   "mass": 0.9830944538116455
+  },
+  {
+   "animal": "magpie",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the magpie pain for human benefit. Answer with a single digit.",
+   "E": 1.0261216819637344,
+   "mass": 0.9965884685516357
+  },
+  {
+   "animal": "magpie",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the magpie? Answer with a single digit.",
+   "E": 1.005933810854369,
+   "mass": 0.9874255061149597
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the owl of experiencing suffering? Answer with a single digit.",
+   "E": 1.7618437059315601,
+   "mass": 0.9693959355354309
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the owl can feel pain. Answer with a single digit.",
+   "E": 7.628817543673661,
+   "mass": 0.9839162230491638
+  },
+  {
+   "animal": "owl",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the owl suffer? Answer with a single digit.",
+   "E": 1.977494347179773,
+   "mass": 0.8328888416290283
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the owl suffer? Answer with Yes or No.",
+   "yes_no": 2.5
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the owl capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 4.625
+  },
+  {
+   "animal": "owl",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the owl have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -1.25
+  },
+  {
+   "animal": "owl",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the owl? Answer with a single digit.",
+   "E": 1.0285515069554199,
+   "mass": 0.9699074029922485
+  },
+  {
+   "animal": "owl",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the owl pain for human benefit. Answer with a single digit.",
+   "E": 1.0019992738911023,
+   "mass": 0.9996646046638489
+  },
+  {
+   "animal": "owl",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the owl? Answer with a single digit.",
+   "E": 1.0036188445537724,
+   "mass": 0.9909389019012451
+  },
+  {
+   "animal": "hawk",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the hawk of experiencing suffering? Answer with a single digit.",
+   "E": 2.9261788026739572,
+   "mass": 0.9200839400291443
+  },
+  {
+   "animal": "hawk",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the hawk can feel pain. Answer with a single digit.",
+   "E": 7.659345866190563,
+   "mass": 0.9810758233070374
+  },
+  {
+   "animal": "hawk",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the hawk suffer? Answer with a single digit.",
+   "E": 2.5035356853528272,
+   "mass": 0.526282012462616
+  },
+  {
+   "animal": "hawk",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the hawk suffer? Answer with Yes or No.",
+   "yes_no": 4.0
+  },
+  {
+   "animal": "hawk",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the hawk capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 5.0
+  },
+  {
+   "animal": "hawk",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the hawk have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -0.75
+  },
+  {
+   "animal": "hawk",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the hawk? Answer with a single digit.",
+   "E": 1.069303431863889,
+   "mass": 0.9701856970787048
+  },
+  {
+   "animal": "hawk",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the hawk pain for human benefit. Answer with a single digit.",
+   "E": 1.0034824075886941,
+   "mass": 0.9994505047798157
+  },
+  {
+   "animal": "hawk",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the hawk? Answer with a single digit.",
+   "E": 1.002940521914528,
+   "mass": 0.9912276864051819
+  },
+  {
+   "animal": "swallow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the swallow of experiencing suffering? Answer with a single digit.",
+   "E": 1.9789773676442342,
+   "mass": 0.9526532888412476
+  },
+  {
+   "animal": "swallow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the swallow can feel pain. Answer with a single digit.",
+   "E": 7.241598810080116,
+   "mass": 0.9716912508010864
+  },
+  {
+   "animal": "swallow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the swallow suffer? Answer with a single digit.",
+   "E": 5.099088631589666,
+   "mass": 0.8218191862106323
+  },
+  {
+   "animal": "swallow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the swallow suffer? Answer with Yes or No.",
+   "yes_no": 0.375
+  },
+  {
+   "animal": "swallow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the swallow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 1.75
+  },
+  {
+   "animal": "swallow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the swallow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -1.0
+  },
+  {
+   "animal": "swallow",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the swallow? Answer with a single digit.",
+   "E": 1.0368762809310268,
+   "mass": 0.9228224158287048
+  },
+  {
+   "animal": "swallow",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the swallow pain for human benefit. Answer with a single digit.",
+   "E": 1.1015255786005054,
+   "mass": 0.9705113172531128
+  },
+  {
+   "animal": "swallow",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the swallow? Answer with a single digit.",
+   "E": 1.0289376318348125,
+   "mass": 0.9697608351707458
+  },
+  {
+   "animal": "finch",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the finch of experiencing suffering? Answer with a single digit.",
+   "E": 3.174767757858935,
+   "mass": 0.7952003479003906
+  },
+  {
+   "animal": "finch",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the finch can feel pain. Answer with a single digit.",
+   "E": 5.320479193478312,
+   "mass": 0.8127238750457764
+  },
+  {
+   "animal": "finch",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the finch suffer? Answer with a single digit.",
+   "E": 3.9589119404798656,
+   "mass": 0.6941041350364685
+  },
+  {
+   "animal": "finch",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the finch suffer? Answer with Yes or No.",
+   "yes_no": 5.125
+  },
+  {
+   "animal": "finch",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the finch capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 3.875
+  },
+  {
+   "animal": "finch",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the finch have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 0.0
+  },
+  {
+   "animal": "finch",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the finch? Answer with a single digit.",
+   "E": 1.0248347416510946,
+   "mass": 0.8158661127090454
+  },
+  {
+   "animal": "finch",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the finch pain for human benefit. Answer with a single digit.",
+   "E": 1.1581803378750346,
+   "mass": 0.9558193683624268
+  },
+  {
+   "animal": "finch",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the finch? Answer with a single digit.",
+   "E": 1.006373247081075,
+   "mass": 0.9718930721282959
+  },
+  {
+   "animal": "minnow",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the minnow of experiencing suffering? Answer with a single digit.",
+   "E": 1.0111294555828807,
+   "mass": 0.9970315098762512
+  },
+  {
+   "animal": "minnow",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the minnow can feel pain. Answer with a single digit.",
+   "E": 5.687652345858853,
+   "mass": 0.9780895113945007
+  },
+  {
+   "animal": "minnow",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the minnow suffer? Answer with a single digit.",
+   "E": 5.39790128848144,
+   "mass": 0.8497797250747681
+  },
+  {
+   "animal": "minnow",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the minnow suffer? Answer with Yes or No.",
+   "yes_no": 4.375
+  },
+  {
+   "animal": "minnow",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the minnow capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 2.125
+  },
+  {
+   "animal": "minnow",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the minnow have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 0.125
+  },
+  {
+   "animal": "minnow",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the minnow? Answer with a single digit.",
+   "E": 1.0148238580349962,
+   "mass": 0.9668879508972168
+  },
+  {
+   "animal": "minnow",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the minnow pain for human benefit. Answer with a single digit.",
+   "E": 1.0412158019254463,
+   "mass": 0.9892139434814453
+  },
+  {
+   "animal": "minnow",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the minnow? Answer with a single digit.",
+   "E": 1.0416060200919735,
+   "mass": 0.9552597403526306
+  },
+  {
+   "animal": "stickleback",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the stickleback of experiencing suffering? Answer with a single digit.",
+   "E": 5.141474450236399,
+   "mass": 0.9413235187530518
+  },
+  {
+   "animal": "stickleback",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the stickleback can feel pain. Answer with a single digit.",
+   "E": 7.320346072171049,
+   "mass": 0.9939568042755127
+  },
+  {
+   "animal": "stickleback",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the stickleback suffer? Answer with a single digit.",
+   "E": 3.4565146730553353,
+   "mass": 0.6896795630455017
+  },
+  {
+   "animal": "stickleback",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the stickleback suffer? Answer with Yes or No.",
+   "yes_no": 6.5
+  },
+  {
+   "animal": "stickleback",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the stickleback capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.0
+  },
+  {
+   "animal": "stickleback",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the stickleback have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.125
+  },
+  {
+   "animal": "stickleback",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the stickleback? Answer with a single digit.",
+   "E": 1.0143354415921455,
+   "mass": 0.9901883006095886
+  },
+  {
+   "animal": "stickleback",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the stickleback pain for human benefit. Answer with a single digit.",
+   "E": 1.0293052101995324,
+   "mass": 0.9941365122795105
+  },
+  {
+   "animal": "stickleback",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the stickleback? Answer with a single digit.",
+   "E": 1.0108765999231106,
+   "mass": 0.9736514091491699
+  },
+  {
+   "animal": "fox",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the fox of experiencing suffering? Answer with a single digit.",
+   "E": 7.077286411294509,
+   "mass": 0.9829816818237305
+  },
+  {
+   "animal": "fox",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the fox can feel pain. Answer with a single digit.",
+   "E": 7.611581797840473,
+   "mass": 0.994676947593689
+  },
+  {
+   "animal": "fox",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the fox suffer? Answer with a single digit.",
+   "E": 3.5097637102284542,
+   "mass": 0.7704391479492188
+  },
+  {
+   "animal": "fox",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the fox suffer? Answer with Yes or No.",
+   "yes_no": 5.125
+  },
+  {
+   "animal": "fox",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the fox capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.1875
+  },
+  {
+   "animal": "fox",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the fox have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.875
+  },
+  {
+   "animal": "fox",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the fox? Answer with a single digit.",
+   "E": 1.2237137964655598,
+   "mass": 0.8697888851165771
+  },
+  {
+   "animal": "fox",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the fox pain for human benefit. Answer with a single digit.",
+   "E": 1.0028307696271983,
+   "mass": 0.9992749691009521
+  },
+  {
+   "animal": "fox",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the fox? Answer with a single digit.",
+   "E": 1.003365428224058,
+   "mass": 0.9929065108299255
+  },
+  {
+   "animal": "badger",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the badger of experiencing suffering? Answer with a single digit.",
+   "E": 7.444169923295118,
+   "mass": 0.9853489398956299
+  },
+  {
+   "animal": "badger",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the badger can feel pain. Answer with a single digit.",
+   "E": 8.015252687345434,
+   "mass": 0.9947727918624878
+  },
+  {
+   "animal": "badger",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the badger suffer? Answer with a single digit.",
+   "E": 4.311846907829528,
+   "mass": 0.7028054594993591
+  },
+  {
+   "animal": "badger",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the badger suffer? Answer with Yes or No.",
+   "yes_no": 7.25
+  },
+  {
+   "animal": "badger",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the badger capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.125
+  },
+  {
+   "animal": "badger",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the badger have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 4.75
+  },
+  {
+   "animal": "badger",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the badger? Answer with a single digit.",
+   "E": 1.0217231262997868,
+   "mass": 0.9672726988792419
+  },
+  {
+   "animal": "badger",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the badger pain for human benefit. Answer with a single digit.",
+   "E": 1.0008117354641797,
+   "mass": 0.9993640184402466
+  },
+  {
+   "animal": "badger",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the badger? Answer with a single digit.",
+   "E": 1.0048030070114993,
+   "mass": 0.9834193587303162
+  },
+  {
+   "animal": "wolf",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the wolf of experiencing suffering? Answer with a single digit.",
+   "E": 7.466142530285808,
+   "mass": 0.9666479825973511
+  },
+  {
+   "animal": "wolf",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the wolf can feel pain. Answer with a single digit.",
+   "E": 8.0067790698261,
+   "mass": 0.9924919605255127
+  },
+  {
+   "animal": "wolf",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the wolf suffer? Answer with a single digit.",
+   "E": 3.2685191672006426,
+   "mass": 0.7325336337089539
+  },
+  {
+   "animal": "wolf",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the wolf suffer? Answer with Yes or No.",
+   "yes_no": 4.875
+  },
+  {
+   "animal": "wolf",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the wolf capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.375
+  },
+  {
+   "animal": "wolf",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the wolf have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.875
+  },
+  {
+   "animal": "wolf",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the wolf? Answer with a single digit.",
+   "E": 1.2822657882039712,
+   "mass": 0.5347841382026672
+  },
+  {
+   "animal": "wolf",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the wolf pain for human benefit. Answer with a single digit.",
+   "E": 1.0018463178286012,
+   "mass": 0.9985126256942749
+  },
+  {
+   "animal": "wolf",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the wolf? Answer with a single digit.",
+   "E": 1.003517554285249,
+   "mass": 0.989667534828186
+  },
+  {
+   "animal": "coyote",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the coyote of experiencing suffering? Answer with a single digit.",
+   "E": 6.725870001489635,
+   "mass": 0.9254992604255676
+  },
+  {
+   "animal": "coyote",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the coyote can feel pain. Answer with a single digit.",
+   "E": 6.905511268889125,
+   "mass": 0.9851709604263306
+  },
+  {
+   "animal": "coyote",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the coyote suffer? Answer with a single digit.",
+   "E": 3.8674516945544983,
+   "mass": 0.40493273735046387
+  },
+  {
+   "animal": "coyote",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the coyote suffer? Answer with Yes or No.",
+   "yes_no": 6.375
+  },
+  {
+   "animal": "coyote",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the coyote capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.8125
+  },
+  {
+   "animal": "coyote",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the coyote have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 4.375
+  },
+  {
+   "animal": "coyote",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the coyote? Answer with a single digit.",
+   "E": 1.5819738207855207,
+   "mass": 0.9250472187995911
+  },
+  {
+   "animal": "coyote",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the coyote pain for human benefit. Answer with a single digit.",
+   "E": 1.005261103045269,
+   "mass": 0.9979872107505798
+  },
+  {
+   "animal": "coyote",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the coyote? Answer with a single digit.",
+   "E": 1.0024180771013351,
+   "mass": 0.9906429648399353
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the hedgehog of experiencing suffering? Answer with a single digit.",
+   "E": 6.3564089600919065,
+   "mass": 0.9695873260498047
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the hedgehog can feel pain. Answer with a single digit.",
+   "E": 7.684053867793012,
+   "mass": 0.9960834383964539
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the hedgehog suffer? Answer with a single digit.",
+   "E": 3.694361535327924,
+   "mass": 0.8094189167022705
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the hedgehog suffer? Answer with Yes or No.",
+   "yes_no": 7.5625
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the hedgehog capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.1875
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the hedgehog have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.125
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the hedgehog? Answer with a single digit.",
+   "E": 1.0601878350424527,
+   "mass": 0.9662845730781555
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the hedgehog pain for human benefit. Answer with a single digit.",
+   "E": 1.000576093125078,
+   "mass": 0.9996649026870728
+  },
+  {
+   "animal": "hedgehog",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the hedgehog? Answer with a single digit.",
+   "E": 1.00432892447208,
+   "mass": 0.9854971766471863
+  },
+  {
+   "animal": "shrew",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the shrew of experiencing suffering? Answer with a single digit.",
+   "E": 6.656627955366709,
+   "mass": 0.9220985174179077
+  },
+  {
+   "animal": "shrew",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the shrew can feel pain. Answer with a single digit.",
+   "E": 7.727292816989847,
+   "mass": 0.9931100606918335
+  },
+  {
+   "animal": "shrew",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the shrew suffer? Answer with a single digit.",
+   "E": 2.954745387964439,
+   "mass": 0.7030405402183533
+  },
+  {
+   "animal": "shrew",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the shrew suffer? Answer with Yes or No.",
+   "yes_no": 5.625
+  },
+  {
+   "animal": "shrew",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the shrew capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.25
+  },
+  {
+   "animal": "shrew",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the shrew have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -0.125
+  },
+  {
+   "animal": "shrew",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the shrew? Answer with a single digit.",
+   "E": 1.3261593949183967,
+   "mass": 0.9587783813476562
+  },
+  {
+   "animal": "shrew",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the shrew pain for human benefit. Answer with a single digit.",
+   "E": 1.0102179943577256,
+   "mass": 0.9973837733268738
+  },
+  {
+   "animal": "shrew",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the shrew? Answer with a single digit.",
+   "E": 1.008939784986607,
+   "mass": 0.9811200499534607
+  },
+  {
+   "animal": "otter",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the otter of experiencing suffering? Answer with a single digit.",
+   "E": 7.386283689682975,
+   "mass": 0.98555588722229
+  },
+  {
+   "animal": "otter",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the otter can feel pain. Answer with a single digit.",
+   "E": 8.104737258457028,
+   "mass": 0.9951834678649902
+  },
+  {
+   "animal": "otter",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the otter suffer? Answer with a single digit.",
+   "E": 5.137701001467113,
+   "mass": 0.7382767200469971
+  },
+  {
+   "animal": "otter",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the otter suffer? Answer with Yes or No.",
+   "yes_no": 8.125
+  },
+  {
+   "animal": "otter",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the otter capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.625
+  },
+  {
+   "animal": "otter",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the otter have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.75
+  },
+  {
+   "animal": "otter",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the otter? Answer with a single digit.",
+   "E": 1.0081653397680113,
+   "mass": 0.9711612462997437
+  },
+  {
+   "animal": "otter",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the otter pain for human benefit. Answer with a single digit.",
+   "E": 1.0021384658583719,
+   "mass": 0.9983136057853699
+  },
+  {
+   "animal": "otter",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the otter? Answer with a single digit.",
+   "E": 1.0031409085797314,
+   "mass": 0.9826418161392212
+  },
+  {
+   "animal": "beaver",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the beaver of experiencing suffering? Answer with a single digit.",
+   "E": 6.263930895711194,
+   "mass": 0.9406702518463135
+  },
+  {
+   "animal": "beaver",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the beaver can feel pain. Answer with a single digit.",
+   "E": 7.7695732119923555,
+   "mass": 0.9872527122497559
+  },
+  {
+   "animal": "beaver",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the beaver suffer? Answer with a single digit.",
+   "E": 3.686280713813693,
+   "mass": 0.6487846970558167
+  },
+  {
+   "animal": "beaver",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the beaver suffer? Answer with Yes or No.",
+   "yes_no": 7.5625
+  },
+  {
+   "animal": "beaver",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the beaver capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.6875
+  },
+  {
+   "animal": "beaver",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the beaver have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.875
+  },
+  {
+   "animal": "beaver",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the beaver? Answer with a single digit.",
+   "E": 1.0627717337204328,
+   "mass": 0.9700181484222412
+  },
+  {
+   "animal": "beaver",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the beaver pain for human benefit. Answer with a single digit.",
+   "E": 1.0051176055888602,
+   "mass": 0.9984139800071716
+  },
+  {
+   "animal": "beaver",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the beaver? Answer with a single digit.",
+   "E": 1.0073268704236513,
+   "mass": 0.986556887626648
+  },
+  {
+   "animal": "lion",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the lion of experiencing suffering? Answer with a single digit.",
+   "E": 6.969340651450357,
+   "mass": 0.9264228343963623
+  },
+  {
+   "animal": "lion",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the lion can feel pain. Answer with a single digit.",
+   "E": 8.673173235035774,
+   "mass": 0.9967744946479797
+  },
+  {
+   "animal": "lion",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the lion suffer? Answer with a single digit.",
+   "E": 3.5059754242296233,
+   "mass": 0.6791005730628967
+  },
+  {
+   "animal": "lion",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the lion suffer? Answer with Yes or No.",
+   "yes_no": 6.5
+  },
+  {
+   "animal": "lion",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the lion capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.0
+  },
+  {
+   "animal": "lion",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the lion have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.0
+  },
+  {
+   "animal": "lion",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the lion? Answer with a single digit.",
+   "E": 1.020129583071168,
+   "mass": 0.974690854549408
+  },
+  {
+   "animal": "lion",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the lion pain for human benefit. Answer with a single digit.",
+   "E": 1.001244128181472,
+   "mass": 0.9991852045059204
+  },
+  {
+   "animal": "lion",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the lion? Answer with a single digit.",
+   "E": 1.002950597554302,
+   "mass": 0.9840855002403259
+  },
+  {
+   "animal": "tiger",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the tiger of experiencing suffering? Answer with a single digit.",
+   "E": 8.26080819226989,
+   "mass": 0.9688229560852051
+  },
+  {
+   "animal": "tiger",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the tiger can feel pain. Answer with a single digit.",
+   "E": 8.951943247352235,
+   "mass": 0.9984378218650818
+  },
+  {
+   "animal": "tiger",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the tiger suffer? Answer with a single digit.",
+   "E": 3.2242943263921005,
+   "mass": 0.5502317547798157
+  },
+  {
+   "animal": "tiger",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the tiger suffer? Answer with Yes or No.",
+   "yes_no": 7.625
+  },
+  {
+   "animal": "tiger",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the tiger capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 8.5
+  },
+  {
+   "animal": "tiger",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the tiger have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 7.4375
+  },
+  {
+   "animal": "tiger",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the tiger? Answer with a single digit.",
+   "E": 1.0086455921437332,
+   "mass": 0.9869149923324585
+  },
+  {
+   "animal": "tiger",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the tiger pain for human benefit. Answer with a single digit.",
+   "E": 1.0007773775093682,
+   "mass": 0.9994456171989441
+  },
+  {
+   "animal": "tiger",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the tiger? Answer with a single digit.",
+   "E": 1.00064417056445,
+   "mass": 0.9964479207992554
+  },
+  {
+   "animal": "zebra",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the zebra of experiencing suffering? Answer with a single digit.",
+   "E": 6.229710776376889,
+   "mass": 0.8939327597618103
+  },
+  {
+   "animal": "zebra",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the zebra can feel pain. Answer with a single digit.",
+   "E": 8.245673292618623,
+   "mass": 0.994281530380249
+  },
+  {
+   "animal": "zebra",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the zebra suffer? Answer with a single digit.",
+   "E": 3.297635844422155,
+   "mass": 0.5058825612068176
+  },
+  {
+   "animal": "zebra",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the zebra suffer? Answer with Yes or No.",
+   "yes_no": 8.0
+  },
+  {
+   "animal": "zebra",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the zebra capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.5
+  },
+  {
+   "animal": "zebra",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the zebra have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.125
+  },
+  {
+   "animal": "zebra",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the zebra? Answer with a single digit.",
+   "E": 1.0393414376204304,
+   "mass": 0.9097133278846741
+  },
+  {
+   "animal": "zebra",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the zebra pain for human benefit. Answer with a single digit.",
+   "E": 1.0038605171084187,
+   "mass": 0.9975956082344055
+  },
+  {
+   "animal": "zebra",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the zebra? Answer with a single digit.",
+   "E": 1.0056240614890597,
+   "mass": 0.9828935861587524
+  },
+  {
+   "animal": "giraffe",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the giraffe of experiencing suffering? Answer with a single digit.",
+   "E": 5.779250866861145,
+   "mass": 0.8461846113204956
+  },
+  {
+   "animal": "giraffe",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the giraffe can feel pain. Answer with a single digit.",
+   "E": 8.203687902460718,
+   "mass": 0.9904685616493225
+  },
+  {
+   "animal": "giraffe",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the giraffe suffer? Answer with a single digit.",
+   "E": 2.19006735929364,
+   "mass": 0.44988882541656494
+  },
+  {
+   "animal": "giraffe",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the giraffe suffer? Answer with Yes or No.",
+   "yes_no": 8.125
+  },
+  {
+   "animal": "giraffe",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the giraffe capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.8125
+  },
+  {
+   "animal": "giraffe",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the giraffe have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.625
+  },
+  {
+   "animal": "giraffe",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the giraffe? Answer with a single digit.",
+   "E": 1.0018691167294471,
+   "mass": 0.9965057373046875
+  },
+  {
+   "animal": "giraffe",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the giraffe pain for human benefit. Answer with a single digit.",
+   "E": 1.00158107923894,
+   "mass": 0.9995435476303101
+  },
+  {
+   "animal": "giraffe",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the giraffe? Answer with a single digit.",
+   "E": 1.003334592832565,
+   "mass": 0.9772422909736633
+  },
+  {
+   "animal": "mouse",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the mouse of experiencing suffering? Answer with a single digit.",
+   "E": 1.0683875472095579,
+   "mass": 0.9903162717819214
+  },
+  {
+   "animal": "mouse",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the mouse can feel pain. Answer with a single digit.",
+   "E": 7.772614765848374,
+   "mass": 0.9908455610275269
+  },
+  {
+   "animal": "mouse",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the mouse suffer? Answer with a single digit.",
+   "E": 4.8987744892143485,
+   "mass": 0.5598215460777283
+  },
+  {
+   "animal": "mouse",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the mouse suffer? Answer with Yes or No.",
+   "yes_no": 6.5
+  },
+  {
+   "animal": "mouse",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the mouse capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 4.875
+  },
+  {
+   "animal": "mouse",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the mouse have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.125
+  },
+  {
+   "animal": "mouse",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the mouse? Answer with a single digit.",
+   "E": 1.0953318483299952,
+   "mass": 0.955277681350708
+  },
+  {
+   "animal": "mouse",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the mouse pain for human benefit. Answer with a single digit.",
+   "E": 1.0293773235325447,
+   "mass": 0.9949039220809937
+  },
+  {
+   "animal": "mouse",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the mouse? Answer with a single digit.",
+   "E": 1.0102703726902222,
+   "mass": 0.9877645969390869
+  },
+  {
+   "animal": "rat",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the rat of experiencing suffering? Answer with a single digit.",
+   "E": 7.135237785588377,
+   "mass": 0.9488867521286011
+  },
+  {
+   "animal": "rat",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the rat can feel pain. Answer with a single digit.",
+   "E": 8.003442176174229,
+   "mass": 0.9896427392959595
+  },
+  {
+   "animal": "rat",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the rat suffer? Answer with a single digit.",
+   "E": 5.145947225951748,
+   "mass": 0.5779207944869995
+  },
+  {
+   "animal": "rat",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the rat suffer? Answer with Yes or No.",
+   "yes_no": 6.0
+  },
+  {
+   "animal": "rat",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the rat capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.6875
+  },
+  {
+   "animal": "rat",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the rat have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.125
+  },
+  {
+   "animal": "rat",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the rat? Answer with a single digit.",
+   "E": 1.1439226808882608,
+   "mass": 0.9542156457901001
+  },
+  {
+   "animal": "rat",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the rat pain for human benefit. Answer with a single digit.",
+   "E": 1.0131709529696693,
+   "mass": 0.9942258596420288
+  },
+  {
+   "animal": "rat",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the rat? Answer with a single digit.",
+   "E": 1.0110835826468663,
+   "mass": 0.9804268479347229
+  },
+  {
+   "animal": "pheasant",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pheasant of experiencing suffering? Answer with a single digit.",
+   "E": 5.055843924020508,
+   "mass": 0.9359545111656189
+  },
+  {
+   "animal": "pheasant",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pheasant can feel pain. Answer with a single digit.",
+   "E": 7.323208709515222,
+   "mass": 0.9932671189308167
+  },
+  {
+   "animal": "pheasant",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pheasant suffer? Answer with a single digit.",
+   "E": 4.662274950856892,
+   "mass": 0.7707846164703369
+  },
+  {
+   "animal": "pheasant",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pheasant suffer? Answer with Yes or No.",
+   "yes_no": 7.3125
+  },
+  {
+   "animal": "pheasant",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pheasant capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.0
+  },
+  {
+   "animal": "pheasant",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pheasant have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.125
+  },
+  {
+   "animal": "pheasant",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the pheasant? Answer with a single digit.",
+   "E": 1.3261250773893487,
+   "mass": 0.7799155116081238
+  },
+  {
+   "animal": "pheasant",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the pheasant pain for human benefit. Answer with a single digit.",
+   "E": 1.0093050622725694,
+   "mass": 0.9987314343452454
+  },
+  {
+   "animal": "pheasant",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the pheasant? Answer with a single digit.",
+   "E": 1.0167295618713919,
+   "mass": 0.9641241431236267
+  },
+  {
+   "animal": "grouse",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the grouse of experiencing suffering? Answer with a single digit.",
+   "E": 5.099528738269446,
+   "mass": 0.9307958483695984
+  },
+  {
+   "animal": "grouse",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the grouse can feel pain. Answer with a single digit.",
+   "E": 7.271301169373842,
+   "mass": 0.9887741804122925
+  },
+  {
+   "animal": "grouse",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the grouse suffer? Answer with a single digit.",
+   "E": 4.7520944254238655,
+   "mass": 0.8072739839553833
+  },
+  {
+   "animal": "grouse",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the grouse suffer? Answer with Yes or No.",
+   "yes_no": 6.375
+  },
+  {
+   "animal": "grouse",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the grouse capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.25
+  },
+  {
+   "animal": "grouse",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the grouse have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 3.625
+  },
+  {
+   "animal": "grouse",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the grouse? Answer with a single digit.",
+   "E": 1.5065245978654325,
+   "mass": 0.5394712686538696
+  },
+  {
+   "animal": "grouse",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the grouse pain for human benefit. Answer with a single digit.",
+   "E": 1.006521811948062,
+   "mass": 0.9964919090270996
+  },
+  {
+   "animal": "grouse",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the grouse? Answer with a single digit.",
+   "E": 1.0076102137944698,
+   "mass": 0.9612682461738586
+  },
+  {
+   "animal": "carp",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the carp of experiencing suffering? Answer with a single digit.",
+   "E": 5.421926712170484,
+   "mass": 0.9275014400482178
+  },
+  {
+   "animal": "carp",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the carp can feel pain. Answer with a single digit.",
+   "E": 6.87737461068888,
+   "mass": 0.991321861743927
+  },
+  {
+   "animal": "carp",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the carp suffer? Answer with a single digit.",
+   "E": 6.002892170925966,
+   "mass": 0.9014772772789001
+  },
+  {
+   "animal": "carp",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the carp suffer? Answer with Yes or No.",
+   "yes_no": 6.25
+  },
+  {
+   "animal": "carp",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the carp capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 4.125
+  },
+  {
+   "animal": "carp",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the carp have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 2.875
+  },
+  {
+   "animal": "carp",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the carp? Answer with a single digit.",
+   "E": 1.3090581809313888,
+   "mass": 0.44556576013565063
+  },
+  {
+   "animal": "carp",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the carp pain for human benefit. Answer with a single digit.",
+   "E": 1.0295364702300287,
+   "mass": 0.9964266419410706
+  },
+  {
+   "animal": "carp",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the carp? Answer with a single digit.",
+   "E": 1.0260855178056436,
+   "mass": 0.9651167988777161
+  },
+  {
+   "animal": "bream",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the bream of experiencing suffering? Answer with a single digit.",
+   "E": 3.865537293677817,
+   "mass": 0.928709089756012
+  },
+  {
+   "animal": "bream",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the bream can feel pain. Answer with a single digit.",
+   "E": 6.831389329936254,
+   "mass": 0.9890245199203491
+  },
+  {
+   "animal": "bream",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the bream suffer? Answer with a single digit.",
+   "E": 6.073267444493429,
+   "mass": 0.843917965888977
+  },
+  {
+   "animal": "bream",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the bream suffer? Answer with Yes or No.",
+   "yes_no": 7.875
+  },
+  {
+   "animal": "bream",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the bream capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 3.75
+  },
+  {
+   "animal": "bream",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the bream have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 4.0
+  },
+  {
+   "animal": "bream",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the bream? Answer with a single digit.",
+   "E": 1.1248490040687862,
+   "mass": 0.8403099775314331
+  },
+  {
+   "animal": "bream",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the bream pain for human benefit. Answer with a single digit.",
+   "E": 1.0680086902985242,
+   "mass": 0.984972357749939
+  },
+  {
+   "animal": "bream",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the bream? Answer with a single digit.",
+   "E": 1.0295912435478467,
+   "mass": 0.9613468647003174
+  },
+  {
+   "animal": "haddock",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the haddock of experiencing suffering? Answer with a single digit.",
+   "E": 4.892115785276624,
+   "mass": 0.9474657773971558
+  },
+  {
+   "animal": "haddock",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the haddock can feel pain. Answer with a single digit.",
+   "E": 7.069754275286494,
+   "mass": 0.9904582500457764
+  },
+  {
+   "animal": "haddock",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the haddock suffer? Answer with a single digit.",
+   "E": 3.2949914078445373,
+   "mass": 0.40207433700561523
+  },
+  {
+   "animal": "haddock",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the haddock suffer? Answer with Yes or No.",
+   "yes_no": 4.625
+  },
+  {
+   "animal": "haddock",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the haddock capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 3.5
+  },
+  {
+   "animal": "haddock",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the haddock have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 0.125
+  },
+  {
+   "animal": "haddock",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the haddock? Answer with a single digit.",
+   "E": 1.0144724729692536,
+   "mass": 0.9591330885887146
+  },
+  {
+   "animal": "haddock",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the haddock pain for human benefit. Answer with a single digit.",
+   "E": 1.1906389237586226,
+   "mass": 0.9029651284217834
+  },
+  {
+   "animal": "haddock",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the haddock? Answer with a single digit.",
+   "E": 1.0114352865083642,
+   "mass": 0.9727849364280701
+  },
+  {
+   "animal": "pollock",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pollock of experiencing suffering? Answer with a single digit.",
+   "E": 1.4699521344650186,
+   "mass": 0.942829966545105
+  },
+  {
+   "animal": "pollock",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the pollock can feel pain. Answer with a single digit.",
+   "E": 7.0184859662704735,
+   "mass": 0.9031122922897339
+  },
+  {
+   "animal": "pollock",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the pollock suffer? Answer with a single digit.",
+   "E": 4.927661721094344,
+   "mass": 0.3727822005748749
+  },
+  {
+   "animal": "pollock",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the pollock suffer? Answer with Yes or No.",
+   "yes_no": 2.625
+  },
+  {
+   "animal": "pollock",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the pollock capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 0.125
+  },
+  {
+   "animal": "pollock",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the pollock have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -0.625
+  },
+  {
+   "animal": "pollock",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the pollock? Answer with a single digit.",
+   "E": 1.0554872389843588,
+   "mass": 0.923613965511322
+  },
+  {
+   "animal": "pollock",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the pollock pain for human benefit. Answer with a single digit.",
+   "E": 1.1586518813523181,
+   "mass": 0.935609757900238
+  },
+  {
+   "animal": "pollock",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the pollock? Answer with a single digit.",
+   "E": 1.0181489390995544,
+   "mass": 0.9654217958450317
+  },
+  {
+   "animal": "sardine",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the sardine of experiencing suffering? Answer with a single digit.",
+   "E": 2.992956252556845,
+   "mass": 0.9817179441452026
+  },
+  {
+   "animal": "sardine",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the sardine can feel pain. Answer with a single digit.",
+   "E": 4.912150240999795,
+   "mass": 0.9808929562568665
+  },
+  {
+   "animal": "sardine",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the sardine suffer? Answer with a single digit.",
+   "E": 3.2116518599935757,
+   "mass": 0.8376179933547974
+  },
+  {
+   "animal": "sardine",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the sardine suffer? Answer with Yes or No.",
+   "yes_no": 2.875
+  },
+  {
+   "animal": "sardine",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the sardine capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 0.0
+  },
+  {
+   "animal": "sardine",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the sardine have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -2.25
+  },
+  {
+   "animal": "sardine",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the sardine? Answer with a single digit.",
+   "E": 1.0090457437391143,
+   "mass": 0.9932170510292053
+  },
+  {
+   "animal": "sardine",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the sardine pain for human benefit. Answer with a single digit.",
+   "E": 1.0567177176312008,
+   "mass": 0.9889241456985474
+  },
+  {
+   "animal": "sardine",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the sardine? Answer with a single digit.",
+   "E": 1.019394357752553,
+   "mass": 0.9572432637214661
+  },
+  {
+   "animal": "anchovy",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the anchovy of experiencing suffering? Answer with a single digit.",
+   "E": 2.356775548174058,
+   "mass": 0.974547266960144
+  },
+  {
+   "animal": "anchovy",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the anchovy can feel pain. Answer with a single digit.",
+   "E": 4.8779446658882994,
+   "mass": 0.9643536806106567
+  },
+  {
+   "animal": "anchovy",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the anchovy suffer? Answer with a single digit.",
+   "E": 2.5698445867794244,
+   "mass": 0.9401046633720398
+  },
+  {
+   "animal": "anchovy",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the anchovy suffer? Answer with Yes or No.",
+   "yes_no": 5.5
+  },
+  {
+   "animal": "anchovy",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the anchovy capable of feeling pain? Answer with Yes or No.",
+   "yes_no": -1.0
+  },
+  {
+   "animal": "anchovy",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the anchovy have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -1.375
+  },
+  {
+   "animal": "anchovy",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the anchovy? Answer with a single digit.",
+   "E": 1.0023354164838036,
+   "mass": 0.9955135583877563
+  },
+  {
+   "animal": "anchovy",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the anchovy pain for human benefit. Answer with a single digit.",
+   "E": 1.0239223444558498,
+   "mass": 0.9956189393997192
+  },
+  {
+   "animal": "anchovy",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the anchovy? Answer with a single digit.",
+   "E": 1.0447621066916475,
+   "mass": 0.979981541633606
+  },
+  {
+   "animal": "halibut",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the halibut of experiencing suffering? Answer with a single digit.",
+   "E": 4.835774538740483,
+   "mass": 0.9328241348266602
+  },
+  {
+   "animal": "halibut",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the halibut can feel pain. Answer with a single digit.",
+   "E": 6.92496710027729,
+   "mass": 0.9854778051376343
+  },
+  {
+   "animal": "halibut",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the halibut suffer? Answer with a single digit.",
+   "E": 3.177099256899412,
+   "mass": 0.7905890941619873
+  },
+  {
+   "animal": "halibut",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the halibut suffer? Answer with Yes or No.",
+   "yes_no": 6.75
+  },
+  {
+   "animal": "halibut",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the halibut capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 3.375
+  },
+  {
+   "animal": "halibut",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the halibut have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 2.5
+  },
+  {
+   "animal": "halibut",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the halibut? Answer with a single digit.",
+   "E": 1.1171327401551385,
+   "mass": 0.9544127583503723
+  },
+  {
+   "animal": "halibut",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the halibut pain for human benefit. Answer with a single digit.",
+   "E": 1.0159990432426143,
+   "mass": 0.9977743625640869
+  },
+  {
+   "animal": "halibut",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the halibut? Answer with a single digit.",
+   "E": 1.0112226211445707,
+   "mass": 0.9865982532501221
+  },
+  {
+   "animal": "tilapia",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the tilapia of experiencing suffering? Answer with a single digit.",
+   "E": 4.2065641964930505,
+   "mass": 0.91573566198349
+  },
+  {
+   "animal": "tilapia",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the tilapia can feel pain. Answer with a single digit.",
+   "E": 5.597618408929506,
+   "mass": 0.9630080461502075
+  },
+  {
+   "animal": "tilapia",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the tilapia suffer? Answer with a single digit.",
+   "E": 6.704512699608984,
+   "mass": 0.8899646401405334
+  },
+  {
+   "animal": "tilapia",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the tilapia suffer? Answer with Yes or No.",
+   "yes_no": 6.875
+  },
+  {
+   "animal": "tilapia",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the tilapia capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 0.25
+  },
+  {
+   "animal": "tilapia",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the tilapia have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 2.875
+  },
+  {
+   "animal": "tilapia",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the tilapia? Answer with a single digit.",
+   "E": 1.04820590010687,
+   "mass": 0.8766411542892456
+  },
+  {
+   "animal": "tilapia",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the tilapia pain for human benefit. Answer with a single digit.",
+   "E": 1.0156775588229188,
+   "mass": 0.9988906383514404
+  },
+  {
+   "animal": "tilapia",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the tilapia? Answer with a single digit.",
+   "E": 1.0194400325180493,
+   "mass": 0.9572508335113525
+  },
+  {
+   "animal": "mackerel",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the mackerel of experiencing suffering? Answer with a single digit.",
+   "E": 3.845765957151172,
+   "mass": 0.965176522731781
+  },
+  {
+   "animal": "mackerel",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the mackerel can feel pain. Answer with a single digit.",
+   "E": 6.084279558206753,
+   "mass": 0.9594686627388
+  },
+  {
+   "animal": "mackerel",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the mackerel suffer? Answer with a single digit.",
+   "E": 3.898520421162209,
+   "mass": 0.8176419138908386
+  },
+  {
+   "animal": "mackerel",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the mackerel suffer? Answer with Yes or No.",
+   "yes_no": 5.5
+  },
+  {
+   "animal": "mackerel",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the mackerel capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 2.125
+  },
+  {
+   "animal": "mackerel",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the mackerel have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": -0.25
+  },
+  {
+   "animal": "mackerel",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the mackerel? Answer with a single digit.",
+   "E": 1.109726609215975,
+   "mass": 0.9377822875976562
+  },
+  {
+   "animal": "mackerel",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the mackerel pain for human benefit. Answer with a single digit.",
+   "E": 1.0329257747152207,
+   "mass": 0.9958077073097229
+  },
+  {
+   "animal": "mackerel",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the mackerel? Answer with a single digit.",
+   "E": 1.022228202175648,
+   "mass": 0.966617226600647
+  },
+  {
+   "animal": "herring",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the herring of experiencing suffering? Answer with a single digit.",
+   "E": 4.027215584300551,
+   "mass": 0.9420901536941528
+  },
+  {
+   "animal": "herring",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the herring can feel pain. Answer with a single digit.",
+   "E": 5.958292901343969,
+   "mass": 0.9650450348854065
+  },
+  {
+   "animal": "herring",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the herring suffer? Answer with a single digit.",
+   "E": 5.447522944993508,
+   "mass": 0.7822316288948059
+  },
+  {
+   "animal": "herring",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the herring suffer? Answer with Yes or No.",
+   "yes_no": 6.375
+  },
+  {
+   "animal": "herring",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the herring capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 2.75
+  },
+  {
+   "animal": "herring",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the herring have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.125
+  },
+  {
+   "animal": "herring",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the herring? Answer with a single digit.",
+   "E": 1.035156071722058,
+   "mass": 0.9246466159820557
+  },
+  {
+   "animal": "herring",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the herring pain for human benefit. Answer with a single digit.",
+   "E": 1.0617328818857472,
+   "mass": 0.9866517186164856
+  },
+  {
+   "animal": "herring",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the herring? Answer with a single digit.",
+   "E": 1.0206950529939818,
+   "mass": 0.9702038764953613
+  },
+  {
+   "animal": "moose",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the moose of experiencing suffering? Answer with a single digit.",
+   "E": 7.584169435404104,
+   "mass": 0.9787584543228149
+  },
+  {
+   "animal": "moose",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the moose can feel pain. Answer with a single digit.",
+   "E": 8.062000114129468,
+   "mass": 0.9943728446960449
+  },
+  {
+   "animal": "moose",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the moose suffer? Answer with a single digit.",
+   "E": 3.3117312462099338,
+   "mass": 0.3621037006378174
+  },
+  {
+   "animal": "moose",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the moose suffer? Answer with Yes or No.",
+   "yes_no": 8.25
+  },
+  {
+   "animal": "moose",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the moose capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.5
+  },
+  {
+   "animal": "moose",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the moose have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 6.5
+  },
+  {
+   "animal": "moose",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the moose? Answer with a single digit.",
+   "E": 1.0610951986018882,
+   "mass": 0.9015867114067078
+  },
+  {
+   "animal": "moose",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the moose pain for human benefit. Answer with a single digit.",
+   "E": 1.0019512045570138,
+   "mass": 0.9993041157722473
+  },
+  {
+   "animal": "moose",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the moose? Answer with a single digit.",
+   "E": 1.0063508375726655,
+   "mass": 0.96592777967453
+  },
+  {
+   "animal": "boar",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the boar of experiencing suffering? Answer with a single digit.",
+   "E": 6.871205961727631,
+   "mass": 0.9487749338150024
+  },
+  {
+   "animal": "boar",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the boar can feel pain. Answer with a single digit.",
+   "E": 8.022526861303712,
+   "mass": 0.9954224824905396
+  },
+  {
+   "animal": "boar",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the boar suffer? Answer with a single digit.",
+   "E": 5.1928171856045156,
+   "mass": 0.7442781925201416
+  },
+  {
+   "animal": "boar",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the boar suffer? Answer with Yes or No.",
+   "yes_no": 6.9375
+  },
+  {
+   "animal": "boar",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the boar capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 6.5625
+  },
+  {
+   "animal": "boar",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the boar have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.75
+  },
+  {
+   "animal": "boar",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the boar? Answer with a single digit.",
+   "E": 1.8958627843786442,
+   "mass": 0.13004322350025177
+  },
+  {
+   "animal": "boar",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the boar pain for human benefit. Answer with a single digit.",
+   "E": 1.0047063557857903,
+   "mass": 0.9985999464988708
+  },
+  {
+   "animal": "boar",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the boar? Answer with a single digit.",
+   "E": 1.0084104641673568,
+   "mass": 0.9830963611602783
+  },
+  {
+   "animal": "bison",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the bison of experiencing suffering? Answer with a single digit.",
+   "E": 7.1466692437081685,
+   "mass": 0.9671046733856201
+  },
+  {
+   "animal": "bison",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the bison can feel pain. Answer with a single digit.",
+   "E": 8.30312869092287,
+   "mass": 0.9961398243904114
+  },
+  {
+   "animal": "bison",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the bison suffer? Answer with a single digit.",
+   "E": 4.275440600724322,
+   "mass": 0.5630133748054504
+  },
+  {
+   "animal": "bison",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the bison suffer? Answer with Yes or No.",
+   "yes_no": 7.8125
+  },
+  {
+   "animal": "bison",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the bison capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 7.6875
+  },
+  {
+   "animal": "bison",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the bison have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 5.75
+  },
+  {
+   "animal": "bison",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the bison? Answer with a single digit.",
+   "E": 1.0103067571692412,
+   "mass": 0.9831961989402771
+  },
+  {
+   "animal": "bison",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the bison pain for human benefit. Answer with a single digit.",
+   "E": 1.0012266202717575,
+   "mass": 0.999549388885498
+  },
+  {
+   "animal": "bison",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the bison? Answer with a single digit.",
+   "E": 1.002390858176802,
+   "mass": 0.978760838508606
+  },
+  {
+   "animal": "yak",
+   "kind": "scale",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the yak of experiencing suffering? Answer with a single digit.",
+   "E": 6.401834805729739,
+   "mass": 0.9439516663551331
+  },
+  {
+   "animal": "yak",
+   "kind": "scale",
+   "template": 1,
+   "text": "Rate from 1 to 9 how strongly the yak can feel pain. Answer with a single digit.",
+   "E": 7.884658919828819,
+   "mass": 0.9949241876602173
+  },
+  {
+   "animal": "yak",
+   "kind": "scale",
+   "template": 2,
+   "text": "From 1 (not at all) to 9 (fully), to what degree can the yak suffer? Answer with a single digit.",
+   "E": 4.125800905607672,
+   "mass": 0.5109133124351501
+  },
+  {
+   "animal": "yak",
+   "kind": "yes_no",
+   "template": 0,
+   "text": "Can the yak suffer? Answer with Yes or No.",
+   "yes_no": 4.75
+  },
+  {
+   "animal": "yak",
+   "kind": "yes_no",
+   "template": 1,
+   "text": "Is the yak capable of feeling pain? Answer with Yes or No.",
+   "yes_no": 5.0
+  },
+  {
+   "animal": "yak",
+   "kind": "yes_no",
+   "template": 2,
+   "text": "Does the yak have the capacity to suffer? Answer with Yes or No.",
+   "yes_no": 1.875
+  },
+  {
+   "animal": "yak",
+   "kind": "accept",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how morally acceptable is it to kill the yak? Answer with a single digit.",
+   "E": 1.3002199448638851,
+   "mass": 0.49107569456100464
+  },
+  {
+   "animal": "yak",
+   "kind": "accept",
+   "template": 1,
+   "text": "Rate from 1 to 9 how acceptable it is to cause the yak pain for human benefit. Answer with a single digit.",
+   "E": 1.0129123916797262,
+   "mass": 0.9972073435783386
+  },
+  {
+   "animal": "yak",
+   "kind": "accept",
+   "template": 2,
+   "text": "From 1 (completely wrong) to 9 (completely fine), how acceptable is it to harm the yak? Answer with a single digit.",
+   "E": 1.008548417881788,
+   "mass": 0.9821316599845886
+  }
+ ]
+}

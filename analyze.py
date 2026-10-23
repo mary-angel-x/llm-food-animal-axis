@@ -166,7 +166,8 @@ def bootstrap_d(x, rng):
 
 def covariate_intercept(sM, dzipf, dtok, rng):
     """§5.5: OLS s_M ~ 1 + ΔZipf + Δtok; bootstrap CI of the intercept."""
-    X = np.column_stack([np.ones_like(sM), dzipf, dtok])
+    # a covariate that is constant across pairs (e.g. Δtok ≡ 0) is already matched out
+    X = np.column_stack([np.ones_like(sM)] + [c for c in (dzipf, dtok) if np.ptp(c) > 0])
     fit = lambda X, y: np.linalg.lstsq(X, y, rcond=None)[0]
     beta = fit(X, sM)
     boot = []
