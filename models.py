@@ -9,4 +9,6 @@ MODELS = {
     # gated: needs huggingface-cli login and accepting the license on the model page
     "llama-8b": {"name": "meta-llama/Llama-3.1-8B-Instruct",
                  "short": "Llama-8B", "role": "transfer"},
+    "gemma-2b": {"name": "google/gemma-2-2b-it",
+                 "short": "Gemma-2B", "role": "transfer"},
 }

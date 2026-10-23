@@ -15,7 +15,7 @@ Design, metrics and decision thresholds are fixed in [`PREREGISTRATION.md`](PRER
 
 `test_analyze.py` checks the stage 3 pipeline on synthetic data (Gram-matrix LOPO = brute force; planted signal is found; signal present in both contexts gives no interaction).
 
-Models: `qwen-7b` (discovery), `llama-8b` (confirmation). Run from the project venv:
+Models: `qwen-7b` (discovery), `llama-8b` and `gemma-2b` (confirmation). Run from the project venv:
 
 ```
 ..\venv\Scripts\python.exe extract.py --model qwen-7b

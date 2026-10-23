@@ -2,7 +2,8 @@
   "built": "2026-10-23",
   "models": {
     "qwen-7b": "Qwen/Qwen2.5-7B-Instruct",
-    "llama-8b": "meta-llama/Llama-3.1-8B-Instruct"
+    "llama-8b": "meta-llama/Llama-3.1-8B-Instruct",
+    "gemma-2b": "google/gemma-2-2b-it"
   },
   "pairs": [
     {
@@ -277,7 +278,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "dog": {
@@ -285,7 +287,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "cow": {
@@ -293,7 +296,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "horse": {
@@ -301,7 +305,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "sheep": {
@@ -309,7 +314,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "cat": {
@@ -317,7 +323,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "goat": {
@@ -325,7 +332,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "pony": {
@@ -333,7 +341,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "lamb": {
@@ -341,7 +350,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "kitten": {
@@ -349,7 +359,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "calf": {
@@ -357,7 +368,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "puppy": {
@@ -365,7 +377,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "chicken": {
@@ -373,7 +386,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "parrot": {
@@ -381,7 +395,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "duck": {
@@ -389,7 +404,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "swan": {
@@ -397,7 +413,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "turkey": {
@@ -405,7 +422,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "eagle": {
@@ -413,7 +431,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "goose": {
@@ -421,7 +440,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "owl": {
@@ -429,7 +449,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "hen": {
@@ -437,7 +458,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "dove": {
@@ -445,7 +467,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "trout": {
@@ -453,7 +476,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "goldfish": {
@@ -461,7 +485,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "salmon": {
@@ -469,7 +494,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "koi": {
@@ -477,7 +503,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "sparrow": {
@@ -485,7 +512,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "robin": {
@@ -493,7 +521,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "crow": {
@@ -501,7 +530,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "magpie": {
@@ -509,7 +539,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 2
         }
       },
       "hawk": {
@@ -517,7 +548,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "swallow": {
@@ -525,7 +557,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "finch": {
@@ -533,7 +566,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 2
         }
       },
       "minnow": {
@@ -541,7 +575,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 2
         }
       },
       "stickleback": {
@@ -549,7 +584,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 3,
-          "llama-8b": 3
+          "llama-8b": 3,
+          "gemma-2b": 3
         }
       },
       "fox": {
@@ -557,7 +593,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "badger": {
@@ -565,7 +602,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "wolf": {
@@ -573,7 +611,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "coyote": {
@@ -581,7 +620,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "hedgehog": {
@@ -589,7 +629,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "shrew": {
@@ -597,7 +638,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "otter": {
@@ -605,7 +647,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "beaver": {
@@ -613,7 +656,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "lion": {
@@ -621,7 +665,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "tiger": {
@@ -629,7 +674,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "zebra": {
@@ -637,7 +683,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "giraffe": {
@@ -645,7 +692,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "mouse": {
@@ -653,7 +701,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "rat": {
@@ -661,7 +710,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "pheasant": {
@@ -669,7 +719,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 3,
-          "llama-8b": 3
+          "llama-8b": 3,
+          "gemma-2b": 1
         }
       },
       "grouse": {
@@ -677,7 +728,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "carp": {
@@ -685,7 +737,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "bream": {
@@ -693,7 +746,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 2
         }
       },
       "haddock": {
@@ -701,7 +755,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 2
         }
       },
       "pollock": {
@@ -709,7 +764,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 2
         }
       },
       "sardine": {
@@ -717,7 +773,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 3,
-          "llama-8b": 3
+          "llama-8b": 3,
+          "gemma-2b": 2
         }
       },
       "anchovy": {
@@ -725,7 +782,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 2
         }
       },
       "halibut": {
@@ -733,7 +791,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 3,
-          "llama-8b": 3
+          "llama-8b": 3,
+          "gemma-2b": 2
         }
       },
       "tilapia": {
@@ -741,7 +800,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 2
         }
       },
       "mackerel": {
@@ -749,7 +809,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 3,
-          "llama-8b": 3
+          "llama-8b": 3,
+          "gemma-2b": 1
         }
       },
       "herring": {
@@ -757,7 +818,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "moose": {
@@ -765,7 +827,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "boar": {
@@ -773,7 +836,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "bison": {
@@ -781,7 +845,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 2,
-          "llama-8b": 2
+          "llama-8b": 2,
+          "gemma-2b": 1
         }
       },
       "yak": {
@@ -789,7 +854,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "rabbit": {
@@ -797,7 +863,8 @@
         "meat_homonym": true,
         "tokens": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 1
         }
       },
       "guinea pig": {
@@ -805,7 +872,8 @@
         "meat_homonym": false,
         "tokens": {
           "qwen-7b": 3,
-          "llama-8b": 3
+          "llama-8b": 3,
+          "gemma-2b": 2
         }
       }
     },
@@ -819,7 +887,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -831,7 +900,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -843,7 +913,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -855,7 +926,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -867,7 +939,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -879,7 +952,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -891,7 +965,8 @@
         "freq_flag": true,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": 0
         }
       },
       {
@@ -903,7 +978,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": 0
         }
       },
       {
@@ -915,7 +991,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -927,7 +1004,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -939,7 +1017,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -951,7 +1030,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": 0
         }
       },
       {
@@ -963,7 +1043,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": 0
         }
       },
       {
@@ -975,7 +1056,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 0
         }
       },
       {
@@ -987,7 +1069,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": -1
         }
       },
       {
@@ -999,7 +1082,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -1011,7 +1095,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": -1
         }
       },
       {
@@ -1023,7 +1108,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": -1
         }
       },
       {
@@ -1035,7 +1121,8 @@
         "freq_flag": true,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": 0
         }
       },
       {
@@ -1047,7 +1134,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": 0
         }
       },
       {
@@ -1059,7 +1147,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -1071,7 +1160,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -1083,7 +1173,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -1095,7 +1186,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -1107,7 +1199,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -1119,7 +1212,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 0
         }
       },
       {
@@ -1131,7 +1225,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": -1,
-          "llama-8b": -1
+          "llama-8b": -1,
+          "gemma-2b": -1
         }
       },
       {
@@ -1143,7 +1238,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -1155,7 +1251,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 0
         }
       },
       {
@@ -1167,7 +1264,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 0
         }
       },
       {
@@ -1179,7 +1277,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 0
         }
       },
       {
@@ -1191,7 +1290,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 0,
-          "llama-8b": 0
+          "llama-8b": 0,
+          "gemma-2b": 0
         }
       },
       {
@@ -1203,7 +1303,8 @@
         "freq_flag": false,
         "token_gap": {
           "qwen-7b": 1,
-          "llama-8b": 1
+          "llama-8b": 1,
+          "gemma-2b": 0
         }
       }
     ],
@@ -1243,6 +1344,24 @@
           "No": 1
         },
         "ok": true
+      },
+      "gemma-2b": {
+        "digits": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1
+        },
+        "yes_no": {
+          "Yes": 1,
+          "No": 1
+        },
+        "ok": true
       }
     },
     "templates": [
@@ -1254,6 +1373,10 @@
             13
           ],
           "llama-8b": [
+            12,
+            13
+          ],
+          "gemma-2b": [
             12,
             13
           ]
@@ -1270,6 +1393,10 @@
           "llama-8b": [
             13,
             13
+          ],
+          "gemma-2b": [
+            13,
+            13
           ]
         },
         "ok": true
@@ -1282,6 +1409,10 @@
             12
           ],
           "llama-8b": [
+            12,
+            12
+          ],
+          "gemma-2b": [
             12,
             12
           ]
@@ -1298,6 +1429,10 @@
           "llama-8b": [
             13,
             13
+          ],
+          "gemma-2b": [
+            13,
+            13
           ]
         },
         "ok": true
@@ -1312,6 +1447,10 @@
           "llama-8b": [
             13,
             13
+          ],
+          "gemma-2b": [
+            12,
+            13
           ]
         },
         "ok": true
@@ -1324,6 +1463,10 @@
             10
           ],
           "llama-8b": [
+            9,
+            10
+          ],
+          "gemma-2b": [
             9,
             10
           ]
@@ -1340,6 +1483,10 @@
           "llama-8b": [
             10,
             10
+          ],
+          "gemma-2b": [
+            10,
+            10
           ]
         },
         "ok": true
@@ -1352,6 +1499,10 @@
             13
           ],
           "llama-8b": [
+            12,
+            13
+          ],
+          "gemma-2b": [
             12,
             13
           ]
