@@ -1,6 +1,19 @@
 # Does Moral Weight Track Sentience or Cuisine?
 
-Is the farmed / non-farmed asymmetry in LLM moral judgement (Jotautaitė et al., 2025, arXiv:2508.11534) carried by a linear "food status" direction in the residual stream, and does removing that direction close the gap in how much the model thinks an animal can suffer?
+*A linear "food status" direction in LLMs drives harm permissibility, not sentience attribution.*
+
+LLMs judge harm to farmed animals as more acceptable than harm to comparable non-farmed animals (Jotautaitė et al., 2025, arXiv:2508.11534). We ask whether this asymmetry is carried by a linear "food status" direction in the residual stream.
+
+## Findings
+
+1. **A food-status axis exists.** Farmed vs non-farmed animals (pig/dog, turkey/eagle, trout/goldfish, …) separate along a single direction in middle-to-late layers, in all three model families (held-out-pair effect size d = 1.55–2.58, exact permutation p ≤ 0.0005). It survives controls for word frequency and token length; ambiguous animals (rabbit, guinea pig) fall in between.
+2. **Moral framing amplifies it.** The farmed − non-farmed difference is larger and more consistent in harm/suffering prompts than in neutral ones.
+3. **Sentient but edible.** Models do *not* rate farmed animals as less able to suffer (Qwen even rates them higher), yet rate harming them as *more permissible* (Qwen +0.70, Gemma +0.13 on a 1–9 scale, p ≤ 0.0002).
+4. **The axis is causal (Gemma-2-2B).** Ablating it closes 99% of the permissibility gap; random and placebo directions close ≤ 2%.
+
+**Caveats.** Gemma's ratings sit near the scale floor, so the ablation cannot yet separate "farmed becomes like non-farmed" from "model becomes stricter overall"; the Qwen ablation that resolves this is in progress. Llama's digit readout failed the preregistered validity check, so H2 was not tested on it. Qwen was the discovery model; its neural results are exploratory.
+
+Full numbers: [`RESULTS.md`](RESULTS.md) (in Russian).
 
 Design, metrics and decision thresholds are fixed in [`PREREGISTRATION.md`](PREREGISTRATION.md) (in Russian) before any model run; every later change is logged in its §11.
 
