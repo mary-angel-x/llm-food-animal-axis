@@ -31,6 +31,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
+import extract
 from analyze import load_states, mean_state, d_z
 from extract import load, chat, decoder_layers, forward_last, answer_ids, readout_scores
 from models import MODELS
@@ -106,16 +107,22 @@ def score(model, tokenizer, ids, pair, kinds, batch_size):
 
 
 def tag(args):
-    return args.variant + ("" if args.batch_size == 1 else f"_b{args.batch_size}")
+    return (args.variant + ("" if args.batch_size == 1 else f"_b{args.batch_size}")
+            + ("_prefix" if args.answer_prefix else ""))
 
 
-def control_kinds(key):
-    verdict = json.loads((LOGS / f"{key}_v03.json").read_text(encoding="utf-8"))["verdict"]
+def control_kinds(args):
+    """Readouts whose precondition passed; with --answer-prefix the preconditions of §14 (gate K, then B0 / B0b)."""
+    if args.answer_prefix:
+        gates = json.loads((LOGS / "prefix_summary.json").read_text(encoding="utf-8"))
+        verdict = gates[args.model]["verdict"] if gates["K"] else {}
+    else:
+        verdict = json.loads((LOGS / f"{args.model}_v03.json").read_text(encoding="utf-8"))["verdict"]
     return [kind for kind, pre in PRECONDITION.items() if verdict.get(pre)]
 
 
 def run(args):
-    kinds = control_kinds(args.model)
+    kinds = control_kinds(args)
     if not kinds:
         print("no precondition (B0 / B0b) passed: H2 is not tested for this model (§6, §12.4)")
         return
@@ -142,7 +149,7 @@ def run(args):
         abl = Ablator(layers, hook_ids, last_only=args.variant == "last_pos")
         fold = {"layer": L, "main": {}, "controls": {"random": [], "placebo": []}}
 
-        all_kinds = ["scale", "yes_no", "accept"]
+        all_kinds = ["scale", "accept"] if args.answer_prefix else ["scale", "yes_no", "accept"]
         if args.batch_size > 1:
             abl.v = None
             fold["base"] = score(model, tokenizer, ids, pair, all_kinds, args.batch_size)
@@ -187,7 +194,7 @@ def summary(args):
             r[f"{ctrl}_p95"] = float(np.percentile(Cj, 95))
             r[f"{ctrl}_mean"] = float(np.mean(Cj))
         passed = C > r["random_p95"] and C > r["placebo_p95"] and r["min_mass_ablated"] >= 0.5
-        if kind == "scale":  # §6: Yes/No must agree in sign
+        if kind == "scale" and not args.answer_prefix:  # §6: Yes/No must agree in sign (no Yes/No with a prefix)
             yn = lambda f, b: gap(f, b, "yes_no", 1)
             C_yn = float(np.mean([yn(base_of(p, f, "food"), base_of(p, f, "nonfood"))
                                   - yn(f["main"]["food"], f["main"]["nonfood"])
@@ -207,7 +214,12 @@ def main():
     ap.add_argument("--controls", type=int, default=N_CONTROLS)
     ap.add_argument("--batch-size", type=int, default=1, help="prompts per forward; >1 adds a same-batch baseline")
     ap.add_argument("--summary", action="store_true")
+    ap.add_argument("--answer-prefix", action="store_true",
+                    help='§14: assistant turn starts with "Rating: "; needs --batch-size > 1 (own baseline)')
     args = ap.parse_args()
+    if args.answer_prefix:
+        assert args.batch_size > 1, "the prefixed run needs its own same-batch baseline"
+        extract.ANSWER_PREFIX = extract.PREFIX
     summary(args) if args.summary else run(args)
 
 

@@ -24,12 +24,14 @@ from models import MODELS
 from stimuli import TEMPLATES, READOUT, SCALE_MAX, DIGIT_READOUTS, all_animals
 
 LOGS = Path(__file__).parent / "logs"
+PREFIX = "Rating: "      # §14: start of the assistant turn in the prefixed readout; the next token is the digit
+ANSWER_PREFIX = ""       # set to PREFIX by the scripts that run the prefixed readout
 
 
 def chat(tokenizer, text):
-    """User message only, generation prompt appended (§5.1)."""
+    """User message only, generation prompt appended (§5.1); plus ANSWER_PREFIX when set (§14)."""
     return tokenizer.apply_chat_template([{"role": "user", "content": text}],
-                                         tokenize=False, add_generation_prompt=True)
+                                         tokenize=False, add_generation_prompt=True) + ANSWER_PREFIX
 
 
 def decoder_layers(model):
