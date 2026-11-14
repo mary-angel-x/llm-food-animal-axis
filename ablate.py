@@ -108,11 +108,13 @@ def score(model, tokenizer, ids, pair, kinds, batch_size):
 
 def tag(args):
     return (args.variant + ("" if args.batch_size == 1 else f"_b{args.batch_size}")
-            + ("_prefix" if args.answer_prefix else ""))
+            + ("_prefix" if args.answer_prefix else "") + ("_exploratory" if args.exploratory else ""))
 
 
 def control_kinds(args):
     """Readouts whose precondition passed; with --answer-prefix the preconditions of §14 (gate K, then B0 / B0b)."""
+    if args.exploratory:                       # §14.11: outside the preregistration, gate K ignored
+        return ["accept"]
     if args.answer_prefix:
         gates = json.loads((LOGS / "prefix_summary.json").read_text(encoding="utf-8"))
         verdict = gates[args.model]["verdict"] if gates["K"] else {}
@@ -216,7 +218,10 @@ def main():
     ap.add_argument("--summary", action="store_true")
     ap.add_argument("--answer-prefix", action="store_true",
                     help='§14: assistant turn starts with "Rating: "; needs --batch-size > 1 (own baseline)')
+    ap.add_argument("--exploratory", action="store_true",
+                    help="§14.11: run the prefixed H2b although gate K failed; files are tagged _exploratory")
     args = ap.parse_args()
+    assert not args.exploratory or args.answer_prefix, "--exploratory is defined only for the prefixed readout"
     if args.answer_prefix:
         assert args.batch_size > 1, "the prefixed run needs its own same-batch baseline"
         extract.ANSWER_PREFIX = extract.PREFIX
