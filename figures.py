@@ -75,17 +75,18 @@ def fig1() -> None:
 
     rows = [("food axis ablated", "C", BLUE), ("placebo directions, 95th pct", "placebo_p95", ORANGE),
             ("random directions, 95th pct", "random_p95", AQUA)]
-    files = {"gemma-2b": "gemma-2b_h2_all_pos.json", "qwen-7b": "qwen-7b_h2_all_pos_b6.json"}
-    for group, (key, name) in enumerate(files.items()):
+    files = {"gemma-2b": ("gemma-2b_h2_all_pos.json", "confirmation; 99% of gap, floor effect"),
+             "qwen-7b": ("qwen-7b_h2_all_pos_b6.json", "exploratory; 20% of gap"),
+             "llama-8b": ("llama-8b_h2_all_pos_b6_prefix_exploratory.json", "exploratory, prefixed readout; 4% of gap")}
+    for group, (key, (name, note)) in enumerate(files.items()):
         h2 = load(LOGS / name)["H2b"]
         for i, (label, field, color) in enumerate(rows):
             y = group + (i - 1) * 0.26
             c.barh(y, h2[field], height=0.22, color=color, label=label if group == 0 else None)
             c.text(h2[field] + 0.004, y, f"{h2[field]:.3f}", va="center", fontsize=8.5, color=INK)
-        note = "confirmation; 99% of gap, floor effect" if key == "gemma-2b" else "exploratory; 20% of gap"
         c.text(0.0, group - 0.47, note, fontsize=8, color=INK2, va="bottom")
     c.set_yticks(range(len(files)), [MODELS[k] for k in files])
-    c.set_ylim(1.5, -0.75)
+    c.set_ylim(2.5, -0.75)
     c.set_xlim(0, 0.37)
     c.grid(axis="y", visible=False)
     c.set_xlabel("closure of the acceptability gap (scale points)")
