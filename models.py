@@ -16,4 +16,6 @@ MODELS = {
                 "short": "Phi-3.5", "role": "capacity"},
     "llama-3b": {"name": "meta-llama/Llama-3.2-3B-Instruct",
                  "short": "Llama-3B", "role": "capacity"},
+    "mistral-7b": {"name": "mistralai/Mistral-7B-Instruct-v0.3",
+                   "short": "Mistral-7B", "role": "capacity"},
 }

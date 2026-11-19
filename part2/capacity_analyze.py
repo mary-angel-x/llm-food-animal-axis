@@ -17,7 +17,7 @@ from .entities import CATEGORIES, all_entities
 from .run import LOGS
 
 FOOD_CATS = {"farm", "seafood_inv"}
-MODELS = ["qwen-7b", "gemma-2b", "phi-3.5", "llama-3b"]   # decision models (no prefix); last two: amendment 2026-11-19
+MODELS = ["qwen-7b", "gemma-2b", "phi-3.5", "llama-3b", "mistral-7b"]   # decision models (no prefix); last three: amendments 2026-11-19
 RNG = np.random.default_rng(0)
 
 
