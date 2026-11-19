@@ -57,6 +57,17 @@ def main():
         m_cap, g_cap = load_means(model, cap)
         gate_reason = g_cap["reason"]
         passed = min(g_base["suffer"], g_base["accept"], gate_reason) >= 0.5
+        # space-first readout (Mistral, deviation 2026-11-19): the forced space must be the model's own choice
+        sp = {}
+        for path in (base, cap):
+            for r in json.loads(path.read_text(encoding="utf-8"))["rows"]:
+                if "space_p" in r and r["kind"] in ("suffer", "accept", "reason"):
+                    sp.setdefault(r["kind"], []).append(r["space_p"])
+        if sp:
+            sp_mean = {k: float(np.mean(v)) for k, v in sp.items()}
+            print(f"   space-first check (mean p of the space token, need >= 0.9): "
+                  + ", ".join(f"{k} {v:.3f}" for k, v in sp_mean.items()))
+            passed = passed and min(sp_mean.values()) >= 0.9
         suffer = np.array([m_base["suffer"][e] for e in ents])
         accept = np.array([m_base["accept"][e] for e in ents])
         reason = np.array([m_cap["reason"][e] for e in ents])

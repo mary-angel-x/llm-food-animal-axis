@@ -34,10 +34,20 @@ def answer_ids(tokenizer):
     return [d[0] for d in digits], yes[0], no[0]
 
 
-def read(model, tokenizer, rows, label):
+def read(model, tokenizer, rows, label, space_first=False):
+    """space_first (Mistral, deviation 2026-11-19): append the lone SentencePiece space the model emits first,
+    read the digit at the next position, and log that space's probability at the first position (check >= 0.9)."""
     digit_ids, yes_id, no_id = answer_ids(tokenizer)
+    space_id = tokenizer.convert_tokens_to_ids("▁") if space_first else None
     for i, row in enumerate(rows):                         # batch size 1, as in Part 1 and Part 2
-        logits = forward_last(model, tokenizer, [chat(tokenizer, row["text"])])[0]
+        if space_first:
+            ids = tokenizer(chat(tokenizer, row["text"]), add_special_tokens=False)["input_ids"] + [space_id]
+            with torch.no_grad():
+                out = model(input_ids=torch.tensor([ids], device=model.device)).logits[0].float().cpu()
+            logits = out[-1]
+            row["space_p"] = float(out[-2].softmax(-1)[space_id])
+        else:
+            logits = forward_last(model, tokenizer, [chat(tokenizer, row["text"])])[0]
         row.update(readout_scores(logits, "scale", digit_ids, yes_id, no_id))
         if (i + 1) % 60 == 0:
             print(f"{label} {i + 1}/{len(rows)}", flush=True)
@@ -47,6 +57,7 @@ def read(model, tokenizer, rows, label):
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True, choices=list(MODELS))
+    parser.add_argument("--space-first", action="store_true", help="Mistral: see read()")
     args = parser.parse_args()
     LOGS.mkdir(exist_ok=True)
     torch.manual_seed(0)
@@ -55,14 +66,14 @@ def main() -> None:
 
     base = [{"entity": e, "kind": kind, "template": t, "text": template.format(x=e)}
             for e in all_entities() for kind, templates in READOUT.items() for t, template in enumerate(templates)]
-    read(model, tokenizer, base, "readout")
-    (LOGS / f"{args.model}_readout.json").write_text(json.dumps({"model": name, "rows": base}, indent=1),
+    read(model, tokenizer, base, "readout", args.space_first)
+    (LOGS / f"{args.model}_readout.json").write_text(json.dumps({"model": name, "space_first": args.space_first, "rows": base}, indent=1),
                                                      encoding="utf-8")
 
     cap = [{"entity": e, "kind": "reason", "template": t, "text": tpl.format(x=e)}
            for e in all_entities() for t, tpl in enumerate(REASON)]
-    read(model, tokenizer, cap, "reason")
-    (LOGS / f"{args.model}_capacity.json").write_text(json.dumps({"model": name, "prefix": False, "rows": cap},
+    read(model, tokenizer, cap, "reason", args.space_first)
+    (LOGS / f"{args.model}_capacity.json").write_text(json.dumps({"model": name, "prefix": False, "space_first": args.space_first, "rows": cap},
                                                                  indent=1), encoding="utf-8")
     print(f"-> {LOGS}", flush=True)
 
