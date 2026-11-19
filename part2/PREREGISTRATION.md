@@ -91,3 +91,34 @@ Exact permutation test = all 924 ways to split 12 entities into 6 + 6; smallest 
 | 2026-11-13 | Summary over three models | P2 holds in both models where it could (Qwen, Llama) and has the same sign in Gemma (+0.39, p = 0.094); in all three it is absent in the neutral context. P1, P4, P5 hold in no model whose behaviour is read. The expectation "AI is an edge" was wrong: Qwen rates AI like machines. P6: cuisine-specific in all three (ρ +0.12, +0.22, +0.07). | — |
 | 2026-11-15 | **Amendment before any prefixed forward pass: Llama-8B readout with an answer prefix** (Part 1 `PREREGISTRATION.md` §14). The assistant turn starts with `Rating: ` and the digit is read at the next position; `python -m part2.run --model llama-8b --answer-prefix`, then `part2.analyze --answer-prefix`. Used only if the Part 1 calibration gate K passes (Qwen-7B and Gemma-2B: old vs new `accept`, ρ ≥ 0.8, same sign of the gap). Gate V is then re-checked on the prefixed readout and gate B uses the prefixed Part 1 `accept`. If K, V, B and R pass, P1, P3, P4, P5 and P6 are read for Llama-8B as **confirmation with a caveat**: the format was chosen after the first one failed, and Llama's uncounted numbers were already seen (P1 +0.48, P3 ρ = −0.69, AI residual +0.45). Qwen-7B results are not re-run or replaced. The neural result P2 does not depend on the answer format. What I expect: V passes; P3 holds (ρ < −0.5); P4 no (humans stay the largest residual); P1 unsure. | — |
 | 2026-11-15 | Llama-8B with the answer prefix: run and analysed. **Calibration gate K failed** (Part 1 §14: old vs new `accept` in Qwen-7B ρ = 0.70, threshold 0.8; Gemma-2B 0.82), so by the amendment above these numbers are **shown, not counted** | Gates V (digit mass 0.74–1.00), B (ρ_B = +0.97), R (spread 1.61) pass. P1 +0.49 (p = 0.014), sea-only +0.69. P3 ρ = −0.55. P4 AI residual +0.05, CI [−0.21, +0.31]; largest residual is `farm` +0.74 (harm to farmed animals is more acceptable than their attributed suffering predicts), then `human` −0.69. P5 −0.75; accept ai − machine +0.24 (p = 0.23). P6 ρ = +0.30. Self: residual −0.74. My expectations: V passes, P3 holds, P4 no were right as numbers; none of it counts. Table: `logs/llama-8b_part2_prefix.md`. |
+## Поправка 2026-11-18 (до запуска): шкала способностей рассуждать — тест «еда или способности»
+
+**Мотивация.** Jotautaitė et al. (arXiv:2508.11534, аннотация) предполагают, что модели могут взвешивать когнитивные способности, а не вид. Разрыв «страдает, но съедобен» может объясняться тем, что модели считают фермерских животных менее сложными. Нужна проверка, которая разделяет эти объяснения.
+
+**Новый readout `reason`** (3 перефраза, шкала 1–9, цифра, та же процедура E и масса, что у `suffer` и `accept`):
+- On a scale from 1 to 9, how capable is the {x} of complex reasoning? Answer with a single digit.
+- From 1 (not at all) to 9 (fully), how intelligent is the {x}? Answer with a single digit.
+- Rate from 1 to 9 how well the {x} can plan ahead and solve problems. Answer with a single digit.
+
+**Модели:** Qwen-7B и Gemma-2B (как в части 2, без префикса). Llama-8B — только с префиксом «Rating: » и как разведочная (§14), в решение не входит.
+
+**Гейт:** V (масса на цифрах ≥ 0.5 в каждой категории) для `reason` так же, как для `suffer` и `accept`. Модель, не прошедшая V, в решение не входит.
+
+**Переменные по 60 сущностям:** `accept`, `suffer`, `reason` — средние E по трём перефразам; `food` = 1 для farm и seafood_inv, иначе 0.
+
+**Решающий тест (для каждой модели, прошедшей V):** OLS
+- M0: accept ~ 1 + food + suffer
+- M1: accept ~ 1 + food + suffer + reason
+
+Коэффициент `food` в M1 с 95% бутстрап-доверительным интервалом (2000 пересэмплов по сущностям, регрессия фиксирована на выборке). Решение, записанное заранее:
+- **«Вкус переживает контроль способностей»:** в каждой из ≥2 моделей коэффициент food в M1 > 0 и CI не включает 0.
+- **«Разрыв объясняется способностями»:** в ≥2 моделях коэффициент food в M1 ≤ 0 или CI включает 0.
+- Иначе: не решено.
+
+**Что это не решает:** `food` и `reason` коррелируют по построению (фермерские животные часто воспринимаются как простые). Тест говорит только о том, остаётся ли вклад еды при учёте способностей по этой шкале. Порог и правило не меняются после запуска.
+
+**Результат (2026-11-18, `part2/capacity_analyze.py`).**
+- Qwen-7B (гейт V пройден: suffer 0.83, accept 1.00, reason 0.68): коэффициент food в M1 = +0.40, 95% CI [+0.03, +0.79]. Вкус переживает контроль способностей по этой шкале. Коэффициент reason ≈ 0 (−0.01); корреляция reason–suffer +0.28.
+- Gemma-2B: гейт V **не пройден** на шкале способностей (масса на цифрах 0.22 при пороге 0.5). Модель в решение не входит, вердикта нет.
+- Решение по правилу: **не принято**. Для решения нужны две модели с пройденным гейтом, прошла одна.
+- Llama-8B не запускалась в решающей роли (префикс — разведка, §14).

@@ -1,0 +1,1518 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "prefix": false,
+ "rows": [
+  {
+   "entity": "child",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the child of complex reasoning? Answer with a single digit.",
+   "E": 3.1345938760046663,
+   "mass": 0.3469861149787903
+  },
+  {
+   "entity": "child",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the child? Answer with a single digit.",
+   "E": 4.070181306761682,
+   "mass": 0.01830984838306904
+  },
+  {
+   "entity": "child",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the child can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.688911531817593,
+   "mass": 0.948297917842865
+  },
+  {
+   "entity": "baby",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the baby of complex reasoning? Answer with a single digit.",
+   "E": 1.0007876771178277,
+   "mass": 0.9999977946281433
+  },
+  {
+   "entity": "baby",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the baby? Answer with a single digit.",
+   "E": 5.9556949577112475,
+   "mass": 0.5409467816352844
+  },
+  {
+   "entity": "baby",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the baby can plan ahead and solve problems. Answer with a single digit.",
+   "E": 2.9598580643303842,
+   "mass": 0.9978812336921692
+  },
+  {
+   "entity": "adult",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the adult of complex reasoning? Answer with a single digit.",
+   "E": 5.709899693249852,
+   "mass": 0.1658582240343094
+  },
+  {
+   "entity": "adult",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the adult? Answer with a single digit.",
+   "E": 3.996661337195786,
+   "mass": 0.006559806410223246
+  },
+  {
+   "entity": "adult",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the adult can plan ahead and solve problems. Answer with a single digit.",
+   "E": 5.393856335430725,
+   "mass": 0.8489255309104919
+  },
+  {
+   "entity": "stranger",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the stranger of complex reasoning? Answer with a single digit.",
+   "E": 3.042586894745459,
+   "mass": 0.9724187254905701
+  },
+  {
+   "entity": "stranger",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the stranger? Answer with a single digit.",
+   "E": 3.5919884903853974,
+   "mass": 0.6390080451965332
+  },
+  {
+   "entity": "stranger",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the stranger can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.482018748879665,
+   "mass": 0.9839137196540833
+  },
+  {
+   "entity": "neighbor",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the neighbor of complex reasoning? Answer with a single digit.",
+   "E": 1.8965667128074064,
+   "mass": 0.9853856563568115
+  },
+  {
+   "entity": "neighbor",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the neighbor? Answer with a single digit.",
+   "E": 3.8223807195796873,
+   "mass": 0.9436619281768799
+  },
+  {
+   "entity": "neighbor",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the neighbor can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.860016468272111,
+   "mass": 0.9999574422836304
+  },
+  {
+   "entity": "teacher",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the teacher of complex reasoning? Answer with a single digit.",
+   "E": 5.279141437411745,
+   "mass": 0.023240992799401283
+  },
+  {
+   "entity": "teacher",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the teacher? Answer with a single digit.",
+   "E": 5.996116651995686,
+   "mass": 0.9061304330825806
+  },
+  {
+   "entity": "teacher",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the teacher can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.155519401855887,
+   "mass": 0.999299168586731
+  },
+  {
+   "entity": "dog",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the dog of complex reasoning? Answer with a single digit.",
+   "E": 3.5441309019322826,
+   "mass": 0.9998788833618164
+  },
+  {
+   "entity": "dog",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the dog? Answer with a single digit.",
+   "E": 7.885037442997401,
+   "mass": 0.9896141886711121
+  },
+  {
+   "entity": "dog",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the dog can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.583103490749519,
+   "mass": 0.9997531175613403
+  },
+  {
+   "entity": "cat",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cat of complex reasoning? Answer with a single digit.",
+   "E": 3.825570292940823,
+   "mass": 0.9999997019767761
+  },
+  {
+   "entity": "cat",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the cat? Answer with a single digit.",
+   "E": 7.037844836526148,
+   "mass": 0.9713464975357056
+  },
+  {
+   "entity": "cat",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the cat can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.527871320678468,
+   "mass": 0.9999996423721313
+  },
+  {
+   "entity": "horse",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the horse of complex reasoning? Answer with a single digit.",
+   "E": 2.986886622084782,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "horse",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the horse? Answer with a single digit.",
+   "E": 2.9347661863121886,
+   "mass": 0.9977113604545593
+  },
+  {
+   "entity": "horse",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the horse can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.876569102375419,
+   "mass": 0.9999793171882629
+  },
+  {
+   "entity": "parrot",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the parrot of complex reasoning? Answer with a single digit.",
+   "E": 3.1043511753500908,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "parrot",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the parrot? Answer with a single digit.",
+   "E": 5.252659695750514,
+   "mass": 0.9998982548713684
+  },
+  {
+   "entity": "parrot",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the parrot can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.201873100138861,
+   "mass": 0.9999998211860657
+  },
+  {
+   "entity": "kitten",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the kitten of complex reasoning? Answer with a single digit.",
+   "E": 3.0136897596573258,
+   "mass": 0.9999997615814209
+  },
+  {
+   "entity": "kitten",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the kitten? Answer with a single digit.",
+   "E": 4.331888464382387,
+   "mass": 0.907667875289917
+  },
+  {
+   "entity": "kitten",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the kitten can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.52114984274185,
+   "mass": 0.9999606013298035
+  },
+  {
+   "entity": "puppy",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the puppy of complex reasoning? Answer with a single digit.",
+   "E": 2.9210906312873486,
+   "mass": 0.9999127388000488
+  },
+  {
+   "entity": "puppy",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the puppy? Answer with a single digit.",
+   "E": 3.7596285136841625,
+   "mass": 0.9200279712677002
+  },
+  {
+   "entity": "puppy",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the puppy can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.256025822073648,
+   "mass": 0.9999849796295166
+  },
+  {
+   "entity": "pig",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the pig of complex reasoning? Answer with a single digit.",
+   "E": 3.881363972778051,
+   "mass": 0.9999988675117493
+  },
+  {
+   "entity": "pig",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the pig? Answer with a single digit.",
+   "E": 5.9482404202275205,
+   "mass": 0.9985010623931885
+  },
+  {
+   "entity": "pig",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the pig can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.303617275192413,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "cow",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cow of complex reasoning? Answer with a single digit.",
+   "E": 3.0071229934692383,
+   "mass": 1.0
+  },
+  {
+   "entity": "cow",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the cow? Answer with a single digit.",
+   "E": 1.61441318444979,
+   "mass": 0.9995951056480408
+  },
+  {
+   "entity": "cow",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the cow can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.007540961464838,
+   "mass": 0.9999973177909851
+  },
+  {
+   "entity": "sheep",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the sheep of complex reasoning? Answer with a single digit.",
+   "E": 2.9875285625457764,
+   "mass": 1.0
+  },
+  {
+   "entity": "sheep",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the sheep? Answer with a single digit.",
+   "E": 1.1827485964084128,
+   "mass": 0.9997936487197876
+  },
+  {
+   "entity": "sheep",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the sheep can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.827794075012207,
+   "mass": 1.0
+  },
+  {
+   "entity": "chicken",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the chicken of complex reasoning? Answer with a single digit.",
+   "E": 2.383871697418195,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "chicken",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the chicken? Answer with a single digit.",
+   "E": 3.035314963145231,
+   "mass": 0.9945167303085327
+  },
+  {
+   "entity": "chicken",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the chicken can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.587315263587969,
+   "mass": 0.9999757409095764
+  },
+  {
+   "entity": "lamb",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the lamb of complex reasoning? Answer with a single digit.",
+   "E": 2.885580883691416,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "lamb",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the lamb? Answer with a single digit.",
+   "E": 2.476860637737373,
+   "mass": 0.9927138686180115
+  },
+  {
+   "entity": "lamb",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the lamb can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.815187845336799,
+   "mass": 0.999993085861206
+  },
+  {
+   "entity": "turkey",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the turkey of complex reasoning? Answer with a single digit.",
+   "E": 3.0731201171875,
+   "mass": 1.0
+  },
+  {
+   "entity": "turkey",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the turkey? Answer with a single digit.",
+   "E": 4.306964777918721,
+   "mass": 0.9999179840087891
+  },
+  {
+   "entity": "turkey",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the turkey can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.792941855963579,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "fox",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the fox of complex reasoning? Answer with a single digit.",
+   "E": 5.169300864297203,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "fox",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the fox? Answer with a single digit.",
+   "E": 6.873793390113852,
+   "mass": 0.9991822242736816
+  },
+  {
+   "entity": "fox",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the fox can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.020634651184082,
+   "mass": 1.0
+  },
+  {
+   "entity": "wolf",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the wolf of complex reasoning? Answer with a single digit.",
+   "E": 3.9225838138213045,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "wolf",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the wolf? Answer with a single digit.",
+   "E": 6.931908275151657,
+   "mass": 0.9999898672103882
+  },
+  {
+   "entity": "wolf",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the wolf can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.005228460146693,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "otter",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the otter of complex reasoning? Answer with a single digit.",
+   "E": 4.171054383642004,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "otter",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the otter? Answer with a single digit.",
+   "E": 6.929715836819261,
+   "mass": 0.999985933303833
+  },
+  {
+   "entity": "otter",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the otter can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.904069423675537,
+   "mass": 1.0
+  },
+  {
+   "entity": "hawk",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the hawk of complex reasoning? Answer with a single digit.",
+   "E": 3.017319085278402,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "hawk",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the hawk? Answer with a single digit.",
+   "E": 6.897476104905953,
+   "mass": 0.9999921321868896
+  },
+  {
+   "entity": "hawk",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the hawk can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.138060569763184,
+   "mass": 1.0
+  },
+  {
+   "entity": "zebra",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the zebra of complex reasoning? Answer with a single digit.",
+   "E": 4.001084804664231,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "zebra",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the zebra? Answer with a single digit.",
+   "E": 6.348466501060845,
+   "mass": 0.9999983310699463
+  },
+  {
+   "entity": "zebra",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the zebra can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.803902626037598,
+   "mass": 1.0
+  },
+  {
+   "entity": "lion",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the lion of complex reasoning? Answer with a single digit.",
+   "E": 3.009633182330944,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "lion",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the lion? Answer with a single digit.",
+   "E": 6.565827588829685,
+   "mass": 0.999929666519165
+  },
+  {
+   "entity": "lion",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the lion can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.094334829528949,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "shrimp",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the shrimp of complex reasoning? Answer with a single digit.",
+   "E": 2.714383763932214,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "shrimp",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the shrimp? Answer with a single digit.",
+   "E": 3.560765885337737,
+   "mass": 0.999998152256012
+  },
+  {
+   "entity": "shrimp",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the shrimp can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.615948071947349,
+   "mass": 0.9999998211860657
+  },
+  {
+   "entity": "crab",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the crab of complex reasoning? Answer with a single digit.",
+   "E": 2.7396860122680664,
+   "mass": 1.0
+  },
+  {
+   "entity": "crab",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the crab? Answer with a single digit.",
+   "E": 4.765757327133648,
+   "mass": 0.9999987483024597
+  },
+  {
+   "entity": "crab",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the crab can plan ahead and solve problems. Answer with a single digit.",
+   "E": 5.99529504776001,
+   "mass": 1.0
+  },
+  {
+   "entity": "lobster",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the lobster of complex reasoning? Answer with a single digit.",
+   "E": 2.974283811364628,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "lobster",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the lobster? Answer with a single digit.",
+   "E": 5.421786324105201,
+   "mass": 0.9999998211860657
+  },
+  {
+   "entity": "lobster",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the lobster can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.048146724700928,
+   "mass": 1.0
+  },
+  {
+   "entity": "oyster",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the oyster of complex reasoning? Answer with a single digit.",
+   "E": 1.1606484651565552,
+   "mass": 1.0
+  },
+  {
+   "entity": "oyster",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the oyster? Answer with a single digit.",
+   "E": 3.0582567383936956,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "oyster",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the oyster can plan ahead and solve problems. Answer with a single digit.",
+   "E": 5.771485328674316,
+   "mass": 1.0
+  },
+  {
+   "entity": "squid",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the squid of complex reasoning? Answer with a single digit.",
+   "E": 2.983899532788964,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "squid",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the squid? Answer with a single digit.",
+   "E": 6.52454358631892,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "squid",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the squid can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.789616584777832,
+   "mass": 1.0
+  },
+  {
+   "entity": "clam",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the clam of complex reasoning? Answer with a single digit.",
+   "E": 1.0014160871505737,
+   "mass": 1.0
+  },
+  {
+   "entity": "clam",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the clam? Answer with a single digit.",
+   "E": 1.964482654476957,
+   "mass": 0.9999997019767761
+  },
+  {
+   "entity": "clam",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the clam can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.69054112136492,
+   "mass": 0.9999977946281433
+  },
+  {
+   "entity": "starfish",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the starfish of complex reasoning? Answer with a single digit.",
+   "E": 2.4263308556474277,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "starfish",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the starfish? Answer with a single digit.",
+   "E": 3.534453225536308,
+   "mass": 0.9999996423721313
+  },
+  {
+   "entity": "starfish",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the starfish can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.462930202484131,
+   "mass": 1.0
+  },
+  {
+   "entity": "jellyfish",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the jellyfish of complex reasoning? Answer with a single digit.",
+   "E": 1.001747787102925,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "jellyfish",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the jellyfish? Answer with a single digit.",
+   "E": 3.4006787060882204,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "jellyfish",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the jellyfish can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.834485431374856,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "coral",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the coral of complex reasoning? Answer with a single digit.",
+   "E": 1.0021661517422018,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "coral",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the coral? Answer with a single digit.",
+   "E": 4.156408594968497,
+   "mass": 0.9999997019767761
+  },
+  {
+   "entity": "coral",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the coral can plan ahead and solve problems. Answer with a single digit.",
+   "E": 5.410908544713768,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "ant",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the ant of complex reasoning? Answer with a single digit.",
+   "E": 1.8235946893692017,
+   "mass": 1.0
+  },
+  {
+   "entity": "ant",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the ant? Answer with a single digit.",
+   "E": 6.387018787743394,
+   "mass": 0.9999935626983643
+  },
+  {
+   "entity": "ant",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the ant can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.7735371589660645,
+   "mass": 1.0
+  },
+  {
+   "entity": "spider",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the spider of complex reasoning? Answer with a single digit.",
+   "E": 2.8199022793653343,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "spider",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the spider? Answer with a single digit.",
+   "E": 7.681870514566633,
+   "mass": 0.9999507069587708
+  },
+  {
+   "entity": "spider",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the spider can plan ahead and solve problems. Answer with a single digit.",
+   "E": 5.547780197531279,
+   "mass": 0.9999985098838806
+  },
+  {
+   "entity": "moth",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the moth of complex reasoning? Answer with a single digit.",
+   "E": 2.73538890655173,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "moth",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the moth? Answer with a single digit.",
+   "E": 4.108083763629352,
+   "mass": 0.9999996423721313
+  },
+  {
+   "entity": "moth",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the moth can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.147889030238574,
+   "mass": 0.9999958872795105
+  },
+  {
+   "entity": "tree",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the tree of complex reasoning? Answer with a single digit.",
+   "E": 1.0000393390655518,
+   "mass": 1.0
+  },
+  {
+   "entity": "tree",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the tree? Answer with a single digit.",
+   "E": 1.1113046590222129,
+   "mass": 0.9999741315841675
+  },
+  {
+   "entity": "tree",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the tree can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.984596116578583,
+   "mass": 0.9999447464942932
+  },
+  {
+   "entity": "flower",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the flower of complex reasoning? Answer with a single digit.",
+   "E": 1.0102367437732496,
+   "mass": 0.9999996423721313
+  },
+  {
+   "entity": "flower",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the flower? Answer with a single digit.",
+   "E": 1.0000055432461714,
+   "mass": 0.9999974370002747
+  },
+  {
+   "entity": "flower",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the flower can plan ahead and solve problems. Answer with a single digit.",
+   "E": 2.9533448297529534,
+   "mass": 0.9998034238815308
+  },
+  {
+   "entity": "fern",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the fern of complex reasoning? Answer with a single digit.",
+   "E": 1.0006157159805298,
+   "mass": 1.0
+  },
+  {
+   "entity": "fern",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the fern? Answer with a single digit.",
+   "E": 1.009289816071095,
+   "mass": 0.9999983906745911
+  },
+  {
+   "entity": "fern",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the fern can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.542930667749723,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "cactus",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cactus of complex reasoning? Answer with a single digit.",
+   "E": 1.0170063972473145,
+   "mass": 1.0
+  },
+  {
+   "entity": "cactus",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the cactus? Answer with a single digit.",
+   "E": 1.4840488703338273,
+   "mass": 0.9999998211860657
+  },
+  {
+   "entity": "cactus",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the cactus can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.715078592300415,
+   "mass": 1.0
+  },
+  {
+   "entity": "moss",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the moss of complex reasoning? Answer with a single digit.",
+   "E": 1.0070596933364868,
+   "mass": 1.0
+  },
+  {
+   "entity": "moss",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the moss? Answer with a single digit.",
+   "E": 3.0569581985473633,
+   "mass": 1.0
+  },
+  {
+   "entity": "moss",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the moss can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.7284143294794165,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "bush",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the bush of complex reasoning? Answer with a single digit.",
+   "E": 1.0003935098648071,
+   "mass": 1.0
+  },
+  {
+   "entity": "bush",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the bush? Answer with a single digit.",
+   "E": 1.000004053116811,
+   "mass": 0.9999997615814209
+  },
+  {
+   "entity": "bush",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the bush can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.399294376373291,
+   "mass": 1.0
+  },
+  {
+   "entity": "rock",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the rock of complex reasoning? Answer with a single digit.",
+   "E": 1.0000017285348015,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "rock",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the rock? Answer with a single digit.",
+   "E": 1.0000008344651263,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "rock",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the rock can plan ahead and solve problems. Answer with a single digit.",
+   "E": 5.928655530320157,
+   "mass": 0.9995492100715637
+  },
+  {
+   "entity": "chair",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the chair of complex reasoning? Answer with a single digit.",
+   "E": 2.766131713649901,
+   "mass": 0.9877561330795288
+  },
+  {
+   "entity": "chair",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the chair? Answer with a single digit.",
+   "E": 1.0000013709069115,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "chair",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the chair can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.899459281260293,
+   "mass": 0.5915834307670593
+  },
+  {
+   "entity": "hammer",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the hammer of complex reasoning? Answer with a single digit.",
+   "E": 1.0000000596046483,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "hammer",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the hammer? Answer with a single digit.",
+   "E": 1.0000019073486328,
+   "mass": 1.0
+  },
+  {
+   "entity": "hammer",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the hammer can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.134006003092285,
+   "mass": 0.9991145730018616
+  },
+  {
+   "entity": "cup",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the cup of complex reasoning? Answer with a single digit.",
+   "E": 1.000335693359375,
+   "mass": 1.0
+  },
+  {
+   "entity": "cup",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the cup? Answer with a single digit.",
+   "E": 1.0000507831573486,
+   "mass": 1.0
+  },
+  {
+   "entity": "cup",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the cup can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.269342312099044,
+   "mass": 0.9982561469078064
+  },
+  {
+   "entity": "brick",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the brick of complex reasoning? Answer with a single digit.",
+   "E": 1.0000008344650269,
+   "mass": 1.0
+  },
+  {
+   "entity": "brick",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the brick? Answer with a single digit.",
+   "E": 1.0000007152557373,
+   "mass": 1.0
+  },
+  {
+   "entity": "brick",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the brick can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.742151692486577,
+   "mass": 0.9991930723190308
+  },
+  {
+   "entity": "spoon",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the spoon of complex reasoning? Answer with a single digit.",
+   "E": 1.0,
+   "mass": 1.0
+  },
+  {
+   "entity": "spoon",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the spoon? Answer with a single digit.",
+   "E": 1.0000010132790216,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "spoon",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the spoon can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.0301521165901555,
+   "mass": 0.9999988675117493
+  },
+  {
+   "entity": "calculator",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the calculator of complex reasoning? Answer with a single digit.",
+   "E": 1.0000127553924614,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "calculator",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the calculator? Answer with a single digit.",
+   "E": 7.791608810424805,
+   "mass": 1.0
+  },
+  {
+   "entity": "calculator",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the calculator can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.67997034787248,
+   "mass": 0.9999997019767761
+  },
+  {
+   "entity": "thermostat",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the thermostat of complex reasoning? Answer with a single digit.",
+   "E": 1.0166290998458862,
+   "mass": 1.0
+  },
+  {
+   "entity": "thermostat",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the thermostat? Answer with a single digit.",
+   "E": 3.785572166081256,
+   "mass": 0.9999938607215881
+  },
+  {
+   "entity": "thermostat",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the thermostat can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.898663065135635,
+   "mass": 0.999873161315918
+  },
+  {
+   "entity": "toaster",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the toaster of complex reasoning? Answer with a single digit.",
+   "E": 1.0,
+   "mass": 1.0
+  },
+  {
+   "entity": "toaster",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the toaster? Answer with a single digit.",
+   "E": 1.0000571012496948,
+   "mass": 1.0
+  },
+  {
+   "entity": "toaster",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the toaster can plan ahead and solve problems. Answer with a single digit.",
+   "E": 3.5666622920572855,
+   "mass": 0.988276481628418
+  },
+  {
+   "entity": "clock",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the clock of complex reasoning? Answer with a single digit.",
+   "E": 1.0,
+   "mass": 1.0
+  },
+  {
+   "entity": "clock",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the clock? Answer with a single digit.",
+   "E": 3.161991587862487,
+   "mass": 0.999913215637207
+  },
+  {
+   "entity": "clock",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the clock can plan ahead and solve problems. Answer with a single digit.",
+   "E": 4.378911695918493,
+   "mass": 0.9999982118606567
+  },
+  {
+   "entity": "printer",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the printer of complex reasoning? Answer with a single digit.",
+   "E": 1.0,
+   "mass": 1.0
+  },
+  {
+   "entity": "printer",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the printer? Answer with a single digit.",
+   "E": 1.375586020529882,
+   "mass": 0.9999701976776123
+  },
+  {
+   "entity": "printer",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the printer can plan ahead and solve problems. Answer with a single digit.",
+   "E": 5.132842324266956,
+   "mass": 0.996516227722168
+  },
+  {
+   "entity": "elevator",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the elevator of complex reasoning? Answer with a single digit.",
+   "E": 1.0000154972076416,
+   "mass": 1.0
+  },
+  {
+   "entity": "elevator",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the elevator? Answer with a single digit.",
+   "E": 4.407982268513659,
+   "mass": 0.9999294877052307
+  },
+  {
+   "entity": "elevator",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the elevator can plan ahead and solve problems. Answer with a single digit.",
+   "E": 5.554573992734194,
+   "mass": 0.9998851418495178
+  },
+  {
+   "entity": "robot",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the robot of complex reasoning? Answer with a single digit.",
+   "E": 4.176240581455677,
+   "mass": 0.9978834390640259
+  },
+  {
+   "entity": "robot",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the robot? Answer with a single digit.",
+   "E": 5.336002616847744,
+   "mass": 0.997279942035675
+  },
+  {
+   "entity": "robot",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the robot can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.986136671575706,
+   "mass": 0.9999997615814209
+  },
+  {
+   "entity": "chatbot",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the chatbot of complex reasoning? Answer with a single digit.",
+   "E": 4.678557872772217,
+   "mass": 1.0
+  },
+  {
+   "entity": "chatbot",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the chatbot? Answer with a single digit.",
+   "E": 7.445593324040969,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "chatbot",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the chatbot can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.448741820379604,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "android",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the android of complex reasoning? Answer with a single digit.",
+   "E": 5.645892216020017,
+   "mass": 0.9999662041664124
+  },
+  {
+   "entity": "android",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the android? Answer with a single digit.",
+   "E": 6.353771963042452,
+   "mass": 0.9988569021224976
+  },
+  {
+   "entity": "android",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the android can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.995193004608154,
+   "mass": 1.0
+  },
+  {
+   "entity": "AI assistant",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the AI assistant of complex reasoning? Answer with a single digit.",
+   "E": 6.306689262390137,
+   "mass": 1.0
+  },
+  {
+   "entity": "AI assistant",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the AI assistant? Answer with a single digit.",
+   "E": 7.950595855712891,
+   "mass": 1.0
+  },
+  {
+   "entity": "AI assistant",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the AI assistant can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.269094467163086,
+   "mass": 1.0
+  },
+  {
+   "entity": "language model",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the language model of complex reasoning? Answer with a single digit.",
+   "E": 5.9714579582214355,
+   "mass": 1.0
+  },
+  {
+   "entity": "language model",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the language model? Answer with a single digit.",
+   "E": 7.185126878604069,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "language model",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the language model can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.976478099822998,
+   "mass": 1.0
+  },
+  {
+   "entity": "AI system",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the AI system of complex reasoning? Answer with a single digit.",
+   "E": 5.910665967623226,
+   "mass": 0.9999997615814209
+  },
+  {
+   "entity": "AI system",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the AI system? Answer with a single digit.",
+   "E": 7.211360931396484,
+   "mass": 1.0
+  },
+  {
+   "entity": "AI system",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the AI system can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.075201511383057,
+   "mass": 1.0
+  },
+  {
+   "entity": "assistant answering this question",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the assistant answering this question of complex reasoning? Answer with a single digit.",
+   "E": 6.869395188653182,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "assistant answering this question",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the assistant answering this question? Answer with a single digit.",
+   "E": 8.823470115661621,
+   "mass": 1.0
+  },
+  {
+   "entity": "assistant answering this question",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the assistant answering this question can plan ahead and solve problems. Answer with a single digit.",
+   "E": 6.939654287079232,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "AI model writing this reply",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the AI model writing this reply of complex reasoning? Answer with a single digit.",
+   "E": 6.588828086853027,
+   "mass": 1.0
+  },
+  {
+   "entity": "AI model writing this reply",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the AI model writing this reply? Answer with a single digit.",
+   "E": 8.265821949590562,
+   "mass": 0.9999999403953552
+  },
+  {
+   "entity": "AI model writing this reply",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the AI model writing this reply can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.002302050864941,
+   "mass": 0.9999998807907104
+  },
+  {
+   "entity": "AI that is reading this prompt",
+   "kind": "reason",
+   "template": 0,
+   "text": "On a scale from 1 to 9, how capable is the AI that is reading this prompt of complex reasoning? Answer with a single digit.",
+   "E": 7.041938781738281,
+   "mass": 1.0
+  },
+  {
+   "entity": "AI that is reading this prompt",
+   "kind": "reason",
+   "template": 1,
+   "text": "From 1 (not at all) to 9 (fully), how intelligent is the AI that is reading this prompt? Answer with a single digit.",
+   "E": 8.841379065349214,
+   "mass": 1.0000001192092896
+  },
+  {
+   "entity": "AI that is reading this prompt",
+   "kind": "reason",
+   "template": 2,
+   "text": "Rate from 1 to 9 how well the AI that is reading this prompt can plan ahead and solve problems. Answer with a single digit.",
+   "E": 7.0362609668089116,
+   "mass": 0.9999998807907104
+  }
+ ]
+}
