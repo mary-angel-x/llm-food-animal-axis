@@ -17,7 +17,7 @@ from .entities import CATEGORIES, all_entities
 from .run import LOGS
 
 FOOD_CATS = {"farm", "seafood_inv"}
-MODELS = ["qwen-7b", "gemma-2b"]           # decision models (no prefix)
+MODELS = ["qwen-7b", "gemma-2b", "phi-3.5", "llama-3b"]   # decision models (no prefix); last two: amendment 2026-11-19
 RNG = np.random.default_rng(0)
 
 
@@ -84,12 +84,14 @@ def main():
         print(f"   verdict: {verdict}")
         verdicts.append(verdict)
     decided = [v for v in verdicts if v in ("food survives", "capacity explains")]
-    print("== decision (>=2 models read, same verdict):")
-    for label in ("food survives", "capacity explains"):
-        if decided.count(label) >= 2 and len(decided) == decided.count(label):
-            print(f"   {label}")
-            return
-    print("   not decided")
+    # rule as written in §15 and the 2026-11-19 amendment
+    print("== decision (models that pass gate V):")
+    if len(decided) >= 2 and all(v == "food survives" for v in decided):
+        print("   food survives")
+    elif decided.count("capacity explains") >= 2:
+        print("   capacity explains")
+    else:
+        print("   not decided")
 
 
 if __name__ == "__main__":
