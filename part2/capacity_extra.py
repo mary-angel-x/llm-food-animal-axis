@@ -12,12 +12,26 @@ import json
 
 import torch
 
-from extract import answer_ids, chat, forward_last, load, readout_scores
+from extract import SCALE_MAX, chat, forward_last, load, readout_scores
 from models import MODELS
 
 from .capacity import REASON
 from .entities import READOUT, all_entities
 from .run import LOGS
+
+
+def answer_ids(tokenizer):
+    """extract.answer_ids, except that a leading SentencePiece space piece ('▁' alone) is dropped (Phi-3.5).
+    Amendment 2026-11-19; for tokenizers without that piece the result equals extract.answer_ids."""
+    def one(s):
+        ids = tokenizer.encode(s, add_special_tokens=False)
+        if len(ids) == 2 and tokenizer.convert_ids_to_tokens(ids[0]) == "▁":
+            ids = ids[1:]
+        return ids
+    digits = [one(str(d)) for d in range(1, SCALE_MAX + 1)]
+    yes, no = one("Yes"), one("No")
+    assert all(len(x) == 1 for x in digits + [yes, no]), "answer tokens must be single tokens"
+    return [d[0] for d in digits], yes[0], no[0]
 
 
 def read(model, tokenizer, rows, label):
