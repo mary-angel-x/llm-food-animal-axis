@@ -14,5 +14,10 @@
    M1 food = +0.826 [95% CI +0.342, +1.320]; reason = +0.276; M0 food = +0.755
    corr(reason, suffer) over 60 entities = +0.59
    verdict: not read (gate V failed)
+   space-first check (mean p of the space token, need >= 0.9): suffer 0.660, accept 0.849, reason 0.710
+== mistral-7b  (gate V: suffer 0.08, accept 0.97, reason 0.34 -> FAIL, not read)
+   M1 food = -0.141 [95% CI -0.939, +0.687]; reason = -0.137; M0 food = +0.005
+   corr(reason, suffer) over 60 entities = +0.09
+   verdict: not read (gate V failed)
 == decision (models that pass gate V):
    not decided
