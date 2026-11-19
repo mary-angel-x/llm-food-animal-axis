@@ -1,0 +1,18 @@
+== qwen-7b  (gate V: suffer 0.83, accept 1.00, reason 0.68 -> PASS)
+   M1 food = +0.404 [95% CI +0.027, +0.790]; reason = -0.009; M0 food = +0.410
+   corr(reason, suffer) over 60 entities = +0.28
+   verdict: food survives
+== gemma-2b  (gate V: suffer 0.65, accept 0.95, reason 0.22 -> FAIL, not read)
+   M1 food = +0.020 [95% CI -0.052, +0.111]; reason = -0.008; M0 food = +0.030
+   corr(reason, suffer) over 60 entities = +0.08
+   verdict: not read (gate V failed)
+== phi-3.5  (gate V: suffer 0.00, accept 0.00, reason 0.00 -> FAIL, not read)
+   M1 food = +0.251 [95% CI +0.044, +0.459]; reason = +0.070; M0 food = +0.157
+   corr(reason, suffer) over 60 entities = -0.05
+   verdict: not read (gate V failed)
+== llama-3b  (gate V: suffer 0.15, accept 0.01, reason 0.13 -> FAIL, not read)
+   M1 food = +0.826 [95% CI +0.342, +1.320]; reason = +0.276; M0 food = +0.755
+   corr(reason, suffer) over 60 entities = +0.59
+   verdict: not read (gate V failed)
+== decision (models that pass gate V):
+   not decided
